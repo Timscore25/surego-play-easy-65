@@ -12,7 +12,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="flex flex-col gap-8 mb-16">
           <Card className="bg-white/10 backdrop-blur-sm border-none shadow-lg animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <CardContent className="p-8">
               <div className="flex flex-col h-full">
