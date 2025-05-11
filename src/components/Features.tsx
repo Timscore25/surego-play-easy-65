@@ -1,5 +1,5 @@
 
-import { Calendar, Users, Bell, BalanceScale, Wallet, BarChart } from "lucide-react";
+import { Calendar, Users, Bell, Scale, Wallet, BarChart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Features = () => {
@@ -24,7 +24,7 @@ const Features = () => {
     },
     {
       id: 4,
-      icon: <BalanceScale className="h-10 w-10 text-surego-600" />,
+      icon: <Scale className="h-10 w-10 text-surego-600" />,
       title: "Балансиране на отбори",
       description: "Интелигентно разпределение на играчи за балансирани и конкурентни отбори."
     },
