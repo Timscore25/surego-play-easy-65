@@ -34,11 +34,11 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="section-padding bg-gradient-to-b from-surego-50 to-white">
+    <section id="how-it-works" className="section-padding bg-gradient-to-b from-dbeafe/50 to-white">
       <div className="app-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Как работи SureGo?</h2>
-          <p className="text-lg text-gray-600">
+          <h2 className="section-title mb-4">Как работи SureGo?</h2>
+          <p className="section-subtitle">
             Само шест лесни стъпки ви делят от перфектно организираните футболни събития
           </p>
         </div>
@@ -51,8 +51,9 @@ const HowItWorks = () => {
               style={{ animationDelay: `${0.2 * index}s` }}
             >
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 rounded-full bg-surego-600 text-white flex items-center justify-center text-xl font-bold">
+                <div className="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center text-xl font-bold relative">
                   {step.number}
+                  <div className="absolute inset-0 rounded-full bg-primary opacity-20 animate-ping"></div>
                 </div>
               </div>
               <div className="flex-1">
@@ -60,7 +61,7 @@ const HowItWorks = () => {
                 <p className="text-gray-600">{step.description}</p>
               </div>
               {index < steps.length - 1 && (
-                <div className="hidden md:block h-14 border-l-2 border-dashed border-surego-200 absolute ml-8 mt-16"></div>
+                <div className="hidden md:block h-14 border-l-2 border-dashed border-primary/30 absolute ml-8 mt-16"></div>
               )}
             </div>
           ))}

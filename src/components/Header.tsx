@@ -15,23 +15,23 @@ const Header = () => {
       <div className="app-container flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
-            <span className="text-2xl font-bold text-surego-600">SureGo</span>
-            <span className="ml-1 bg-surego-600 text-white text-xs px-2 py-0.5 rounded">Beta</span>
+            <span className="text-2xl font-bold text-primary">SureGo</span>
+            <span className="ml-1 bg-primary text-white text-xs px-2 py-0.5 rounded">Beta</span>
           </a>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-gray-600 hover:text-surego-600 transition-colors font-medium">
+          <a href="#features" className="text-gray-600 hover:text-primary transition-colors font-medium">
             Функции
           </a>
-          <a href="#how-it-works" className="text-gray-600 hover:text-surego-600 transition-colors font-medium">
+          <a href="#how-it-works" className="text-gray-600 hover:text-primary transition-colors font-medium">
             Как работи
           </a>
-          <a href="#testimonials" className="text-gray-600 hover:text-surego-600 transition-colors font-medium">
+          <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors font-medium">
             Отзиви
           </a>
-          <a href="#faq" className="text-gray-600 hover:text-surego-600 transition-colors font-medium">
+          <a href="#faq" className="text-gray-600 hover:text-primary transition-colors font-medium">
             FAQ
           </a>
           <div className="flex items-center space-x-2 border-l pl-4 border-gray-200">
@@ -46,7 +46,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 rounded-md text-gray-500 hover:text-surego-600 hover:bg-gray-100"
+          className="md:hidden p-2 rounded-md text-gray-500 hover:text-primary hover:bg-gray-100"
           onClick={toggleMenu}
           aria-label="Menu"
         >
@@ -60,28 +60,28 @@ const Header = () => {
           <nav className="flex flex-col space-y-4">
             <a 
               href="#features" 
-              className="text-gray-600 hover:text-surego-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium"
+              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium"
               onClick={toggleMenu}
             >
               Функции
             </a>
             <a 
               href="#how-it-works" 
-              className="text-gray-600 hover:text-surego-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium"
+              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium"
               onClick={toggleMenu}
             >
               Как работи
             </a>
             <a 
               href="#testimonials" 
-              className="text-gray-600 hover:text-surego-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium"
+              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium"
               onClick={toggleMenu}
             >
               Отзиви
             </a>
             <a 
               href="#faq" 
-              className="text-gray-600 hover:text-surego-600 transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium"
+              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium"
               onClick={toggleMenu}
             >
               FAQ

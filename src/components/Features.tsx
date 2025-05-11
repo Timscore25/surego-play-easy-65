@@ -6,37 +6,37 @@ const Features = () => {
   const features = [
     {
       id: 1,
-      icon: <Calendar className="h-10 w-10 text-surego-600" />,
+      icon: <Calendar className="h-10 w-10 text-primary" />,
       title: "Създаване на мачове и тренировки",
       description: "Бързо планиране и управление на футболни събития с всички необходими детайли."
     },
     {
       id: 2,
-      icon: <Users className="h-10 w-10 text-surego-600" />,
+      icon: <Users className="h-10 w-10 text-primary" />,
       title: "Управление на играчи с роли и позиции",
       description: "Организирайте играчите по позиции, умения и специални роли в отбора."
     },
     {
       id: 3,
-      icon: <Bell className="h-10 w-10 text-surego-600" />,
+      icon: <Bell className="h-10 w-10 text-primary" />,
       title: "Автоматични покани и известия",
       description: "Автоматично изпращане на покани и напомняния към играчите за предстоящи мачове."
     },
     {
       id: 4,
-      icon: <Scale className="h-10 w-10 text-surego-600" />,
+      icon: <Scale className="h-10 w-10 text-primary" />,
       title: "Балансиране на отбори",
       description: "Интелигентно разпределение на играчи за балансирани и конкурентни отбори."
     },
     {
       id: 5,
-      icon: <Wallet className="h-10 w-10 text-surego-600" />,
+      icon: <Wallet className="h-10 w-10 text-primary" />,
       title: "Проследяване на каса и плащания",
       description: "Лесно проследяване на внесените суми и общия баланс на отбора."
     },
     {
       id: 6,
-      icon: <BarChart className="h-10 w-10 text-surego-600" />,
+      icon: <BarChart className="h-10 w-10 text-primary" />,
       title: "Игрова статистика и история",
       description: "Преглед на статистики за мачове, посещаемост и представяне на отбора."
     }
@@ -45,22 +45,22 @@ const Features = () => {
   return (
     <section id="features" className="section-padding bg-white">
       <div className="app-container">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Функции, които правят разликата</h2>
-          <p className="text-lg text-gray-600">
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <h2 className="section-title">Функции, които правят разликата</h2>
+          <p className="section-subtitle">
             SureGo съдържа всичко, от което се нуждаете за безпроблемна организация на футболни събития
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature) => (
             <Card 
               key={feature.id} 
-              className="border border-gray-100 hover:border-surego-100 hover:shadow-lg transition-all duration-300 animate-fade-in overflow-hidden group"
+              className="border border-gray-100 hover:border-primary/20 hover:shadow-lg transition-all duration-300 animate-fade-in overflow-hidden group"
               style={{ animationDelay: `${0.1 * feature.id}s` }}
             >
               <CardContent className="p-6">
-                <div className="rounded-full bg-surego-50 w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-surego-100 transition-colors">
+                <div className="rounded-full bg-primary/10 w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>

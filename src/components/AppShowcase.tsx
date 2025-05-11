@@ -16,11 +16,11 @@ const AppShowcase = () => {
   ];
 
   return (
-    <section id="app-showcase" className="section-padding bg-gray-50">
+    <section id="app-showcase" className="section-padding bg-gradient-to-b from-dbeafe to-white">
       <div className="app-container">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Вижте приложението в действие</h2>
+        <h2 className="section-title text-center mb-8">Вижте приложението в действие</h2>
         
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-12">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 mt-10 md:mt-12">
           {screenshots.map((screenshot, index) => (
             <div 
               key={index} 
@@ -28,9 +28,9 @@ const AppShowcase = () => {
               style={{ animationDelay: `${0.2 + index * 0.2}s` }}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${
-                index === 0 ? 'from-surego-400/20 to-surego-500/30' :
-                index === 1 ? 'from-surego-500/20 to-surego-600/30' :
-                'from-surego-600/20 to-surego-700/30'
+                index === 0 ? 'from-primary/20 to-primary/30' :
+                index === 1 ? 'from-primary/20 to-primary/30' :
+                'from-primary/20 to-primary/30'
               } rounded-[2rem] transform ${
                 index === 0 ? '-rotate-6' :
                 index === 1 ? 'rotate-0' :

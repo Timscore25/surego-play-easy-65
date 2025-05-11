@@ -30,8 +30,8 @@ const Faq = () => {
     <section id="faq" className="section-padding bg-gray-50">
       <div className="app-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Често задавани въпроси</h2>
-          <p className="text-lg text-gray-600">
+          <h2 className="section-title mb-4">Често задавани въпроси</h2>
+          <p className="section-subtitle">
             Отговори на най-често задаваните въпроси за използването на SureGo
           </p>
         </div>
@@ -39,7 +39,12 @@ const Faq = () => {
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {faqItems.map((item, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border border-gray-200 rounded-lg mb-4 overflow-hidden animate-fade-in" style={{ animationDelay: `${0.1 * index}s` }}>
+              <AccordionItem 
+                key={index} 
+                value={`item-${index}`} 
+                className="border border-gray-200 rounded-lg mb-4 overflow-hidden animate-fade-in [&_[data-state=open]]:text-primary [&_[data-state=open]_svg]:text-warmyellow-400" 
+                style={{ animationDelay: `${0.1 * index}s` }}
+              >
                 <AccordionTrigger className="px-6 py-4 hover:bg-gray-100 text-left font-medium">
                   {item.question}
                 </AccordionTrigger>

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
@@ -40,7 +40,7 @@ const Newsletter = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <Button type="submit" className="bg-surego-600 hover:bg-surego-700">
+            <Button type="submit" className="bg-primary hover:bg-primary/90">
               Абонирай се
             </Button>
           </form>
