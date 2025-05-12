@@ -27,11 +27,11 @@ const Faq = () => {
   ];
 
   return (
-    <section id="faq" className="section-padding blue-dark-bg">
+    <section id="faq" className="section-padding bg-gray-50">
       <div className="app-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="section-title mb-4 text-white">Често задавани въпроси</h2>
-          <p className="text-lg text-white/80">
+          <h2 className="section-title mb-4">Често задавани въпроси</h2>
+          <p className="section-subtitle">
             Отговори на най-често задаваните въпроси за използването на SureGo
           </p>
         </div>
@@ -42,14 +42,14 @@ const Faq = () => {
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`} 
-                className="bg-white/20 backdrop-blur-sm rounded-lg mb-4 overflow-hidden animate-fade-in [&_[data-state=open]]:text-accent [&_[data-state=open]_svg]:text-accent" 
+                className="border border-gray-200 rounded-lg mb-4 overflow-hidden animate-fade-in [&_[data-state=open]]:text-primary [&_[data-state=open]_svg]:text-warmyellow-400" 
                 style={{ animationDelay: `${0.1 * index}s` }}
               >
-                <AccordionTrigger className="px-6 py-4 hover:bg-white/10 text-left font-medium text-white">
+                <AccordionTrigger className="px-6 py-4 hover:bg-gray-100 text-left font-medium">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="px-6 py-4 text-white/90">
-                  <p>{item.answer}</p>
+                <AccordionContent className="px-6 py-4 bg-white">
+                  <p className="text-gray-600">{item.answer}</p>
                 </AccordionContent>
               </AccordionItem>
             ))}

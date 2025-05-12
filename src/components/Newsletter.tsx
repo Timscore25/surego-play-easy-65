@@ -23,11 +23,11 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="section-padding blue-light-bg relative">
+    <section className="section-padding bg-white">
       <div className="app-container">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Абонирай се за новини и функции</h2>
-          <p className="text-lg text-gray-700 mb-8">
+          <p className="text-lg text-gray-600 mb-8">
             Бъдете първите, които научават за нови функции, събития и съвети за организиране на мачове.
           </p>
           
@@ -40,7 +40,7 @@ const Newsletter = () => {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <Button type="submit" className="bg-accent hover:bg-accent/80 text-accent-foreground">
+            <Button type="submit" className="bg-primary hover:bg-primary/90">
               Абонирай се
             </Button>
           </form>
