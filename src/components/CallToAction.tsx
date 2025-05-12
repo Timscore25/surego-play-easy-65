@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 
 const CallToAction = () => {
   return (
-    <section className="section-padding relative bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-white overflow-hidden">
-      {/* Abstract sporty shape in background */}
+    <section className="section-padding relative blue-dark-bg text-white overflow-hidden">
+      {/* Abstract shapes in background */}
       <div className="absolute inset-0 overflow-hidden opacity-10">
-        <div className="absolute -top-32 -left-32 w-64 h-64 rounded-full bg-warmyellow-400"></div>
-        <div className="absolute top-1/2 right-10 w-96 h-96 rounded-full bg-warmyellow-400/50"></div>
-        <div className="absolute bottom-0 left-1/4 w-72 h-72 rounded-full bg-white/20"></div>
+        <div className="absolute -top-32 -left-32 w-64 h-64 rounded-full bg-white/70"></div>
+        <div className="absolute top-1/2 right-10 w-96 h-96 rounded-full bg-white/50"></div>
+        <div className="absolute bottom-0 left-1/4 w-72 h-72 rounded-full bg-white/30"></div>
       </div>
       
       <div className="app-container relative z-10">
@@ -25,7 +25,7 @@ const CallToAction = () => {
               </svg>
               <span>App Store</span>
             </Button>
-            <Button className="bg-white hover:bg-gray-100 text-primary py-6 px-8 rounded-xl flex items-center gap-2 shadow-lg">
+            <Button className="bg-accent hover:bg-accent/80 text-accent-foreground py-6 px-8 rounded-xl flex items-center gap-2 shadow-lg">
               <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3 20.5V3.5c0-.8.7-1.5 1.5-1.5h15c.8 0 1.5.7 1.5 1.5v17c0 .8-.7 1.5-1.5 1.5h-15c-.8 0-1.5-.7-1.5-1.5zm16.5 0V3.5h-15v17h15z"/>
                 <path d="M7 7l4 2 3.5-2v9.5l-3.5-2-4 2z"/>
@@ -38,7 +38,7 @@ const CallToAction = () => {
       
       {/* Mobile sticky button */}
       <div className="md:hidden fixed bottom-4 left-0 right-0 z-50 px-4">
-        <button className="w-full bg-warmyellow-400 hover:bg-warmyellow-500 text-black py-3 rounded-full shadow-lg flex items-center justify-center gap-2 font-medium">
+        <button className="w-full bg-accent hover:bg-accent-foreground text-accent-foreground hover:text-accent py-3 rounded-full shadow-lg flex items-center justify-center gap-2 font-medium transition-colors">
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M12 15V3m0 12l-4-4m4 4l4-4" />
             <path d="M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />

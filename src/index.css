@@ -34,6 +34,10 @@
     --ring: 214 100% 53%;
 
     --radius: 1rem;
+    
+    /* Two-tone blue colors */
+    --blue-light: 202 56% 81%;  /* #b6d6ea */
+    --blue-dark: 204 35% 63%;   /* #7ca7c4 */
   }
 }
 
@@ -66,4 +70,87 @@
   .section-subtitle {
     @apply text-lg text-gray-600;
   }
+}
+
+@layer utilities {
+  /* Wave divider and animation classes */
+  .wave-divider {
+    @apply absolute left-0 right-0 h-24 md:h-32 lg:h-40 w-full overflow-hidden;
+  }
+
+  .curve-top {
+    @apply absolute left-0 right-0 bottom-0 h-20 md:h-24 lg:h-32;
+  }
+  
+  .curve-bottom {
+    @apply absolute left-0 right-0 top-0 h-20 md:h-24 lg:h-32;
+  }
+  
+  .blue-light-bg {
+    @apply bg-[#b6d6ea];
+  }
+  
+  .blue-dark-bg {
+    @apply bg-[#7ca7c4];
+  }
+  
+  .blue-gradient {
+    @apply bg-gradient-to-b from-[#b6d6ea] to-[#7ca7c4];
+  }
+  
+  .white-card {
+    @apply bg-[#f8fafc] rounded-xl shadow-lg;
+  }
+  
+  .yellow-accent {
+    @apply text-[#facc15];
+  }
+  
+  .yellow-hover {
+    @apply hover:text-[#facc15] transition-colors;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0) translateZ(0);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.animate-wave {
+  animation: wave 15s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
 }
