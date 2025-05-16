@@ -57,34 +57,34 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Adding direct color references for the specified palette
+				// Direct color references for the brand palette
 				lightBlue: '#9cb9c9',
 				darkerBlue: '#90afc1',
 				yellow: '#edae00',
 				boldBlue: '#0db8e6',
 				surego: {
-					50: '#e0f2fb',
-					100: '#b5e0f7',
-					200: '#85cdee',
-					300: '#55b9e5',
-					400: '#30a8e0',
-					500: '#0db8e6',
-					600: '#0b93d4',
-					700: '#097aaf',
-					800: '#07638c',
-					900: '#044d6e'
+					50: '#e0f5fc',
+					100: '#c1ebf9',
+					200: '#9ddff5',
+					300: '#71d2f0',
+					400: '#41c5eb',
+					500: '#0db8e6',  // Brand blue
+					600: '#0a93be',
+					700: '#087496',
+					800: '#05576e',
+					900: '#034151'
 				},
 				warmyellow: {
-					50: '#fff9e0',
-					100: '#ffefb3',
-					200: '#ffe483',
-					300: '#ffd94f',
-					400: '#ffce29',
-					500: '#edae00',
-					600: '#cc9600',
-					700: '#a67c00',
-					800: '#806100',
-					900: '#634a00'
+					50: '#fef9e6',
+					100: '#fef3cd',
+					200: '#fde7a0',
+					300: '#fcda73',
+					400: '#facb40',
+					500: '#edae00',  // Brand yellow
+					600: '#c48f00',
+					700: '#9b7000',
+					800: '#725300',
+					900: '#4d3700'
 				}
 			},
 			borderRadius: {
