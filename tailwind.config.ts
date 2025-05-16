@@ -57,29 +57,34 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Adding direct color references for the specified palette
+				lightBlue: '#9cb9c9',
+				darkerBlue: '#90afc1',
+				yellow: '#edae00',
+				boldBlue: '#0db8e6',
 				surego: {
-					50: '#dbeafe',
-					100: '#bfdbfe',
-					200: '#93c5fd',
-					300: '#60a5fa',
-					400: '#3b82f6',
-					500: '#2563eb',
-					600: '#1d4ed8',
-					700: '#1e40af',
-					800: '#1e3a8a',
-					900: '#172554'
+					50: '#e0f2fb',
+					100: '#b5e0f7',
+					200: '#85cdee',
+					300: '#55b9e5',
+					400: '#30a8e0',
+					500: '#0db8e6',
+					600: '#0b93d4',
+					700: '#097aaf',
+					800: '#07638c',
+					900: '#044d6e'
 				},
 				warmyellow: {
-					50: '#fefce8',
-					100: '#fef9c3',
-					200: '#fef08a',
-					300: '#fde047',
-					400: '#facc15',
-					500: '#eab308',
-					600: '#ca8a04',
-					700: '#a16207',
-					800: '#854d0e',
-					900: '#713f12'
+					50: '#fff9e0',
+					100: '#ffefb3',
+					200: '#ffe483',
+					300: '#ffd94f',
+					400: '#ffce29',
+					500: '#edae00',
+					600: '#cc9600',
+					700: '#a67c00',
+					800: '#806100',
+					900: '#634a00'
 				}
 			},
 			borderRadius: {
