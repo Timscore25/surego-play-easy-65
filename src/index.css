@@ -71,6 +71,23 @@
     @apply text-xl text-neutral-600 max-w-2xl;
   }
 
+  /* Accordion icon styles */
+  [data-state="closed"] .accordion-icon-plus {
+    display: block;
+  }
+  
+  [data-state="closed"] .accordion-icon-minus {
+    display: none;
+  }
+  
+  [data-state="open"] .accordion-icon-plus {
+    display: none;
+  }
+  
+  [data-state="open"] .accordion-icon-minus {
+    display: block;
+  }
+
   /* Modern 2025 styles */
   .glass-card {
     @apply backdrop-blur-md bg-white/10 border border-white/20 shadow-xl;

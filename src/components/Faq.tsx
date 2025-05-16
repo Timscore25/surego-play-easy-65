@@ -80,9 +80,9 @@ const Faq = () => {
                   <AccordionTrigger className="px-6 py-5 hover:bg-neutral-100/80 text-left font-medium text-lg [&[data-state=open]]:text-primary [&[data-state=open]_svg]:text-primary data-[state=open]:bg-neutral-50">
                     <div className="flex-1">{item.question}</div>
                     <div className="flex items-center justify-center w-8 h-8 rounded-full border border-neutral-200 transition-all">
-                      {({ open }: { open: boolean }) => (
-                        open ? <MinusIcon className="h-4 w-4" /> : <PlusIcon className="h-4 w-4" />
-                      )}
+                      {/* Fixed: Using a static element instead of a function component */}
+                      <PlusIcon className="h-4 w-4 accordion-icon-plus" />
+                      <MinusIcon className="h-4 w-4 accordion-icon-minus hidden" />
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 py-5 bg-white text-neutral-600">
