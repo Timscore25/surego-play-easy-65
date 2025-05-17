@@ -24,11 +24,11 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="section-padding bg-gradient-to-b from-white to-sky-50">
+    <section className="section-padding bg-gradient-to-b from-[#11e7ef]/10 to-white">
       <div className="app-container">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center p-3 mb-6 rounded-full bg-blue-50">
-            <Mail className="h-6 w-6 text-primary" />
+          <div className="inline-flex items-center justify-center p-3 mb-6 rounded-full bg-[#11e7ef]/20">
+            <Mail className="h-6 w-6 text-[#11e7ef]" />
           </div>
           
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Абонирай се за новини и функции</h2>
@@ -51,7 +51,7 @@ const Newsletter = () => {
               </div>
               <Button 
                 type="submit" 
-                className="bg-primary hover:bg-primary/90 shadow-md transition-all hover:shadow-lg"
+                className="bg-[#ffc100] hover:bg-[#ffc100]/90 shadow-md transition-all hover:shadow-lg text-gray-900"
               >
                 Абонирай се
               </Button>
