@@ -1,49 +1,38 @@
-
 import { Calendar, Users, Bell, Scale, Wallet, BarChart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
 const Features = () => {
-  const features = [
-    {
-      id: 1,
-      icon: <Calendar className="h-10 w-10 text-[#ffc100]" />,
-      title: "Създаване на мачове и тренировки",
-      description: "Бързо планиране и управление на футболни събития с всички необходими детайли."
-    },
-    {
-      id: 2,
-      icon: <Users className="h-10 w-10 text-[#ffc100]" />,
-      title: "Управление на играчи с роли и позиции",
-      description: "Организирайте играчите по позиции, умения и специални роли в отбора."
-    },
-    {
-      id: 3,
-      icon: <Bell className="h-10 w-10 text-[#ffc100]" />,
-      title: "Автоматични покани и известия",
-      description: "Автоматично изпращане на покани и напомняния към играчите за предстоящи мачове."
-    },
-    {
-      id: 4,
-      icon: <Scale className="h-10 w-10 text-[#ffc100]" />,
-      title: "Балансиране на отбори",
-      description: "Интелигентно разпределение на играчи за балансирани и конкурентни отбори."
-    },
-    {
-      id: 5,
-      icon: <Wallet className="h-10 w-10 text-[#ffc100]" />,
-      title: "Проследяване на каса и плащания",
-      description: "Лесно проследяване на внесените суми и общия баланс на отбора."
-    },
-    {
-      id: 6,
-      icon: <BarChart className="h-10 w-10 text-[#ffc100]" />,
-      title: "Игрова статистика и история",
-      description: "Преглед на статистики за мачове, посещаемост и представяне на отбора."
-    }
-  ];
-
-  return (
-    <section id="features" className="section-padding bg-white">
+  const features = [{
+    id: 1,
+    icon: <Calendar className="h-10 w-10 text-[#ffc100]" />,
+    title: "Създаване на мачове и тренировки",
+    description: "Бързо планиране и управление на футболни събития с всички необходими детайли."
+  }, {
+    id: 2,
+    icon: <Users className="h-10 w-10 text-[#ffc100]" />,
+    title: "Управление на играчи с роли и позиции",
+    description: "Организирайте играчите по позиции, умения и специални роли в отбора."
+  }, {
+    id: 3,
+    icon: <Bell className="h-10 w-10 text-[#ffc100]" />,
+    title: "Автоматични покани и известия",
+    description: "Автоматично изпращане на покани и напомняния към играчите за предстоящи мачове."
+  }, {
+    id: 4,
+    icon: <Scale className="h-10 w-10 text-[#ffc100]" />,
+    title: "Балансиране на отбори",
+    description: "Интелигентно разпределение на играчи за балансирани и конкурентни отбори."
+  }, {
+    id: 5,
+    icon: <Wallet className="h-10 w-10 text-[#ffc100]" />,
+    title: "Проследяване на каса и плащания",
+    description: "Лесно проследяване на внесените суми и общия баланс на отбора."
+  }, {
+    id: 6,
+    icon: <BarChart className="h-10 w-10 text-[#ffc100]" />,
+    title: "Игрова статистика и история",
+    description: "Преглед на статистики за мачове, посещаемост и представяне на отбора."
+  }];
+  return <section id="features" className="section-padding bg-white">
       <div className="app-container">
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="section-title">Функции, които правят разликата</h2>
@@ -53,25 +42,19 @@ const Features = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {features.map((feature) => (
-            <Card 
-              key={feature.id} 
-              className="border border-gray-100 hover:border-primary/20 hover:shadow-lg transition-all duration-300 animate-fade-in overflow-hidden group"
-              style={{ animationDelay: `${0.1 * feature.id}s` }}
-            >
+          {features.map(feature => <Card key={feature.id} style={{
+          animationDelay: `${0.1 * feature.id}s`
+        }} className="border border-gray-100 hover:ffc100/20 hover:shadow-lg transition-all duration-300 animate-fade-in overflow-hidden group">
               <CardContent className="p-6">
-                <div className="rounded-full bg-[#11e7ef]/10 w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#11e7ef]/15 transition-colors">
+                <div className="rounded-full w-16 h-16 flex items-center justify-center mb-4 transition-colors bg-[#f4f4f4]">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Features;
