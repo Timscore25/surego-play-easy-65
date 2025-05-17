@@ -61,6 +61,7 @@ export default {
 				lightBlue: '#9cb9c9',
 				darkerBlue: '#90afc1',
 				yellow: '#edae00',
+				logoYellow: '#fec000',
 				boldBlue: '#0db8e6',
 				surego: {
 					50: '#e0f5fc',
