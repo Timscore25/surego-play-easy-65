@@ -1,7 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 const Hero = () => {
-  return <section id="hero" className="pt-24 pb-12 md:pt-28 md:pb-16 bg-gradient-to-b from-dbeafe to-white overflow-hidden bg-[#ffc100]">
+  return <section id="hero" className="pt-24 pb-12 md:pt-28 md:pb-16 bg-gradient-to-b from-dbeafe to-white overflow-hidden bg-[#11e7ef]">
       <div className="app-container">
         <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-8">
           {/* Hero Content */}
@@ -34,7 +33,7 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center">
             <div className="relative w-64 md:w-72 h-auto animate-float">
-              <div className="absolute inset-0 bg-gradient-to-b from-[#ffc100]/30 to-[#ffc100]/40 rounded-[2.5rem] transform rotate-6"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-[#ffc100] to-[#ffc100] rounded-[2.5rem] transform rotate-6"></div>
               <div className="relative z-10 bg-white border-8 border-gray-100 rounded-[2.5rem] shadow-xl overflow-hidden">
                 <img src="/placeholder.svg" alt="SureGo App Screenshot" className="w-full h-auto" />
               </div>

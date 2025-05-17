@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -7,7 +6,7 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  return <header className="fixed w-full top-0 backdrop-blur-sm z-50 shadow-sm py-4 bg-[#ffc100]">
+  return <header className="fixed w-full top-0 backdrop-blur-sm z-50 shadow-sm py-4 bg-[#12e8f0]">
       <div className="app-container flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
