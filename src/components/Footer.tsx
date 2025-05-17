@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowUp, Whistle } from "lucide-react";
+import { ArrowRight, ArrowUp, Music } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center">
-              <Whistle className="mr-2 h-5 w-5 text-logoYellow" />
+              <Music className="mr-2 h-5 w-5 text-logoYellow" />
               <span className="text-2xl font-bold text-logoYellow">SureGo</span>
               <span className="ml-1 bg-primary text-white text-xs px-2 py-0.5 rounded-full">AI</span>
             </a>

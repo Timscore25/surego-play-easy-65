@@ -1,8 +1,6 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X, ChevronDown } from "lucide-react";
-import { Whistle } from "lucide-react";
+import { Menu, X, ChevronDown, Music } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
@@ -35,7 +33,7 @@ const Header = () => {
       <div className="app-container flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
-            <Whistle className={`mr-2 h-6 w-6 ${isScrolled ? "text-logoYellow" : "text-logoYellow"}`} />
+            <Music className={`mr-2 h-6 w-6 ${isScrolled ? "text-logoYellow" : "text-logoYellow"}`} />
             <span className={`text-2xl font-bold transition-colors ${
               isScrolled ? "text-logoYellow" : "text-logoYellow"
             }`}>
