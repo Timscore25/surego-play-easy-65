@@ -57,35 +57,29 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Direct color references for the brand palette
-				lightBlue: '#9cb9c9',
-				darkerBlue: '#90afc1',
-				yellow: '#edae00',
-				logoYellow: '#fec000',
-				boldBlue: '#0db8e6',
 				surego: {
-					50: '#e0f5fc',
-					100: '#c1ebf9',
-					200: '#9ddff5',
-					300: '#71d2f0',
-					400: '#41c5eb',
-					500: '#0db8e6',  // Brand blue
-					600: '#0a93be',
-					700: '#087496',
-					800: '#05576e',
-					900: '#034151'
+					50: '#dbeafe',
+					100: '#bfdbfe',
+					200: '#93c5fd',
+					300: '#60a5fa',
+					400: '#3b82f6',
+					500: '#2563eb',
+					600: '#1d4ed8',
+					700: '#1e40af',
+					800: '#1e3a8a',
+					900: '#172554'
 				},
 				warmyellow: {
-					50: '#fef9e6',
-					100: '#fef3cd',
-					200: '#fde7a0',
-					300: '#fcda73',
-					400: '#facb40',
-					500: '#edae00',  // Brand yellow
-					600: '#c48f00',
-					700: '#9b7000',
-					800: '#725300',
-					900: '#4d3700'
+					50: '#fefce8',
+					100: '#fef9c3',
+					200: '#fef08a',
+					300: '#fde047',
+					400: '#facc15',
+					500: '#eab308',
+					600: '#ca8a04',
+					700: '#a16207',
+					800: '#854d0e',
+					900: '#713f12'
 				}
 			},
 			borderRadius: {

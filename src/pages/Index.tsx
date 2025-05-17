@@ -1,5 +1,4 @@
 
-import { useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import AppShowcase from "@/components/AppShowcase";
@@ -12,26 +11,8 @@ import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 
 const Index = () => {
-  useEffect(() => {
-    // Smooth scroll functionality for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const href = this.getAttribute('href');
-        if (href === '#') return;
-        
-        const target = document.querySelector(href as string);
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  }, []);
-
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen bg-white">
       <Header />
       <main>
         <Hero />
