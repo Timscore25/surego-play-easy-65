@@ -15,7 +15,12 @@ const Header = () => {
       <div className="app-container flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
-            <span className="text-2xl font-bold text-primary">SureGo</span>
+            <img 
+              src="/lovable-uploads/c6d1b5c6-a420-4e52-a13b-d0c5fa555d33.png" 
+              alt="SureGo Whistle Logo" 
+              className="h-6 mr-2"
+            />
+            <span className="text-2xl font-bold" style={{ color: "#fec000" }}>SureGo</span>
             <span className="ml-1 bg-primary text-white text-xs px-2 py-0.5 rounded">Beta</span>
           </a>
         </div>

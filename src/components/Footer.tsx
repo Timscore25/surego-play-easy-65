@@ -5,7 +5,14 @@ const Footer = () => {
       <div className="app-container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-lg font-bold mb-4">SureGo</h3>
+            <h3 className="flex items-center text-lg font-bold mb-4">
+              <img 
+                src="/lovable-uploads/c6d1b5c6-a420-4e52-a13b-d0c5fa555d33.png" 
+                alt="SureGo Whistle Logo" 
+                className="h-5 mr-2"
+              />
+              <span style={{ color: "#fec000" }}>SureGo</span>
+            </h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-600 hover:text-surego-600">Начало</a></li>
               <li><a href="#features" className="text-gray-600 hover:text-surego-600">Функции</a></li>
