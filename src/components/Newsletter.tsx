@@ -24,26 +24,26 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="section-padding bg-gradient-to-b from-[#11e7ef]/10 to-white">
+    <section className="section-padding bg-gradient-to-b from-[#11e7ef]/10 to-white px-4 md:px-6">
       <div className="app-container">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center justify-center p-3 mb-6 rounded-full bg-[#11e7ef]/20">
-            <Mail className="h-6 w-6 text-[#11e7ef]" />
+            <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-[#11e7ef]" />
           </div>
           
-          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Абонирай се за новини и функции</h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-gray-800">Абонирай се за новини и функции</h2>
+          <p className="text-base sm:text-lg text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto px-2">
             Бъдете първите, които научават за нови функции, събития и съвети за организиране на мачове.
           </p>
           
-          <div className="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto border border-gray-100 animate-fade-in">
+          <div className="bg-white p-5 sm:p-6 md:p-8 rounded-2xl shadow-lg max-w-2xl mx-auto border border-gray-100 animate-fade-in">
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
               <div className="relative flex-grow">
-                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4 sm:h-5 sm:w-5" />
                 <Input
                   type="email"
                   placeholder="Вашият имейл"
-                  className="pl-10 bg-gray-50 border-gray-200 focus:bg-white transition-colors"
+                  className="pl-10 bg-gray-50 border-gray-200 focus:bg-white transition-colors h-10 sm:h-auto"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -51,7 +51,7 @@ const Newsletter = () => {
               </div>
               <Button 
                 type="submit" 
-                className="bg-[#ffc100] hover:bg-[#ffc100]/90 shadow-md transition-all hover:shadow-lg text-gray-900"
+                className="bg-[#ffc100] hover:bg-[#ffc100]/90 shadow-md transition-all hover:shadow-lg text-gray-900 whitespace-nowrap"
               >
                 Абонирай се
               </Button>

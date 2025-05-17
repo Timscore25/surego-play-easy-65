@@ -52,7 +52,7 @@
   }
 
   .section-padding {
-    @apply py-14 px-4 md:py-20 md:px-6;
+    @apply py-10 sm:py-14 md:py-20;
   }
 
   .app-container {
@@ -60,10 +60,53 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-4;
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4;
   }
   
   .section-subtitle {
-    @apply text-lg text-gray-600;
+    @apply text-base sm:text-lg text-gray-600;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Better tap targets for mobile */
+  button, a {
+    @apply min-h-10 min-w-10 flex items-center justify-center;
+  }
+
+  /* Fix double scrollbar issue */
+  html, body {
+    @apply overflow-x-hidden;
+  }
+
+  /* Fix mobile viewport height issues */
+  .min-h-screen {
+    min-height: 100vh; /* fallback */
+    min-height: -webkit-fill-available;
+  }
+
+  @supports (-webkit-touch-callout: none) {
+    .min-h-screen {
+      min-height: -webkit-fill-available;
+    }
+  }
+
+  /* Animations for mobile */
+  .animate-fade-in {
+    animation-duration: 0.8s;
+  }
+
+  /* Add safe bottom padding for mobile devices with home indicators */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+}
+
+@media (max-width: 640px) {
+  .section-padding {
+    @apply py-8;
   }
 }
