@@ -6,37 +6,37 @@ const Features = () => {
   const features = [
     {
       id: 1,
-      icon: <Calendar className="h-10 w-10 text-[#11e7ef]" />,
+      icon: <Calendar className="h-10 w-10 text-[#ffc100]" />,
       title: "Създаване на мачове и тренировки",
       description: "Бързо планиране и управление на футболни събития с всички необходими детайли."
     },
     {
       id: 2,
-      icon: <Users className="h-10 w-10 text-[#11e7ef]" />,
+      icon: <Users className="h-10 w-10 text-[#ffc100]" />,
       title: "Управление на играчи с роли и позиции",
       description: "Организирайте играчите по позиции, умения и специални роли в отбора."
     },
     {
       id: 3,
-      icon: <Bell className="h-10 w-10 text-[#11e7ef]" />,
+      icon: <Bell className="h-10 w-10 text-[#ffc100]" />,
       title: "Автоматични покани и известия",
       description: "Автоматично изпращане на покани и напомняния към играчите за предстоящи мачове."
     },
     {
       id: 4,
-      icon: <Scale className="h-10 w-10 text-[#11e7ef]" />,
+      icon: <Scale className="h-10 w-10 text-[#ffc100]" />,
       title: "Балансиране на отбори",
       description: "Интелигентно разпределение на играчи за балансирани и конкурентни отбори."
     },
     {
       id: 5,
-      icon: <Wallet className="h-10 w-10 text-[#11e7ef]" />,
+      icon: <Wallet className="h-10 w-10 text-[#ffc100]" />,
       title: "Проследяване на каса и плащания",
       description: "Лесно проследяване на внесените суми и общия баланс на отбора."
     },
     {
       id: 6,
-      icon: <BarChart className="h-10 w-10 text-[#11e7ef]" />,
+      icon: <BarChart className="h-10 w-10 text-[#ffc100]" />,
       title: "Игрова статистика и история",
       description: "Преглед на статистики за мачове, посещаемост и представяне на отбора."
     }
