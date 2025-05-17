@@ -34,7 +34,7 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 flex justify-center">
             <div className="relative w-64 md:w-72 h-auto animate-float">
-              <div className="absolute inset-0 bg-gradient-to-b from-primary/30 to-primary/40 rounded-[2.5rem] transform rotate-6"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-[#ffc100]/30 to-[#ffc100]/40 rounded-[2.5rem] transform rotate-6"></div>
               <div className="relative z-10 bg-white border-8 border-gray-100 rounded-[2.5rem] shadow-xl overflow-hidden">
                 <img src="/placeholder.svg" alt="SureGo App Screenshot" className="w-full h-auto" />
               </div>
