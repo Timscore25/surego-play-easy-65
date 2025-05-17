@@ -43,9 +43,9 @@ const AppShowcase = () => {
               style={{ animationDelay: `${0.2 + index * 0.2}s` }}
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${
-                index === 0 ? 'from-primary/20 to-primary/30' :
-                index === 1 ? 'from-primary/20 to-primary/30' :
-                'from-primary/20 to-primary/30'
+                index === 0 ? 'from-[#11e7ef]/20 to-[#11e7ef]/30' :
+                index === 1 ? 'from-[#11e7ef]/20 to-[#11e7ef]/30' :
+                'from-[#11e7ef]/20 to-[#11e7ef]/30'
               } rounded-[2rem] transform ${
                 index === 0 ? '-rotate-6' :
                 index === 1 ? 'rotate-0' :

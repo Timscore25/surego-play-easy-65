@@ -6,37 +6,37 @@ const Features = () => {
   const features = [
     {
       id: 1,
-      icon: <Calendar className="h-10 w-10 text-primary" />,
+      icon: <Calendar className="h-10 w-10 text-[#11e7ef]" />,
       title: "Създаване на мачове и тренировки",
       description: "Бързо планиране и управление на футболни събития с всички необходими детайли."
     },
     {
       id: 2,
-      icon: <Users className="h-10 w-10 text-primary" />,
+      icon: <Users className="h-10 w-10 text-[#11e7ef]" />,
       title: "Управление на играчи с роли и позиции",
       description: "Организирайте играчите по позиции, умения и специални роли в отбора."
     },
     {
       id: 3,
-      icon: <Bell className="h-10 w-10 text-primary" />,
+      icon: <Bell className="h-10 w-10 text-[#11e7ef]" />,
       title: "Автоматични покани и известия",
       description: "Автоматично изпращане на покани и напомняния към играчите за предстоящи мачове."
     },
     {
       id: 4,
-      icon: <Scale className="h-10 w-10 text-primary" />,
+      icon: <Scale className="h-10 w-10 text-[#11e7ef]" />,
       title: "Балансиране на отбори",
       description: "Интелигентно разпределение на играчи за балансирани и конкурентни отбори."
     },
     {
       id: 5,
-      icon: <Wallet className="h-10 w-10 text-primary" />,
+      icon: <Wallet className="h-10 w-10 text-[#11e7ef]" />,
       title: "Проследяване на каса и плащания",
       description: "Лесно проследяване на внесените суми и общия баланс на отбора."
     },
     {
       id: 6,
-      icon: <BarChart className="h-10 w-10 text-primary" />,
+      icon: <BarChart className="h-10 w-10 text-[#11e7ef]" />,
       title: "Игрова статистика и история",
       description: "Преглед на статистики за мачове, посещаемост и представяне на отбора."
     }
@@ -60,7 +60,7 @@ const Features = () => {
               style={{ animationDelay: `${0.1 * feature.id}s` }}
             >
               <CardContent className="p-6">
-                <div className="rounded-full bg-primary/10 w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
+                <div className="rounded-full bg-[#11e7ef]/10 w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-[#11e7ef]/15 transition-colors">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
