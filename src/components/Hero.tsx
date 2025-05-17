@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 const Hero = () => {
-  return <section id="hero" className="pt-24 pb-12 md:pt-28 md:pb-16 bg-gradient-to-b from-dbeafe to-white overflow-hidden bg-[#11e7ef]">
+  return <section id="hero" className="pt-24 pb-12 md:pt-28 md:pb-16 bg-gradient-to-b from-dbeafe to-white overflow-hidden bg-[#ffc100]">
       <div className="app-container">
         <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-8">
           {/* Hero Content */}

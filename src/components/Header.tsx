@@ -7,13 +7,13 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  return <header className="fixed w-full top-0 backdrop-blur-sm z-50 shadow-sm py-4 bg-[#11e7ef]">
+  return <header className="fixed w-full top-0 backdrop-blur-sm z-50 shadow-sm py-4 bg-[#ffc100]">
       <div className="app-container flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="flex items-center">
             <img src="/lovable-uploads/c6d1b5c6-a420-4e52-a13b-d0c5fa555d33.png" alt="SureGo Whistle Logo" className="h-6 mr-2" />
             <span className="text-2xl font-bold" style={{
-            color: "#fec000"
+            color: "#ffc100"
           }}>SureGo</span>
             
           </a>
