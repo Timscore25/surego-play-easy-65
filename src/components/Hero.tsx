@@ -25,12 +25,14 @@ const Hero = () => {
 
           {/* Hero Image */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="relative w-64 sm:w-72 md:w-80 lg:w-96 h-auto animate-float">
+            <div className="relative w-64 sm:w-72 md:w-80 lg:w-96">
+              {/* Yellow background card */}
               <div className="absolute inset-0 bg-gradient-to-b from-[#ffc100] to-[#ffc100] rounded-[2.5rem] transform rotate-6"></div>
-              <div className="relative z-10 bg-white border-8 border-gray-100 rounded-[2.5rem] shadow-xl overflow-hidden flex items-center justify-center">
+              {/* Phone image */}
+              <div className="relative z-10">
                 <img 
                   alt="SureGo App Screenshot" 
-                  className="w-full h-full object-contain" 
+                  className="w-full h-auto rounded-[2.5rem] border-8 border-white shadow-xl" 
                   src="/lovable-uploads/770ba6da-780d-4ba2-8372-86d35f28ed93.png" 
                 />
               </div>
