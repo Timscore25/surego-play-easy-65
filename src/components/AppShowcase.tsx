@@ -1,6 +1,7 @@
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Card } from "@/components/ui/card";
 
 interface AppShowcaseProps {
   screenshots?: string[];
@@ -44,7 +45,16 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
             <div key={index} className="relative w-48 sm:w-56 md:w-64 h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" style={{
               animationDelay: `${0.2 + index * 0.2}s`
             }}>
-              {/* Football decoration in the corner instead of on a card */}
+              {/* Colored background card with tilt effect */}
+              <div 
+                className="absolute inset-0 bg-[#ffc100] rounded-[2rem] shadow-lg" 
+                style={{ 
+                  transform: `rotate(${index % 2 === 0 ? '-3deg' : '3deg'})`,
+                  zIndex: 5
+                }}
+              ></div>
+              
+              {/* Football decoration */}
               <div className="absolute top-2 right-2 z-20 w-8 h-8 rounded-full bg-white/80 shadow-md flex items-center justify-center">
                 <div className="w-6 h-6 rounded-full bg-white border border-gray-300 flex items-center justify-center overflow-hidden">
                   <div className="w-full h-full flex flex-wrap">
@@ -57,12 +67,12 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                 </div>
               </div>
               
-              {/* Phone image with subtle styling */}
-              <div className="relative z-10 overflow-hidden">
+              {/* Phone image as top card */}
+              <div className="relative z-10 overflow-hidden bg-white rounded-[2rem] shadow-lg">
                 <img 
                   src={screenshot.img} 
                   alt={screenshot.title} 
-                  className="w-full h-auto rounded-[2rem] shadow-lg" 
+                  className="w-full h-auto" 
                 />
                 
                 {/* Title overlay at the bottom */}
