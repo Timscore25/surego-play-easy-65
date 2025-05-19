@@ -39,45 +39,50 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
       <div className="app-container">
         <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">{t('appShowcaseTitle')}</h2>
         
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-8 md:mt-12">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 mt-8 md:mt-12">
           {screenshotsWithTitles.map((screenshot, index) => (
-            <div key={index} className="relative w-48 sm:w-56 md:w-64 h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" style={{
-              animationDelay: `${0.2 + index * 0.2}s`
-            }}>
-              {/* Colored background card with tilt effect */}
-              <div 
-                className="absolute inset-0 bg-[#ffc100] rounded-[2rem] shadow-lg" 
-                style={{ 
-                  transform: `rotate(${index % 2 === 0 ? '-3deg' : '3deg'})`,
-                  zIndex: 5
+            <div key={index} className="flex flex-col items-center">
+              {/* Card container with phone */}
+              <div className="relative w-56 sm:w-64 md:w-72 h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" 
+                style={{
+                  animationDelay: `${0.2 + index * 0.2}s`
                 }}
-              ></div>
-              
-              {/* Football decoration */}
-              <div className="absolute top-2 right-2 z-20 w-8 h-8 rounded-full bg-white/80 shadow-md flex items-center justify-center">
-                <div className="w-6 h-6 rounded-full bg-white border border-gray-300 flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full flex flex-wrap">
-                    {Array.from({ length: 6 }).map((_, i) => (
-                      <div key={i} className="w-1/2 h-1/2 border border-gray-400" style={{ 
-                        background: i % 2 === 0 ? 'white' : 'black' 
-                      }}></div>
-                    ))}
+              >
+                {/* Colored background card with tilt effect */}
+                <div 
+                  className="absolute inset-0 bg-[#ffc100] rounded-[2rem] shadow-lg" 
+                  style={{ 
+                    transform: `rotate(${index % 2 === 0 ? '-3deg' : '3deg'})`,
+                    zIndex: 5
+                  }}
+                ></div>
+                
+                {/* Football decoration */}
+                <div className="absolute top-2 right-2 z-20 w-8 h-8 rounded-full bg-white/80 shadow-md flex items-center justify-center">
+                  <div className="w-6 h-6 rounded-full bg-white border border-gray-300 flex items-center justify-center overflow-hidden">
+                    <div className="w-full h-full flex flex-wrap">
+                      {Array.from({ length: 6 }).map((_, i) => (
+                        <div key={i} className="w-1/2 h-1/2 border border-gray-400" style={{ 
+                          background: i % 2 === 0 ? 'white' : 'black' 
+                        }}></div>
+                      ))}
+                    </div>
                   </div>
+                </div>
+                
+                {/* Phone image directly on top of colored card */}
+                <div className="relative z-10 rounded-[2rem] overflow-hidden pt-2 pb-4 px-2">
+                  <img 
+                    src={screenshot.img} 
+                    alt={screenshot.title} 
+                    className="max-w-full h-auto object-contain"
+                  />
                 </div>
               </div>
               
-              {/* Phone image directly on top of colored card */}
-              <div className="relative z-10 rounded-[2rem] overflow-hidden">
-                <img 
-                  src={screenshot.img} 
-                  alt={screenshot.title} 
-                  className="max-w-full h-auto object-contain"
-                />
-                
-                {/* Title shown below the image instead of overlay */}
-                <div className="mt-2 text-center font-medium px-2 py-1 text-xs sm:text-sm">
-                  {screenshot.title}
-                </div>
+              {/* Title shown below the card in a nicer font */}
+              <div className="mt-4 text-center font-medium px-2 py-1 text-lg font-serif tracking-wide">
+                {screenshot.title}
               </div>
             </div>
           ))}
