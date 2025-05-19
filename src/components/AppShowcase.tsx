@@ -78,9 +78,9 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                   </div>
                 </div>
                 
-                {/* Title shown below the card - updated to remove shadow and make text on one line */}
-                <div className="mt-5 text-center px-3 py-2 bg-white rounded-lg border-b-2 border-[#ffc100]">
-                  <span className="text-gray-800 uppercase font-roboto text-base whitespace-nowrap">{screenshot.title}</span>
+                {/* Title shown below the card - updated with better highlighting */}
+                <div className="mt-5 text-center px-4 py-2 bg-gradient-to-r from-[#ffc100] to-[#ffda6a] rounded-lg shadow-sm transform hover:scale-105 transition-all duration-200">
+                  <span className="text-gray-800 uppercase font-roboto text-base whitespace-nowrap font-medium tracking-wide">{screenshot.title}</span>
                 </div>
               </div>
             ))}
