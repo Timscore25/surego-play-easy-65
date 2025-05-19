@@ -92,9 +92,9 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                   </div>
                 </div>
                 
-                {/* Title shown below the card with updated styling for white background and cyrillic-style font */}
-                <div className="mt-5 text-center font-extrabold px-3 py-2 text-lg tracking-wider bg-white rounded-lg shadow-md border-2 border-[#11e7ef]">
-                  <span className="block text-gray-800 font-[Roboto] uppercase">{screenshot.title}</span>
+                {/* Title shown below the card with updated styling - removed blue border, added bottom border only, ensuring font appears */}
+                <div className="mt-5 text-center font-bold px-3 py-2 text-lg tracking-wider bg-white rounded-lg shadow-md border-b-2 border-[#ffc100] font-roboto">
+                  <span className="block text-gray-800 uppercase font-roboto">{screenshot.title}</span>
                 </div>
               </div>
             ))}
