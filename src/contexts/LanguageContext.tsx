@@ -77,9 +77,10 @@ export const translations = {
 
     // App Showcase
     appShowcaseTitle: "Вижте приложението в действие",
-    screenshot1Title: "Екран с играчи",
-    screenshot2Title: "Организиране на мач",
-    screenshot3Title: "Плащания и статистика",
+    screenshot1Title: "Създай Отбор",
+    screenshot2Title: "Покани Играчи",
+    screenshot3Title: "Разпредели Играчите",
+    screenshot4Title: "Организирай и Играй!",
 
     // Testimonials
     testimonialsTitle: "Доказани резултати",
@@ -184,9 +185,10 @@ export const translations = {
 
     // App Showcase
     appShowcaseTitle: "See the App in Action",
-    screenshot1Title: "Player Screen",
-    screenshot2Title: "Match Organization",
-    screenshot3Title: "Payments and Statistics",
+    screenshot1Title: "Create Team",
+    screenshot2Title: "Invite Players",
+    screenshot3Title: "Assign Players",
+    screenshot4Title: "Organize and Play!",
 
     // Testimonials
     testimonialsTitle: "Proven Results",
