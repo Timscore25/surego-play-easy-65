@@ -12,6 +12,14 @@ import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Define the app showcase screenshots in the order specified by the user
+  const appScreenshots = [
+    "/lovable-uploads/19450552-6c39-4408-8801-04f3ac0823d7.png", // Second image (Create Team)
+    "/lovable-uploads/78087210-3661-4383-a7df-163b48ab4965.png", // First image (Invite Players)  
+    "/lovable-uploads/d405336c-4d6f-40e8-b3f3-631cf1b3ab98.png", // Third image (Assign Players)
+    "/lovable-uploads/8c82ea02-2341-4e73-bd3e-36f5db5a2f5d.png", // Last image (Organize and Play!)
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -26,7 +34,7 @@ const Index = () => {
         </div>
         
         <RegistrationShowcase />
-        <AppShowcase />
+        <AppShowcase screenshots={appScreenshots} />
         <Features />
         <HowItWorks />
         <Testimonials />
