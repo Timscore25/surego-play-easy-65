@@ -67,13 +67,15 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                 </div>
               </div>
               
-              {/* Phone image as top card */}
-              <div className="relative z-10 overflow-hidden bg-white rounded-[2rem] shadow-lg">
-                <img 
-                  src={screenshot.img} 
-                  alt={screenshot.title} 
-                  className="w-full h-auto" 
-                />
+              {/* Phone image as top card with better handling of phone images */}
+              <div className="relative z-10 overflow-hidden bg-white rounded-[2rem] shadow-lg flex items-center justify-center">
+                <div className="w-full h-full bg-[#f1f1f1] flex items-center justify-center">
+                  <img 
+                    src={screenshot.img} 
+                    alt={screenshot.title} 
+                    className="w-[90%] h-auto object-contain" 
+                  />
+                </div>
                 
                 {/* Title overlay at the bottom */}
                 <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-2 sm:p-3 text-center text-xs sm:text-sm backdrop-blur-sm">
