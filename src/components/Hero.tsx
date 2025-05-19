@@ -1,18 +1,13 @@
-
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
-  return (
-    <section id="hero" className="pt-20 md:pt-24 lg:pt-28 pb-10 md:pb-12 lg:pb-16 bg-gradient-to-b from-dbeafe to-white overflow-hidden bg-[#11e7ef]">
+  return <section id="hero" className="pt-20 md:pt-24 lg:pt-28 pb-10 md:pb-12 lg:pb-16 bg-gradient-to-b from-dbeafe to-white overflow-hidden bg-[#11e7ef]">
       <div className="app-container">
         <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-8 px-4 md:px-0">
           {/* Hero Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left animate-fade-in mt-8 lg:mt-0" style={{
-            animationDelay: '0.2s'
-          }}>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">
-              Забрави хаоса – организирай мачове с приятели лесно!
-            </h1>
+          animationDelay: '0.2s'
+        }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">Кажи сбогом на хаоса при футболните срещи!</h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8">
               Управлявай събития, играчи и плащания – директно от телефона си.
             </p>
@@ -44,8 +39,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
