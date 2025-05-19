@@ -70,7 +70,7 @@ const RegistrationShowcase = () => {
                     </a>
                     <a href="#" className="inline-block no-underline">
                       <img 
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/128px-Google_Play_Store_badge_EN.svg.png" 
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
                         alt="Get it on Google Play" 
                         className="h-10 w-auto"
                       />
