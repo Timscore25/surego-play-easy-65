@@ -1,0 +1,25 @@
+
+server {
+    listen 80;
+    server_name surego.live www.surego.live;
+
+    # Root directory for the application
+    root /var/www/surego.live/dist;
+    index index.html;
+
+    # Handle all routes for the SPA application
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Cache static assets
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
+        expires 30d;
+        add_header Cache-Control "public, no-transform";
+    }
+
+    # Prevent access to hidden files
+    location ~ /\. {
+        deny all;
+    }
+}
