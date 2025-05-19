@@ -40,9 +40,12 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
         <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">{t('appShowcaseTitle')}</h2>
         
         <ScrollArea className="w-full">
-          <div className="flex justify-start lg:justify-center gap-6 lg:gap-4 xl:gap-8 mt-8 md:mt-12 pb-4 px-4 min-w-max">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-4 xl:gap-8 mt-8 md:mt-12 pb-4 px-4">
             {screenshotsWithTitles.map((screenshot, index) => (
-              <div key={index} className="flex flex-col items-center max-w-[260px]">
+              <div key={index} className="flex flex-col items-center max-w-[260px] mx-auto">
+                {/* Title shown above the card */}
+                <h3 className="mb-3 text-center font-bold text-lg text-gray-800">{screenshot.title}</h3>
+                
                 {/* Card container with phone */}
                 <div className="relative w-[260px] h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" 
                   style={{
@@ -76,11 +79,6 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                       }}
                     />
                   </div>
-                </div>
-                
-                {/* Title shown below the card - updated with better highlighting */}
-                <div className="mt-5 text-center px-4 py-2 bg-gradient-to-r from-[#ffc100] to-[#ffda6a] rounded-lg shadow-sm transform hover:scale-105 transition-all duration-200">
-                  <span className="text-gray-800 uppercase font-roboto text-base whitespace-nowrap font-medium tracking-wide">{screenshot.title}</span>
                 </div>
               </div>
             ))}
