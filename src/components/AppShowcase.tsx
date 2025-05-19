@@ -72,7 +72,6 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                   src={screenshot.img} 
                   alt={screenshot.title} 
                   className="max-w-full h-auto object-contain"
-                  style={{ imageRendering: "high-quality" }}
                 />
                 
                 {/* Title shown below the image instead of overlay */}
