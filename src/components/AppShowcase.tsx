@@ -61,13 +61,6 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                     }}
                   ></div>
                   
-                  {/* Soccer ball decoration - using the provided SVG URL */}
-                  <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg" 
-                    alt="Soccer ball"
-                    className="absolute top-2 right-2 z-20 w-6 h-6"
-                  />
-                  
                   {/* Phone image directly on top of colored card */}
                   <div className="relative z-10 rounded-[2rem] overflow-hidden pt-2 pb-4 px-1">
                     <img 
