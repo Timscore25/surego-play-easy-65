@@ -1,6 +1,6 @@
-
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Volleyball } from "lucide-react";
 
 interface AppShowcaseProps {
   screenshots?: string[];
@@ -60,14 +60,12 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                   
                   {/* Football decoration */}
                   <div className="absolute top-2 right-2 z-20 w-8 h-8 rounded-full bg-white/80 shadow-md flex items-center justify-center">
-                    <div className="w-6 h-6 rounded-full bg-white border border-gray-300 flex items-center justify-center overflow-hidden">
-                      <div className="w-full h-full flex flex-wrap">
-                        {Array.from({ length: 6 }).map((_, i) => (
-                          <div key={i} className="w-1/2 h-1/2 border border-gray-400" style={{ 
-                            background: i % 2 === 0 ? 'white' : 'black' 
-                          }}></div>
-                        ))}
-                      </div>
+                    <div className="w-6 h-6 rounded-full bg-white border border-gray-300 flex items-center justify-center overflow-hidden relative">
+                      {/* Soccer ball pattern */}
+                      <Volleyball 
+                        size={20} 
+                        className="text-gray-900" 
+                      />
                     </div>
                   </div>
                   
