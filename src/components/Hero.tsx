@@ -1,5 +1,6 @@
 
 import { Button } from "@/components/ui/button";
+
 const Hero = () => {
   return <section id="hero" className="pt-20 md:pt-24 lg:pt-28 pb-10 md:pb-12 lg:pb-16 bg-gradient-to-b from-dbeafe to-white overflow-hidden bg-[#11e7ef]">
       <div className="app-container">
@@ -26,13 +27,16 @@ const Hero = () => {
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative w-64 sm:w-72 md:w-80 lg:w-96 h-auto animate-float">
               <div className="absolute inset-0 bg-gradient-to-b from-[#ffc100] to-[#ffc100] rounded-[2.5rem] transform rotate-6"></div>
-              <div className="relative z-10 bg-white border-8 border-gray-100 rounded-[2.5rem] shadow-xl overflow-hidden">
-                <img alt="SureGo App Screenshot" className="w-full h-full object-cover" src="/lovable-uploads/d35149cf-ad77-43fb-a4b1-db00ec745eda.png" />
-              </div>
+              <img 
+                alt="SureGo App Screenshot" 
+                className="relative z-10 w-full h-auto rounded-[2.5rem] shadow-xl" 
+                src="/lovable-uploads/d35149cf-ad77-43fb-a4b1-db00ec745eda.png" 
+              />
             </div>
           </div>
         </div>
       </div>
     </section>;
 };
+
 export default Hero;
