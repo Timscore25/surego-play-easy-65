@@ -44,24 +44,30 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
             <div key={index} className="relative w-48 sm:w-56 md:w-64 h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" style={{
               animationDelay: `${0.2 + index * 0.2}s`
             }}>
-              <div className={`absolute inset-0 bg-gradient-to-br from-[#ffc100]/30 to-[#2563eb]/20 rounded-[2rem] transform ${index === 0 ? '-rotate-6' : index === 1 ? 'rotate-0' : index === 2 ? 'rotate-6' : '-rotate-3'}`}></div>
-              <div className="relative z-10 bg-white border-8 border-gray-100 rounded-[2rem] shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <img src={screenshot.img} alt={screenshot.title} className="w-full h-auto" />
+              {/* Football decoration in the corner instead of on a card */}
+              <div className="absolute top-2 right-2 z-20 w-8 h-8 rounded-full bg-white/80 shadow-md flex items-center justify-center">
+                <div className="w-6 h-6 rounded-full bg-white border border-gray-300 flex items-center justify-center overflow-hidden">
+                  <div className="w-full h-full flex flex-wrap">
+                    {Array.from({ length: 6 }).map((_, i) => (
+                      <div key={i} className="w-1/2 h-1/2 border border-gray-400" style={{ 
+                        background: i % 2 === 0 ? 'white' : 'black' 
+                      }}></div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              
+              {/* Phone image with subtle styling */}
+              <div className="relative z-10 overflow-hidden">
+                <img 
+                  src={screenshot.img} 
+                  alt={screenshot.title} 
+                  className="w-full h-auto rounded-[2rem] shadow-lg" 
+                />
+                
+                {/* Title overlay at the bottom */}
                 <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-2 sm:p-3 text-center text-xs sm:text-sm backdrop-blur-sm">
                   {screenshot.title}
-                </div>
-                
-                {/* Corner football decoration */}
-                <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 shadow-md flex items-center justify-center">
-                  <div className="w-6 h-6 rounded-full bg-white border border-gray-300 flex items-center justify-center overflow-hidden">
-                    <div className="w-full h-full flex flex-wrap">
-                      {Array.from({ length: 6 }).map((_, i) => (
-                        <div key={i} className="w-1/2 h-1/2 border border-gray-400" style={{ 
-                          background: i % 2 === 0 ? 'white' : 'black' 
-                        }}></div>
-                      ))}
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
