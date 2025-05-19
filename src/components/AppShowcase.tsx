@@ -1,3 +1,4 @@
+
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -43,14 +44,14 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
             {screenshotsWithTitles.map((screenshot, index) => (
               <div key={index} className="flex flex-col items-center max-w-[260px]">
                 {/* Card container with phone */}
-                <div className="relative w-56 sm:w-64 md:w-[260px] h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" 
+                <div className="relative w-[260px] h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" 
                   style={{
                     animationDelay: `${0.2 + index * 0.2}s`
                   }}
                 >
                   {/* Colored background card with tilt effect */}
                   <div 
-                    className="absolute inset-0 bg-[#ffc100] rounded-[2rem] shadow-lg" 
+                    className="absolute inset-0 bg-[#ffc100] rounded-[2rem]" 
                     style={{ 
                       transform: `rotate(${index % 2 === 0 ? '-3deg' : '3deg'})`,
                       zIndex: 5
@@ -86,9 +87,9 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                   </div>
                 </div>
                 
-                {/* Title shown below the card */}
-                <div className="mt-5 text-center font-bold px-3 py-2 text-lg tracking-wider bg-white rounded-lg shadow-md border-b-2 border-[#ffc100] font-roboto">
-                  <span className="block text-gray-800 uppercase font-roboto">{screenshot.title}</span>
+                {/* Title shown below the card - updated to remove shadow and make text on one line */}
+                <div className="mt-5 text-center px-3 py-2 bg-white rounded-lg border-b-2 border-[#ffc100]">
+                  <span className="text-gray-800 uppercase font-roboto text-base whitespace-nowrap">{screenshot.title}</span>
                 </div>
               </div>
             ))}
