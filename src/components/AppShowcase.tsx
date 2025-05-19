@@ -40,11 +40,11 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
         <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">{t('appShowcaseTitle')}</h2>
         
         <ScrollArea className="w-full">
-          <div className="flex justify-start gap-6 lg:gap-4 xl:gap-8 mt-8 md:mt-12 pb-8 pr-12 pl-4 min-w-max">
+          <div className="flex justify-center lg:justify-between gap-6 lg:gap-4 xl:gap-8 mt-8 md:mt-12 pb-4 min-w-max">
             {screenshotsWithTitles.map((screenshot, index) => (
-              <div key={index} className="flex flex-col items-center max-w-[280px]">
+              <div key={index} className="flex flex-col items-center max-w-[260px]">
                 {/* Card container with phone */}
-                <div className="relative w-64 sm:w-68 md:w-[280px] h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" 
+                <div className="relative w-56 sm:w-64 md:w-[260px] h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" 
                   style={{
                     animationDelay: `${0.2 + index * 0.2}s`
                   }}
@@ -78,15 +78,15 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                       alt={screenshot.title} 
                       className="max-w-full h-auto object-contain"
                       style={{
-                        transform: "scale(1.15)"
+                        transform: "scale(1.1)"
                       }}
                     />
                   </div>
                 </div>
                 
                 {/* Title shown below the card with improved styling */}
-                <div className="mt-5 text-center font-bold px-4 py-2 w-full text-lg font-serif tracking-wide bg-[#11e7ef]/10 rounded-lg border-b-2 border-[#11e7ef] shadow-sm">
-                  <span className="block text-[#0a7c86] font-serif font-bold">{screenshot.title}</span>
+                <div className="mt-5 text-center font-bold px-2 py-1 text-lg font-serif tracking-wide bg-warmyellow-100/30 rounded-lg border-b-2 border-warmyellow-400">
+                  <span className="block text-gray-800">{screenshot.title}</span>
                 </div>
               </div>
             ))}
