@@ -27,8 +27,8 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
   // If we have raw image paths, convert them to objects with titles
   const screenshotsWithTitles = Array.isArray(appScreenshots[0]) || typeof appScreenshots[0] === 'string' 
     ? [
-        { title: t('screenshot2Title'), img: screenshots?.[0] || "/placeholder.svg" },
-        { title: t('screenshot1Title'), img: screenshots?.[1] || "/placeholder.svg" },
+        { title: t('screenshot1Title'), img: screenshots?.[0] || "/placeholder.svg" },
+        { title: t('screenshot2Title'), img: screenshots?.[1] || "/placeholder.svg" },
         { title: t('screenshot3Title'), img: screenshots?.[2] || "/placeholder.svg" },
         { title: t('screenshot4Title'), img: screenshots?.[3] || "/placeholder.svg" }
       ]
@@ -67,15 +67,16 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
               </div>
               
               {/* Phone image directly on top of colored card */}
-              <div className="relative z-10 rounded-[2rem] shadow-lg overflow-hidden">
+              <div className="relative z-10 rounded-[2rem] overflow-hidden">
                 <img 
                   src={screenshot.img} 
                   alt={screenshot.title} 
-                  className="w-full h-auto object-contain" 
+                  className="max-w-full h-auto object-contain"
+                  style={{ imageRendering: "high-quality" }}
                 />
                 
-                {/* Title overlay at the bottom */}
-                <div className="absolute bottom-0 left-0 right-0 bg-black/70 text-white p-2 sm:p-3 text-center text-xs sm:text-sm backdrop-blur-sm">
+                {/* Title shown below the image instead of overlay */}
+                <div className="mt-2 text-center font-medium px-2 py-1 text-xs sm:text-sm">
                   {screenshot.title}
                 </div>
               </div>
