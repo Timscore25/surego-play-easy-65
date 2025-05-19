@@ -25,11 +25,11 @@ const Hero = () => {
 
           {/* Hero Image */}
           <div className="w-full lg:w-1/2 flex justify-center">
-            <div className="relative w-64 sm:w-72 md:w-80 lg:w-96 h-auto animate-float">
+            <div className="relative w-72 sm:w-80 md:w-96 lg:w-[28rem] h-auto animate-float">
               <div className="absolute inset-0 bg-gradient-to-b from-[#ffc100] to-[#ffc100] rounded-[2.5rem] transform rotate-6"></div>
               <img 
                 alt="SureGo App Screenshot" 
-                className="relative z-10 w-full h-auto rounded-[2.5rem] shadow-xl" 
+                className="relative z-10 w-full h-auto rounded-[2.5rem]" 
                 src="/lovable-uploads/d35149cf-ad77-43fb-a4b1-db00ec745eda.png" 
               />
             </div>
