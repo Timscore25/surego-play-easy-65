@@ -68,13 +68,13 @@ const RegistrationShowcase = () => {
                         className="h-10 w-auto"
                       />
                     </a>
-                    <Button className="py-2 px-4 rounded-xl flex items-center gap-2 bg-[#ffc100] text-gray-950 text-xs sm:text-sm hover:bg-[#ffd43b] transition-colors">
-                      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M3 20.5V3.5c0-.8.7-1.5 1.5-1.5h15c.8 0 1.5.7 1.5 1.5v17c0 .8-.7 1.5-1.5 1.5h-15c-.8 0-1.5-.7-1.5-1.5zm16.5 0V3.5h-15v17h15z" />
-                        <path d="M7 7l4 2 3.5-2v9.5l-3.5-2-4 2z" />
-                      </svg>
-                      <span>Google Play</span>
-                    </Button>
+                    <a href="#" className="inline-block no-underline">
+                      <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/128px-Google_Play_Store_badge_EN.svg.png" 
+                        alt="Get it on Google Play" 
+                        className="h-10 w-auto"
+                      />
+                    </a>
                   </div>
                 )}
               </CardContent>
