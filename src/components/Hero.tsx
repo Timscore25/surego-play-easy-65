@@ -1,6 +1,4 @@
-
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
   return <section id="hero" className="pt-20 md:pt-24 lg:pt-28 pb-10 md:pb-12 lg:pb-16 bg-gradient-to-b from-dbeafe to-white overflow-hidden bg-[#11e7ef]">
       <div className="app-container">
@@ -15,18 +13,10 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4">
               <a href="#" className="inline-block no-underline">
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
-                  alt="Download on the App Store" 
-                  className="h-14 w-auto"
-                />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="h-14 w-auto" />
               </a>
               <a href="#" className="inline-block no-underline">
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-                  alt="Get it on Google Play" 
-                  className="h-14 w-auto"
-                />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" className="h-14 w-auto" />
               </a>
             </div>
           </div>
@@ -36,7 +26,7 @@ const Hero = () => {
             <div className="relative w-64 sm:w-72 md:w-80 lg:w-96 h-auto animate-float">
               <div className="absolute inset-0 bg-gradient-to-b from-[#ffc100] to-[#ffc100] rounded-[2.5rem] transform rotate-6"></div>
               <div className="relative z-10 bg-white border-8 border-gray-100 rounded-[2.5rem] shadow-xl overflow-hidden">
-                <img src="/placeholder.svg" alt="SureGo App Screenshot" className="w-full h-auto" />
+                <img alt="SureGo App Screenshot" className="w-full h-auto" src="/lovable-uploads/d35149cf-ad77-43fb-a4b1-db00ec745eda.png" />
               </div>
             </div>
           </div>
