@@ -36,18 +36,18 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
   
   return (
     <section id="app-showcase" className="relative section-padding bg-gradient-to-b from-dbeafe to-white pt-16 md:pt-24 px-4 sm:px-6">
-      <div className="app-container">
-        <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">{t('appShowcaseTitle')}</h2>
+      <div className="app-container text-center">
+        <h2 className="section-title mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl font-bold">{t('appShowcaseTitle')}</h2>
         
         <ScrollArea className="w-full">
-          <div className="flex flex-col lg:flex-row gap-6 lg:gap-4 xl:gap-8 mt-8 md:mt-12 pb-4 px-4">
+          <div className="flex items-center justify-center flex-wrap gap-8 mt-8 md:mt-12 pb-4">
             {screenshotsWithTitles.map((screenshot, index) => (
-              <div key={index} className="flex flex-col items-center max-w-[260px] mx-auto">
+              <div key={index} className="flex flex-col items-center w-full sm:w-auto max-w-[260px] mx-auto">
                 {/* Title shown above the card */}
                 <h3 className="mb-3 text-center font-bold text-lg text-gray-800">{screenshot.title}</h3>
                 
                 {/* Card container with phone */}
-                <div className="relative w-[260px] h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" 
+                <div className="relative w-[260px] h-auto mx-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" 
                   style={{
                     animationDelay: `${0.2 + index * 0.2}s`
                   }}
