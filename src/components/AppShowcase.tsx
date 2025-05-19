@@ -1,7 +1,6 @@
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Volleyball } from "lucide-react";
 
 interface AppShowcaseProps {
   screenshots?: string[];
@@ -62,11 +61,21 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                   {/* Football decoration */}
                   <div className="absolute top-2 right-2 z-20 w-8 h-8 rounded-full bg-white/80 shadow-md flex items-center justify-center">
                     <div className="w-6 h-6 rounded-full bg-white border border-gray-300 flex items-center justify-center overflow-hidden relative">
-                      {/* Soccer ball pattern */}
-                      <Volleyball 
-                        size={20} 
-                        className="text-gray-900" 
-                      />
+                      {/* Football SVG */}
+                      <svg 
+                        viewBox="0 0 297 297" 
+                        className="w-5 h-5" 
+                        fill="currentColor"
+                      >
+                        <path d="M148.5,0C66.617,0,0,66.617,0,148.5S66.617,297,148.5,297S297,230.383,297,148.5S230.383,0,148.5,0z M148.5,33.091
+                         c16.498,0,32.423,3.251,47.006,9.684l-34.163,28.383L148.5,33.091z M87.587,51.905l39.17,2.522L73.805,88.321
+                         C77.396,75.227,81.668,63.296,87.587,51.905z M90.175,232.973c-5.919-11.391-10.191-23.322-13.781-36.419l52.952,33.896
+                         L90.175,232.973z M148.5,264.5c-16.498,0-32.423-3.251-47.006-9.684l34.163-28.383L148.5,264.5z M180.934,220.194l-32.434-20.891
+                         l-32.434,20.891l12.393-38.14l-32.434-20.892h40.083l12.393-38.141l12.393,38.141h40.083l-32.434,20.892L180.934,220.194z
+                         M209.467,245.095l-39.17-2.522l52.952-33.895C219.657,221.774,215.386,233.705,209.467,245.095z M206.879,64.028
+                         c5.918,11.391,10.19,23.322,13.781,36.417l-52.952-33.895L206.879,64.028z M148.5,127.608l-12.393,38.14h-40.083l32.434,20.892
+                         l-12.393,38.14l32.434-20.892l32.434,20.892l-12.393-38.14l32.434-20.892H160.89L148.5,127.608z"/>
+                      </svg>
                     </div>
                   </div>
                   
