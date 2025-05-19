@@ -1,4 +1,6 @@
 
+import { ScrollArea } from "@/components/ui/scroll-area";
+
 const AppShowcase = () => {
   const screenshots = [{
     title: "Екран с играчи",
@@ -23,7 +25,7 @@ const AppShowcase = () => {
       <div className="app-container">
         <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">Вижте приложението в действие</h2>
         
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 mt-8 md:mt-12 overflow-x-hidden">
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-8 md:mt-12">
           {screenshots.map((screenshot, index) => (
             <div key={index} className="relative w-48 sm:w-56 md:w-64 h-auto animate-fade-in" style={{
               animationDelay: `${0.2 + index * 0.2}s`
