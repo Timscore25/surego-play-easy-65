@@ -1,3 +1,4 @@
+
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Volleyball } from "lucide-react";
@@ -82,9 +83,9 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                   </div>
                 </div>
                 
-                {/* Title shown below the card with improved styling */}
-                <div className="mt-5 text-center font-bold px-2 py-1 text-lg font-serif tracking-wide bg-[#11e7ef]/30 rounded-lg border-b-2 border-[#11e7ef]">
-                  <span className="block text-gray-800">{screenshot.title}</span>
+                {/* Title shown below the card with updated styling for white background and cyrillic-style font */}
+                <div className="mt-5 text-center font-extrabold px-3 py-2 text-lg tracking-wider bg-white rounded-lg shadow-md border-2 border-[#11e7ef]">
+                  <span className="block text-gray-800 font-[Roboto] uppercase">{screenshot.title}</span>
                 </div>
               </div>
             ))}
