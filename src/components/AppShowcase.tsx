@@ -2,10 +2,15 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const AppShowcase = () => {
+interface AppShowcaseProps {
+  screenshots?: string[];
+}
+
+const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
   const { t } = useLanguage();
   
-  const screenshots = [{
+  // Use provided screenshots or fallback to placeholders
+  const appScreenshots = screenshots || [{
     title: t('screenshot1Title'),
     img: "/placeholder.svg"
   }, {
@@ -19,13 +24,23 @@ const AppShowcase = () => {
     img: "/placeholder.svg"
   }];
   
+  // If we have raw image paths, convert them to objects with titles
+  const screenshotsWithTitles = Array.isArray(appScreenshots[0]) || typeof appScreenshots[0] === 'string' 
+    ? [
+        { title: t('screenshot2Title'), img: screenshots?.[0] || "/placeholder.svg" },
+        { title: t('screenshot1Title'), img: screenshots?.[1] || "/placeholder.svg" },
+        { title: t('screenshot3Title'), img: screenshots?.[2] || "/placeholder.svg" },
+        { title: t('screenshot4Title'), img: screenshots?.[3] || "/placeholder.svg" }
+      ]
+    : appScreenshots;
+  
   return (
     <section id="app-showcase" className="relative section-padding bg-gradient-to-b from-dbeafe to-white pt-16 md:pt-24 px-4 sm:px-6">
       <div className="app-container">
         <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">{t('appShowcaseTitle')}</h2>
         
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-8 md:mt-12">
-          {screenshots.map((screenshot, index) => (
+          {screenshotsWithTitles.map((screenshot, index) => (
             <div key={index} className="relative w-48 sm:w-56 md:w-64 h-auto animate-fade-in hover:-translate-y-2 transition-transform duration-300" style={{
               animationDelay: `${0.2 + index * 0.2}s`
             }}>
