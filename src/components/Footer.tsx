@@ -1,5 +1,9 @@
 
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const Footer = () => {
+  const { t, language, changeLanguage } = useLanguage();
+  
   return (
     <footer className="bg-gray-100 pt-12 md:pt-16 pb-6 md:pb-8">
       <div className="app-container px-4 sm:px-6">
@@ -14,34 +18,42 @@ const Footer = () => {
               <span style={{ color: "#fec000" }}>SureGo</span>
             </h3>
             <ul className="space-y-2 text-sm md:text-base">
-              <li><a href="#" className="text-gray-600 hover:text-surego-600">Начало</a></li>
-              <li><a href="#features" className="text-gray-600 hover:text-surego-600">Функции</a></li>
-              <li><a href="#how-it-works" className="text-gray-600 hover:text-surego-600">Как работи</a></li>
-              <li><a href="#testimonials" className="text-gray-600 hover:text-surego-600">Отзиви</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('home')}</a></li>
+              <li><a href="#features" className="text-gray-600 hover:text-surego-600">{t('features')}</a></li>
+              <li><a href="#how-it-works" className="text-gray-600 hover:text-surego-600">{t('howItWorks')}</a></li>
+              <li><a href="#testimonials" className="text-gray-600 hover:text-surego-600">{t('testimonials')}</a></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-base md:text-lg font-bold mb-4">Поддръжка</h3>
+            <h3 className="text-base md:text-lg font-bold mb-4">{t('support')}</h3>
             <ul className="space-y-2 text-sm md:text-base">
-              <li><a href="#faq" className="text-gray-600 hover:text-surego-600">ЧЗВ</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-surego-600">Помощ</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-surego-600">Контакт</a></li>
+              <li><a href="#faq" className="text-gray-600 hover:text-surego-600">{t('faq')}</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('help')}</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('contact')}</a></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-base md:text-lg font-bold mb-4">Правни</h3>
+            <h3 className="text-base md:text-lg font-bold mb-4">{t('legal')}</h3>
             <ul className="space-y-2 text-sm md:text-base">
-              <li><a href="#" className="text-gray-600 hover:text-surego-600">Условия за ползване</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-surego-600">Политика за поверителност</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('terms')}</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('privacy')}</a></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-base md:text-lg font-bold mb-4">Език</h3>
+            <h3 className="text-base md:text-lg font-bold mb-4">{t('language')}</h3>
             <div className="flex items-center space-x-2">
-              <button className="p-2 rounded-full hover:bg-gray-200 transition-colors" aria-label="Български език">
+              <button 
+                className={`p-2 rounded-full transition-colors ${language === "bg" ? "bg-gray-200" : "hover:bg-gray-200"}`} 
+                aria-label="Български език"
+                onClick={() => changeLanguage("bg")}
+              >
                 🇧🇬
               </button>
-              <button className="p-2 rounded-full hover:bg-gray-200 transition-colors" aria-label="English">
+              <button 
+                className={`p-2 rounded-full transition-colors ${language === "en" ? "bg-gray-200" : "hover:bg-gray-200"}`}
+                aria-label="English"
+                onClick={() => changeLanguage("en")}
+              >
                 🇬🇧
               </button>
             </div>
@@ -51,7 +63,7 @@ const Footer = () => {
         <div className="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-xs md:text-sm text-gray-500">
-              © {new Date().getFullYear()} SureGo. Всички права запазени.
+              © {new Date().getFullYear()} SureGo. {t('allRightsReserved')}
             </p>
           </div>
           <div className="flex space-x-4 md:space-x-6">

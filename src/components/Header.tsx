@@ -2,10 +2,13 @@
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Languages } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { language, t, changeLanguage } = useLanguage();
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -42,22 +45,30 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
           <a href="#features" className="text-gray-600 hover:text-primary transition-colors font-medium">
-            Функции
+            {t('features')}
           </a>
           <a href="#how-it-works" className="text-gray-600 hover:text-primary transition-colors font-medium">
-            Как работи
+            {t('howItWorks')}
           </a>
           <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors font-medium">
-            Отзиви
+            {t('testimonials')}
           </a>
           <a href="#faq" className="text-gray-600 hover:text-primary transition-colors font-medium">
-            FAQ
+            {t('faq')}
           </a>
           <div className="flex items-center space-x-2 border-l pl-4 border-gray-200">
-            <button className="p-2 rounded-full hover:bg-gray-100 transition-colors" aria-label="Български език">
+            <button 
+              className={`p-2 rounded-full transition-colors ${language === "bg" ? "bg-gray-100" : "hover:bg-gray-100"}`} 
+              aria-label="Български език"
+              onClick={() => changeLanguage("bg")}
+            >
               🇧🇬
             </button>
-            <button className="p-2 rounded-full hover:bg-gray-100 transition-colors" aria-label="English">
+            <button 
+              className={`p-2 rounded-full transition-colors ${language === "en" ? "bg-gray-100" : "hover:bg-gray-100"}`}
+              aria-label="English"
+              onClick={() => changeLanguage("en")}
+            >
               🇬🇧
             </button>
           </div>
@@ -74,22 +85,30 @@ const Header = () => {
         <div className="md:hidden bg-white py-4 px-4 border-t shadow-lg animate-fade-in">
           <nav className="flex flex-col space-y-3">
             <a href="#features" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
-              Функции
+              {t('features')}
             </a>
             <a href="#how-it-works" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
-              Как работи
+              {t('howItWorks')}
             </a>
             <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
-              Отзиви
+              {t('testimonials')}
             </a>
             <a href="#faq" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
-              FAQ
+              {t('faq')}
             </a>
             <div className="flex items-center space-x-2 border-t pt-3 mt-1">
-              <button className="p-2 rounded-full hover:bg-gray-100 transition-colors" aria-label="Български език">
+              <button 
+                className={`p-2 rounded-full transition-colors ${language === "bg" ? "bg-gray-100" : "hover:bg-gray-100"}`} 
+                aria-label="Български език"
+                onClick={() => changeLanguage("bg")}
+              >
                 🇧🇬
               </button>
-              <button className="p-2 rounded-full hover:bg-gray-100 transition-colors" aria-label="English">
+              <button 
+                className={`p-2 rounded-full transition-colors ${language === "en" ? "bg-gray-100" : "hover:bg-gray-100"}`}
+                aria-label="English"
+                onClick={() => changeLanguage("en")}
+              >
                 🇬🇧
               </button>
             </div>
