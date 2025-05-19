@@ -40,7 +40,7 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
         <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">{t('appShowcaseTitle')}</h2>
         
         <ScrollArea className="w-full">
-          <div className="flex justify-start lg:justify-between gap-6 lg:gap-4 xl:gap-8 mt-8 md:mt-12 pb-8 pr-4 pl-4 min-w-max">
+          <div className="flex justify-start gap-6 lg:gap-4 xl:gap-8 mt-8 md:mt-12 pb-8 pr-12 pl-4 min-w-max">
             {screenshotsWithTitles.map((screenshot, index) => (
               <div key={index} className="flex flex-col items-center max-w-[280px]">
                 {/* Card container with phone */}
@@ -85,8 +85,8 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                 </div>
                 
                 {/* Title shown below the card with improved styling */}
-                <div className="mt-5 text-center font-bold px-4 py-2 w-full text-lg font-serif tracking-wide bg-surego-100/40 rounded-lg border-b-2 border-surego-400 shadow-sm">
-                  <span className="block text-surego-800 font-serif font-bold">{screenshot.title}</span>
+                <div className="mt-5 text-center font-bold px-4 py-2 w-full text-lg font-serif tracking-wide bg-[#11e7ef]/10 rounded-lg border-b-2 border-[#11e7ef] shadow-sm">
+                  <span className="block text-[#0a7c86] font-serif font-bold">{screenshot.title}</span>
                 </div>
               </div>
             ))}
