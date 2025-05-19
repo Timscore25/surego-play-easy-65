@@ -1,47 +1,50 @@
 
 import { Calendar, Users, Bell, Scale, Wallet, BarChart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Features = () => {
+  const { t } = useLanguage();
+  
   const features = [{
     id: 1,
     icon: <Calendar className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
-    title: "Създаване на мачове и тренировки",
-    description: "Бързо планиране и управление на футболни събития с всички необходими детайли."
+    title: t('feature1Title'),
+    description: t('feature1Desc')
   }, {
     id: 2,
     icon: <Users className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
-    title: "Управление на играчи с роли и позиции",
-    description: "Организирайте играчите по позиции, умения и специални роли в отбора."
+    title: t('feature2Title'),
+    description: t('feature2Desc')
   }, {
     id: 3,
     icon: <Bell className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
-    title: "Автоматични покани и известия",
-    description: "Автоматично изпращане на покани и напомняния към играчите за предстоящи мачове."
+    title: t('feature3Title'),
+    description: t('feature3Desc')
   }, {
     id: 4,
     icon: <Scale className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
-    title: "Балансиране на отбори",
-    description: "Интелигентно разпределение на играчи за балансирани и конкурентни отбори."
+    title: t('feature4Title'),
+    description: t('feature4Desc')
   }, {
     id: 5,
     icon: <Wallet className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
-    title: "Проследяване на каса и плащания",
-    description: "Лесно проследяване на внесените суми и общия баланс на отбора."
+    title: t('feature5Title'),
+    description: t('feature5Desc')
   }, {
     id: 6,
     icon: <BarChart className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
-    title: "Игрова статистика и история",
-    description: "Преглед на статистики за мачове, посещаемост и представяне на отбора."
+    title: t('feature6Title'),
+    description: t('feature6Desc')
   }];
   
   return (
     <section id="features" className="section-padding bg-white px-4 sm:px-6">
       <div className="app-container">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <h2 className="section-title text-2xl sm:text-3xl md:text-4xl">Функции, които правят разликата</h2>
+          <h2 className="section-title text-2xl sm:text-3xl md:text-4xl">{t('featuresTitle')}</h2>
           <p className="section-subtitle mt-3 text-base sm:text-lg">
-            SureGo съдържа всичко, от което се нуждаете за безпроблемна организация на футболни събития
+            {t('featuresSubtitle')}
           </p>
         </div>
 

@@ -1,35 +1,39 @@
 
+import { useLanguage } from "@/contexts/LanguageContext";
+
 const HowItWorks = () => {
+  const { t } = useLanguage();
+  
   const steps = [
     {
       number: "01",
-      title: "Свали приложението",
-      description: "Изтеглете SureGo от App Store или Google Play безплатно."
+      title: t('step1Title'),
+      description: t('step1Desc')
     },
     {
       number: "02",
-      title: "Създай профил",
-      description: "Бързо регистриране с Google, Apple ID или имейл."
+      title: t('step2Title'),
+      description: t('step2Desc')
     },
     {
       number: "03",
-      title: "Направи отбор",
-      description: "Създайте своя отбор и настройте основните му параметри."
+      title: t('step3Title'),
+      description: t('step3Desc')
     },
     {
       number: "04",
-      title: "Добави играчи",
-      description: "Поканете играчи с телефон или SureGo ID към вашия отбор."
+      title: t('step4Title'),
+      description: t('step4Desc')
     },
     {
       number: "05",
-      title: "Организирай събитие",
-      description: "Задайте дата, час, локация и условия за участие."
+      title: t('step5Title'),
+      description: t('step5Desc')
     },
     {
       number: "06",
-      title: "Следи потвърждения и плащания",
-      description: "Наблюдавайте кой е потвърдил и платил за участие."
+      title: t('step6Title'),
+      description: t('step6Desc')
     }
   ];
 
@@ -37,9 +41,9 @@ const HowItWorks = () => {
     <section id="how-it-works" className="section-padding bg-gradient-to-b from-dbeafe/50 to-white px-4 sm:px-6">
       <div className="app-container">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <h2 className="section-title mb-3 md:mb-4 text-2xl sm:text-3xl md:text-4xl">Как работи SureGo?</h2>
+          <h2 className="section-title mb-3 md:mb-4 text-2xl sm:text-3xl md:text-4xl">{t('howItWorksTitle')}</h2>
           <p className="section-subtitle text-base sm:text-lg">
-            Само шест лесни стъпки ви делят от перфектно организираните футболни събития
+            {t('howItWorksSubtitle')}
           </p>
         </div>
 

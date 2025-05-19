@@ -5,24 +5,27 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Faq = () => {
+  const { t } = useLanguage();
+  
   const faqItems = [
     {
-      question: "Как се добавят играчи?",
-      answer: "Можете да добавяте играчи по няколко начина: чрез изпращане на покана по имейл или телефон, споделяне на код за присъединяване или търсене по SureGo ID. След като играч приеме поканата, той автоматично се добавя към вашия отбор."
+      question: t('faq1Question'),
+      answer: t('faq1Answer')
     },
     {
-      question: "Мога ли да променям състави?",
-      answer: "Да, можете лесно да променяте съставите по всяко време. Просто отидете в секцията за управление на събития, изберете мача и преместете играчите между отборите. Системата също предлага автоматично балансиране на отборите според зададените умения на играчите."
+      question: t('faq2Question'),
+      answer: t('faq2Answer')
     },
     {
-      question: "Как се следят плащанията?",
-      answer: "SureGo предлага вградена система за проследяване на плащания. Можете да маркирате кой е платил, да изпращате напомняния за неплатени такси и да преглеждате общия баланс на отбора. Играчите получават автоматични известия за дължими суми и могат да маркират плащанията си през приложението."
+      question: t('faq3Question'),
+      answer: t('faq3Answer')
     },
     {
-      question: "Работи ли за турнири?",
-      answer: "Да, SureGo поддържа организиране на турнири с множество отбори. Можете да създадете турнирна структура, да следите резултати, да генерирате автоматично графици и да управлявате класирания. Функционалността за турнири е налична в разширения план на приложението."
+      question: t('faq4Question'),
+      answer: t('faq4Answer')
     }
   ];
 
@@ -30,9 +33,9 @@ const Faq = () => {
     <section id="faq" className="section-padding bg-gray-50 px-4 sm:px-6">
       <div className="app-container">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
-          <h2 className="section-title mb-3 md:mb-4 text-2xl sm:text-3xl md:text-4xl">Често задавани въпроси</h2>
+          <h2 className="section-title mb-3 md:mb-4 text-2xl sm:text-3xl md:text-4xl">{t('faqTitle')}</h2>
           <p className="section-subtitle text-base sm:text-lg">
-            Отговори на най-често задаваните въпроси за използването на SureGo
+            {t('faqSubtitle')}
           </p>
         </div>
 

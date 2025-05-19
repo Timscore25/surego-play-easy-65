@@ -1,22 +1,25 @@
 
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const AppShowcase = () => {
+  const { t } = useLanguage();
+  
   const screenshots = [{
-    title: "Екран с играчи",
+    title: t('screenshot1Title'),
     img: "/placeholder.svg"
   }, {
-    title: "Организиране на мач",
+    title: t('screenshot2Title'),
     img: "/placeholder.svg"
   }, {
-    title: "Плащания и статистика",
+    title: t('screenshot3Title'),
     img: "/placeholder.svg"
   }];
   
   return (
     <section id="app-showcase" className="relative section-padding bg-gradient-to-b from-dbeafe to-white pt-16 md:pt-24 px-4 sm:px-6">
       <div className="app-container">
-        <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">Вижте приложението в действие</h2>
+        <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">{t('appShowcaseTitle')}</h2>
         
         <div className="flex flex-wrap justify-center gap-6 md:gap-8 mt-8 md:mt-12">
           {screenshots.map((screenshot, index) => (

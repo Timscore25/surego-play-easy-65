@@ -1,7 +1,10 @@
 
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const CallToAction = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="section-padding relative bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-white overflow-hidden px-4 sm:px-6">
       {/* Abstract sporty shape in background */}
@@ -11,9 +14,9 @@ const CallToAction = () => {
       
       <div className="app-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-950">Готов ли си да играеш без главоболия?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-950">{t('ctaTitle')}</h2>
           <p className="text-lg sm:text-xl mb-6 sm:mb-10 text-gray-950">
-            Свали SureGo сега и започни да организираш футболни събития лесно и бързо.
+            {t('ctaSubtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
@@ -51,7 +54,7 @@ const CallToAction = () => {
             <path d="M12 15V3m0 12l-4-4m4 4l4-4" />
             <path d="M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
           </svg>
-          <span>Свали SureGo</span>
+          <span>{t('downloadApp')}</span>
         </button>
       </div>
     </section>

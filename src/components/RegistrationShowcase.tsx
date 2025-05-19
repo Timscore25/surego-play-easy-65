@@ -1,28 +1,31 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const RegistrationShowcase = () => {
+  const { t } = useLanguage();
+  
   const registrationSteps = [
     {
-      title: "Изтеглете приложението",
-      description: "Достъпно в App Store и Google Play",
+      title: t('regStep1Title'),
+      description: t('regStep1Desc'),
       img: "/placeholder.svg",
       isDownload: true
     },
     {
-      title: "Изберете начин за регистрация",
-      description: "Няколко лесни начина за създаване на профил",
+      title: t('regStep2Title'),
+      description: t('regStep2Desc'),
       img: "/placeholder.svg"
     },
     {
-      title: "Регистрация с имейл",
-      description: "Въведете вашите данни за бърза регистрация",
+      title: t('regStep3Title'),
+      description: t('regStep3Desc'),
       img: "/placeholder.svg"
     },
     {
-      title: "Активирайте профила си",
-      description: "Потвърдете и започнете да използвате приложението",
+      title: t('regStep4Title'),
+      description: t('regStep4Desc'),
       img: "/placeholder.svg"
     }
   ];
@@ -30,7 +33,7 @@ const RegistrationShowcase = () => {
   return (
     <section id="registration" className="relative section-padding bg-gradient-to-b from-white to-dbeafe pt-16 md:pt-24 px-4 sm:px-6">
       <div className="app-container">
-        <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">Създаване на профил</h2>
+        <h2 className="section-title text-center mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl">{t('registrationTitle')}</h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mt-8 md:mt-12">
           {registrationSteps.map((step, index) => (
