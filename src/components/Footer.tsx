@@ -10,12 +10,14 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-10 md:mb-12">
           <div>
             <h3 className="flex items-center text-base md:text-lg font-bold mb-4">
-              <img 
-                src="/lovable-uploads/c6d1b5c6-a420-4e52-a13b-d0c5fa555d33.png" 
-                alt="SureGo Whistle Logo" 
-                className="h-4 md:h-5 mr-2"
-              />
-              <span style={{ color: "#fec000" }}>SureGo</span>
+              <div className="flex items-center">
+                <img 
+                  src="/lovable-uploads/c6d1b5c6-a420-4e52-a13b-d0c5fa555d33.png" 
+                  alt="SureGo Whistle Logo" 
+                  className="h-4 md:h-5 mr-2"
+                />
+                <span style={{ color: "#fec000" }}>SureGo</span>
+              </div>
             </h3>
             <ul className="space-y-2 text-sm md:text-base">
               <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('home')}</a></li>
@@ -25,7 +27,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-base md:text-lg font-bold mb-4">{t('support')}</h3>
+            <h3 className="flex items-center text-base md:text-lg font-bold mb-4">{t('support')}</h3>
             <ul className="space-y-2 text-sm md:text-base">
               <li><a href="#faq" className="text-gray-600 hover:text-surego-600">{t('faq')}</a></li>
               <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('help')}</a></li>
@@ -33,14 +35,14 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-base md:text-lg font-bold mb-4">{t('legal')}</h3>
+            <h3 className="flex items-center text-base md:text-lg font-bold mb-4">{t('legal')}</h3>
             <ul className="space-y-2 text-sm md:text-base">
               <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('terms')}</a></li>
               <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('privacy')}</a></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-base md:text-lg font-bold mb-4">{t('language')}</h3>
+            <h3 className="flex items-center text-base md:text-lg font-bold mb-4">{t('language')}</h3>
             <div className="flex items-center space-x-2">
               <button 
                 className={`p-2 rounded-full transition-colors ${language === "bg" ? "bg-gray-200" : "hover:bg-gray-200"}`} 
