@@ -20,14 +20,14 @@ const CallToAction = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-            <a href="#" className="inline-flex justify-center w-auto mx-auto">
+            <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center w-auto mx-auto">
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
                 alt="Download on the App Store" 
                 className="h-14 w-auto"
               />
             </a>
-            <a href="#" className="inline-flex justify-center w-auto mx-auto">
+            <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center w-auto mx-auto">
               <img 
                 src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
                 alt="Get it on Google Play" 
@@ -49,7 +49,18 @@ const CallToAction = () => {
       
       {/* Mobile sticky button */}
       <div className="md:hidden fixed bottom-4 left-0 right-0 z-50 px-4">
-        <button className="w-full bg-[#ffc100] hover:bg-warmyellow-500 text-black py-3 rounded-full shadow-lg flex items-center justify-center gap-2 font-medium">
+        <button 
+          onClick={() => {
+            // Open app store based on device
+            const userAgent = navigator.userAgent || navigator.vendor;
+            if (/iPad|iPhone|iPod/.test(userAgent)) {
+              window.open('https://apps.apple.com/bg/app/surego/id1671429121', '_blank');
+            } else {
+              window.open('https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2', '_blank');
+            }
+          }}
+          className="w-full bg-[#ffc100] hover:bg-warmyellow-500 text-black py-3 rounded-full shadow-lg flex items-center justify-center gap-2 font-medium"
+        >
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M12 15V3m0 12l-4-4m4 4l4-4" />
             <path d="M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17" />
