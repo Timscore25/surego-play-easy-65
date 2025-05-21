@@ -15,44 +15,44 @@ const Instructions = () => {
           
           <div className="max-w-4xl mx-auto space-y-12">
             {/* Section 1 */}
-            <section className="bg-gray-50 rounded-lg p-6 md:p-8 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-bold mb-4">Да забравим за хаоса с футболните срещи!</h2>
+            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
+              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Да забравим за хаоса с футболните срещи!</h2>
               <p className="mb-4">Организирането на мач с момчетата от квартала всяка седмица е истинско предизвикателство – някой не може, друг се разболява, винаги има проблеми, които трябва да се решават в последния момент, за да се събере необходимия брой играчи.</p>
-              <p className="mb-4 font-medium">SureGo идва с решението!</p>
+              <p className="mb-4 font-medium text-[#0f87e9]">SureGo идва с решението!</p>
               <p className="mb-4">Приложението поема голяма част от организационния стрес. Мениджърът на отбора просто създава събитие, избира дата и часа, посочва кои играчи са титуляри, резерви или гости, и задава време за изпращане на поканите. Оттук нататък SureGo автоматично:</p>
               <ul className="list-none space-y-2 mb-4">
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">✔</span> 
+                  <span className="text-green-500 font-bold mr-2 flex-shrink-0">✔</span> 
                   <span>Изпраща покани</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">✔</span>
+                  <span className="text-green-500 font-bold mr-2 flex-shrink-0">✔</span>
                   <span>Следи потвържденията за участие</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-600 font-bold mr-2">✔</span>
+                  <span className="text-green-500 font-bold mr-2 flex-shrink-0">✔</span>
                   <span>Дава на мениджъра пълен контрол в реално време, за да може да реагира при нужда</span>
                 </li>
               </ul>
               <p>Но това не е всичко! Приложението също така опростява управлението на финансите на отбора. Всеки играч може да проверява колко пари има в касата и хазната, така че всичко да е прозрачно и лесно.</p>
-              <p className="font-medium mt-4">С SureGo футболът става удоволствие – без главоболия!</p>
+              <p className="font-medium mt-4 text-[#0f87e9]">С SureGo футболът става удоволствие – без главоболия!</p>
             </section>
             
             {/* Section 2 */}
-            <section className="bg-gray-50 rounded-lg p-6 md:p-8 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-bold mb-4">Създаване на профил в SureGo – бързо и лесно!</h2>
+            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
+              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Създаване на профил в SureGo – бързо и лесно!</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-bold mb-2">Свалете приложението</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">Свалете приложението</h3>
                   <p>Достапно е в:</p>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li><a href="#" className="text-blue-600 hover:underline">[App Store]</a> (за iPhone)</li>
-                    <li><a href="#" className="text-blue-600 hover:underline">[Google Play]</a> (за Android)</li>
+                    <li><a href="#" className="text-blue-600 hover:underline hover:text-[#0f87e9] transition-colors">[App Store]</a> (за iPhone)</li>
+                    <li><a href="#" className="text-blue-600 hover:underline hover:text-[#0f87e9] transition-colors">[Google Play]</a> (за Android)</li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">Изберете начин за регистрация</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">Изберете начин за регистрация</h3>
                   <p>Можете да се регистрирате чрез:</p>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
                     <li>Google акаунт</li>
@@ -62,7 +62,7 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">Ако сте избрали имейл регистрация:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">Ако сте избрали имейл регистрация:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
                     <li>Въведете вашия имейл и парола</li>
                     <li>Натиснете „Създай профил"</li>
@@ -71,7 +71,7 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">Активирайте профила си</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">Активирайте профила си</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
                     <li>Отворете имейла и кликнете върху линка за потвърждение</li>
                     <li>Върнете се в приложението и изберете „Вход с имейл"</li>
@@ -79,30 +79,30 @@ const Instructions = () => {
                   </ul>
                 </div>
                 
-                <p className="font-medium">Вече имате активен профил и сте готови да започнете да използвате SureGo!</p>
+                <p className="font-medium text-[#0f87e9]">Вече имате активен профил и сте готови да започнете да използвате SureGo!</p>
               </div>
             </section>
             
             {/* Section 3 */}
-            <section className="bg-gray-50 rounded-lg p-6 md:p-8 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-bold mb-4">Създайте своя отбор</h2>
+            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
+              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Създайте своя отбор</h2>
               <ul className="list-disc ml-6 space-y-2 mt-2">
                 <li>Отворете раздела „Отбори"</li>
                 <li>Натиснете „+" (в горния десен ъгъл)</li>
                 <li>Попълнете име, държава, град и добавете снимка</li>
                 <li>Натиснете „Запази" – и готово!</li>
               </ul>
-              <p className="font-medium mt-4">Вече сте готови да организирате мачовете си без главоболия!</p>
+              <p className="font-medium mt-4 text-[#0f87e9]">Вече сте готови да организирате мачовете си без главоболия!</p>
             </section>
             
             {/* Section 4 */}
-            <section className="bg-gray-50 rounded-lg p-6 md:p-8 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-bold mb-4">Добавяне и настройка на играчи в отбора</h2>
+            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
+              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Добавяне и настройка на играчи в отбора</h2>
               <p className="mb-4">Вече имате създаден отбор - нека го организираме перфектно!</p>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="font-bold mb-2">1. Достъп до секцията за играчи:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">1. Достъп до секцията за играчи:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
                     <li>Отворете раздела „Отбори"</li>
                     <li>Изберете вашия отбор</li>
@@ -111,7 +111,7 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">2. Добавяне на нов играч:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">2. Добавяне на нов играч:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
                     <li>Натиснете „+" (в горния десен ъгъл)</li>
                     <li>
@@ -126,11 +126,11 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">3. Конфигуриране на играча</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">3. Конфигуриране на играча</h3>
                   
                   <div className="ml-6 space-y-4">
                     <div>
-                      <p className="font-medium italic">Задаване на роля:</p>
+                      <p className="font-medium italic text-[#0f87e9]">Задаване на роля:</p>
                       <ul className="list-none space-y-1 mt-1">
                         <li>🏆 Основен (приоритетни покани)</li>
                         <li>🔄 Резервен (поканват се втори)</li>
@@ -140,7 +140,7 @@ const Instructions = () => {
                     </div>
                     
                     <div>
-                      <p className="font-medium italic">Специалност (позиция):</p>
+                      <p className="font-medium italic text-[#0f87e9]">Специалност (позиция):</p>
                       <ul className="list-none space-y-1 mt-1">
                         <li>🧤 Вратар</li>
                         <li>🛡️ Защитник</li>
@@ -150,7 +150,7 @@ const Instructions = () => {
                     </div>
                     
                     <div>
-                      <p className="font-medium italic">Позициите се използват за:</p>
+                      <p className="font-medium italic text-[#0f87e9]">Позициите се използват за:</p>
                       <ul className="list-disc ml-6 space-y-1 mt-1">
                         <li>Автоматично балансиране на отборите при мачове</li>
                         <li>Детайлна статистика по пост</li>
@@ -161,12 +161,12 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">4. Ако играчът все още не е в SureGo:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">4. Ако играчът все още не е в SureGo:</h3>
                   <p className="ml-6">Можете да му изпратите инвайт линк по SMS, имейл или месинджър – той ще получи директна връзка за изтегляне на приложението и регистрация.</p>
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">5. Допълнителни възможности:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">5. Допълнителни възможности:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-1">
                     <li>Редактиране на профили по-късно</li>
                     <li>Промяна на позиции и роли</li>
@@ -175,8 +175,8 @@ const Instructions = () => {
                 </div>
               </div>
               
-              <div className="mt-6 bg-yellow-50 p-4 rounded-md">
-                <p className="font-bold">🌟 След като конфигурирате играчите, ще можете:</p>
+              <div className="mt-6 bg-gradient-to-r from-[#fff9e6] to-[#fffdf5] p-4 rounded-md border border-[#fec000]/30">
+                <p className="font-bold text-[#fec000]">🌟 След като конфигурирате играчите, ще можете:</p>
                 <ul className="list-disc ml-6 space-y-1 mt-2">
                   <li>Да получавате автоматични предложения за оптимални състави</li>
                   <li>Да следите производителността по позиции</li>
@@ -187,12 +187,12 @@ const Instructions = () => {
             </section>
             
             {/* Section 5 */}
-            <section className="bg-gray-50 rounded-lg p-6 md:p-8 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-bold mb-4">Създаване на футболно събитие в SureGo</h2>
+            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
+              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Създаване на футболно събитие в SureGo</h2>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="font-bold mb-2">1. Стартиране на ново събитие:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">1. Стартиране на ново събитие:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-1">
                     <li>От екрана на отбора изберете „Събития"</li>
                     <li>Натиснете „+" (горен десен ъгъл)</li>
@@ -200,7 +200,7 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">2. Основна информация:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">2. Основна информация:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-1">
                     <li>Въведете име и описание на събитието</li>
                     <li>Добавете място (с възможност за точна локация чрез „Карта" бутон)</li>
@@ -209,22 +209,22 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">3. Настройки на мача:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">3. Настройки на мача:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-1">
                     <li>Изберете дата и начален час</li>
                     <li>Задайте продължителност (в минути)</li>
                     <li>
                       Изберете повторяемост:
                       <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="text-blue-500">🔹</span> Еднократно (само за този ден)</li>
-                        <li><span className="text-blue-500">🔹</span> Ежеседмично (автоматично повторение)</li>
+                        <li><span className="text-[#0f87e9]">🔹</span> Еднократно (само за този ден)</li>
+                        <li><span className="text-[#0f87e9]">🔹</span> Ежеседмично (автоматично повторение)</li>
                       </ul>
                     </li>
                     <li>
                       Посочете брой отбори:
                       <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="font-medium">1 отбор</span> (игра срещу външен отбор - въведете име)</li>
-                        <li><span className="font-medium">2 отбора</span> (вътрешен мач между играчите ви)</li>
+                        <li><span className="font-medium text-[#0f87e9]">1 отбор</span> (игра срещу външен отбор - въведете име)</li>
+                        <li><span className="font-medium text-[#0f87e9]">2 отбора</span> (вътрешен мач между играчите ви)</li>
                       </ul>
                     </li>
                     <li>Задайте минимален брой играчи</li>
@@ -232,33 +232,33 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">4. Покани за играчи:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">4. Покани за играчи:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-1">
                     <li>
                       Настройте времеви интервали за покани:
                       <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="font-medium">⏰ Основни играчи</span> (първи получават покана)</li>
-                        <li><span className="font-medium">⏰ Резерви</span> (получават след основните)</li>
-                        <li><span className="font-medium">⏰ Гости</span> (получават последни)</li>
+                        <li><span className="font-medium text-[#0f87e9]">⏰ Основни играчи</span> (първи получават покана)</li>
+                        <li><span className="font-medium text-[#0f87e9]">⏰ Резерви</span> (получават след основните)</li>
+                        <li><span className="font-medium text-[#0f87e9]">⏰ Гости</span> (получават последни)</li>
                       </ul>
                     </li>
                     <li>
                       Задайте краен срок за потвърждение:
                       <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="font-medium">📅</span> Ако не се събере достатъчно играчи до този момент, събитието се отменя автоматично</li>
+                        <li><span className="font-medium text-[#0f87e9]">📅</span> Ако не се събере достатъчно играчи до този момент, събитието се отменя автоматично</li>
                       </ul>
                     </li>
                   </ul>
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">5. Финанси и допълнения:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">5. Финанси и допълнения:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-1">
                     <li>
                       Въведете цена за участие (по избор):
                       <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="font-medium">💰</span> Възможност за закръгляване на сумата (остатъкът отива в хазната)</li>
-                        <li><span className="font-medium">🎫</span> Безплатен вариант (ако желаете)</li>
+                        <li><span className="font-medium text-[#0f87e9]">💰</span> Възможност за закръгляване на сумата (остатъкът отива в хазната)</li>
+                        <li><span className="font-medium text-[#0f87e9]">🎫</span> Безплатен вариант (ако желаете)</li>
                       </ul>
                     </li>
                     <li>Добавете бележки (по избор)</li>
@@ -268,10 +268,10 @@ const Instructions = () => {
               </div>
               
               <div className="mt-6">
-                <p className="font-bold">✅ Готово! Събитието е активно и поканите са изпратени според зададените настройки.</p>
+                <p className="font-bold text-[#0f87e9]">✅ Готово! Събитието е активно и поканите са изпратени според зададените настройки.</p>
                 
-                <div className="bg-yellow-50 p-4 rounded-md mt-4">
-                  <p className="font-bold">🌟 Допълнителни възможности:</p>
+                <div className="bg-gradient-to-r from-[#fff9e6] to-[#fffdf5] p-4 rounded-md mt-4 border border-[#fec000]/30">
+                  <p className="font-bold text-[#fec000]">🌟 Допълнителни възможности:</p>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
                     <li>Автоматично балансиране на отборите (ако е вътрешен мач)</li>
                     <li>Проследяване на потвърждения в реално време</li>
@@ -285,12 +285,12 @@ const Instructions = () => {
             </section>
             
             {/* Section 6 */}
-            <section className="bg-gray-50 rounded-lg p-6 md:p-8 shadow-sm">
-              <h2 className="text-xl md:text-2xl font-bold mb-4">Управление на плащанията за събитие</h2>
+            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
+              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Управление на плащанията за събитие</h2>
               
               <div className="space-y-6">
                 <div>
-                  <h3 className="font-bold mb-2">Процес на регистрация на плащания:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">Процес на регистрация на плащания:</h3>
                   <ol className="list-decimal ml-6 space-y-1 mt-2">
                     <li>Отворете желаното събитие като го изберете от предстоящи или минали</li>
                     <li>Натиснете бутона "$" в горния десен ъгъл</li>
@@ -298,7 +298,7 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">3. Екран за управление на плащания:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">3. Екран за управление на плащания:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
                     <li>Виждате списък с всички участници</li>
                     <li>В горната част се показва сумата за плащане (която може да се редактира)</li>
@@ -313,7 +313,7 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">4. Завършване на процеса:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">4. Завършване на процеса:</h3>
                   <ol className="list-decimal ml-6 space-y-1 mt-2">
                     <li>Натиснете червения бутон в горния десен ъгъл</li>
                     <li>
@@ -329,7 +329,7 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">Допълнителна информация:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">Допълнителна информация:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
                     <li>
                       Ако има играчи, които не са платили, системата проверява:
@@ -342,7 +342,7 @@ const Instructions = () => {
                 </div>
                 
                 <div>
-                  <h3 className="font-bold mb-2">Предимства на системата:</h3>
+                  <h3 className="font-bold mb-2 text-[#12e8f0]">Предимства на системата:</h3>
                   <ul className="list-disc ml-6 space-y-1 mt-2">
                     <li>Удобно управление на плащанията без необходимост от връщане на ресто</li>
                     <li>Пълна финансова прозрачност</li>
@@ -351,8 +351,8 @@ const Instructions = () => {
                 </div>
               </div>
               
-              <div className="mt-6 bg-yellow-50 p-4 rounded-md">
-                <p><span className="font-bold">Пример:</span> Ако играч плати 20 лв. вместо 15 лв., оставащите 5 лв. се запазват в неговия баланс за следващи събития.</p>
+              <div className="mt-6 bg-gradient-to-r from-[#fff9e6] to-[#fffdf5] p-4 rounded-md border border-[#fec000]/30">
+                <p><span className="font-bold text-[#fec000]">Пример:</span> Ако играч плати 20 лв. вместо 15 лв., оставащите 5 лв. се запазват в неговия баланс за следващи събития.</p>
                 <p className="mt-2">Всички играчи имат достъп до своя баланс и история на плащанията, което гарантира прозрачност.</p>
               </div>
             </section>
