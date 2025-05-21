@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Languages } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,12 +34,12 @@ const Header = () => {
       ${isScrolled ? 'shadow-md bg-[#12e8f0]/90' : 'bg-[#12e8f0]'}`}>
       <div className="app-container flex items-center justify-between">
         <div className="flex items-center">
-          <a href="#" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src="/lovable-uploads/c6d1b5c6-a420-4e52-a13b-d0c5fa555d33.png" alt="SureGo Whistle Logo" className="h-5 sm:h-6 mr-2" />
             <span className="text-xl sm:text-2xl font-bold" style={{
               color: "#ffc100"
             }}>SureGo</span>
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -56,6 +56,9 @@ const Header = () => {
           <a href="#faq" className="text-gray-600 hover:text-primary transition-colors font-medium">
             {t('faq')}
           </a>
+          <Link to="/instructions" className="text-gray-600 hover:text-primary transition-colors font-medium">
+            Инструкции
+          </Link>
           <div className="flex items-center space-x-2 border-l pl-4 border-gray-200">
             <button 
               className={`p-2 rounded-full transition-colors ${language === "bg" ? "bg-gray-100" : "hover:bg-gray-100"}`} 
@@ -96,6 +99,9 @@ const Header = () => {
             <a href="#faq" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
               {t('faq')}
             </a>
+            <Link to="/instructions" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
+              Инструкции
+            </Link>
             <div className="flex items-center space-x-2 border-t pt-3 mt-1">
               <button 
                 className={`p-2 rounded-full transition-colors ${language === "bg" ? "bg-gray-100" : "hover:bg-gray-100"}`} 

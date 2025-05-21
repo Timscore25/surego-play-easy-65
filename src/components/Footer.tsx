@@ -1,5 +1,7 @@
+
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t, language, changeLanguage } = useLanguage();
@@ -20,10 +22,11 @@ const Footer = () => {
               </div>
             </h3>
             <ul className="space-y-2 text-sm md:text-base text-center">
-              <li><a href="#" className="text-gray-600 hover:text-surego-600">{t('home')}</a></li>
+              <li><Link to="/" className="text-gray-600 hover:text-surego-600">{t('home')}</Link></li>
               <li><a href="#features" className="text-gray-600 hover:text-surego-600">{t('features')}</a></li>
               <li><a href="#how-it-works" className="text-gray-600 hover:text-surego-600">{t('howItWorks')}</a></li>
               <li><a href="#testimonials" className="text-gray-600 hover:text-surego-600">{t('testimonials')}</a></li>
+              <li><Link to="/instructions" className="text-gray-600 hover:text-surego-600">Инструкции</Link></li>
             </ul>
           </div>
           <div>
