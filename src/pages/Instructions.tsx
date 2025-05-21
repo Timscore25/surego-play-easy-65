@@ -1,365 +1,544 @@
 
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { 
+  Users, 
+  Download, 
+  Mail, 
+  Check, 
+  Plus, 
+  UserPlus, 
+  ShieldCheck,
+  Award, 
+  CalendarPlus, 
+  DollarSign,
+  ChevronDown
+} from "lucide-react";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+import { Separator } from "@/components/ui/separator";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const Instructions = () => {
   const { language } = useLanguage();
+  const [openSections, setOpenSections] = useState<Record<string, boolean>>({
+    section1: true,
+    section2: false,
+    section3: false,
+    section4: false,
+    section5: false,
+    section6: false
+  });
+
+  const toggleSection = (section: string) => {
+    setOpenSections(prev => ({
+      ...prev,
+      [section]: !prev[section]
+    }));
+  };
   
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-white to-blue-50">
       <Header />
-      <main className="pt-20 pb-16">
-        <div className="app-container px-4 sm:px-6 mt-8 md:mt-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Инструкции</h1>
+      <main className="pt-24 pb-16">
+        <div className="app-container px-4 sm:px-6 max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 text-surego-700">
+              SureGo – Организирайте футболните срещи без хаос!
+            </h1>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Открийте как да използвате пълния потенциал на SureGo с нашите подробни инструкции
+            </p>
+          </div>
           
-          <div className="max-w-4xl mx-auto space-y-12">
-            {/* Section 1 */}
-            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Да забравим за хаоса с футболните срещи!</h2>
-              <p className="mb-4">Организирането на мач с момчетата от квартала всяка седмица е истинско предизвикателство – някой не може, друг се разболява, винаги има проблеми, които трябва да се решават в последния момент, за да се събере необходимия брой играчи.</p>
-              <p className="mb-4 font-medium text-[#0f87e9]">SureGo идва с решението!</p>
-              <p className="mb-4">Приложението поема голяма част от организационния стрес. Мениджърът на отбора просто създава събитие, избира дата и часа, посочва кои играчи са титуляри, резерви или гости, и задава време за изпращане на поканите. Оттук нататък SureGo автоматично:</p>
-              <ul className="list-none space-y-2 mb-4">
-                <li className="flex items-start">
-                  <span className="text-green-500 font-bold mr-2 flex-shrink-0">✔</span> 
-                  <span>Изпраща покани</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 font-bold mr-2 flex-shrink-0">✔</span>
-                  <span>Следи потвържденията за участие</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-green-500 font-bold mr-2 flex-shrink-0">✔</span>
-                  <span>Дава на мениджъра пълен контрол в реално време, за да може да реагира при нужда</span>
-                </li>
-              </ul>
-              <p>Но това не е всичко! Приложението също така опростява управлението на финансите на отбора. Всеки играч може да проверява колко пари има в касата и хазната, така че всичко да е прозрачно и лесно.</p>
-              <p className="font-medium mt-4 text-[#0f87e9]">С SureGo футболът става удоволствие – без главоболия!</p>
-            </section>
-            
-            {/* Section 2 */}
-            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Създаване на профил в SureGo – бързо и лесно!</h2>
-              <div className="space-y-4">
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">Свалете приложението</h3>
-                  <p>Достапно е в:</p>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li><a href="#" className="text-blue-600 hover:underline hover:text-[#0f87e9] transition-colors">[App Store]</a> (за iPhone)</li>
-                    <li><a href="#" className="text-blue-600 hover:underline hover:text-[#0f87e9] transition-colors">[Google Play]</a> (за Android)</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">Изберете начин за регистрация</h3>
-                  <p>Можете да се регистрирате чрез:</p>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li>Google акаунт</li>
-                    <li>Apple ID</li>
-                    <li>Имейл (изберете „Създай профил")</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">Ако сте избрали имейл регистрация:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li>Въведете вашия имейл и парола</li>
-                    <li>Натиснете „Създай профил"</li>
-                    <li>Проверете имейла си за потвърждаващ линк</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">Активирайте профила си</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li>Отворете имейла и кликнете върху линка за потвърждение</li>
-                    <li>Върнете се в приложението и изберете „Вход с имейл"</li>
-                    <li>Въведете имейл и парола – и готово!</li>
-                  </ul>
-                </div>
-                
-                <p className="font-medium text-[#0f87e9]">Вече имате активен профил и сте готови да започнете да използвате SureGo!</p>
-              </div>
-            </section>
-            
-            {/* Section 3 */}
-            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Създайте своя отбор</h2>
-              <ul className="list-disc ml-6 space-y-2 mt-2">
-                <li>Отворете раздела „Отбори"</li>
-                <li>Натиснете „+" (в горния десен ъгъл)</li>
-                <li>Попълнете име, държава, град и добавете снимка</li>
-                <li>Натиснете „Запази" – и готово!</li>
-              </ul>
-              <p className="font-medium mt-4 text-[#0f87e9]">Вече сте готови да организирате мачовете си без главоболия!</p>
-            </section>
-            
-            {/* Section 4 */}
-            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Добавяне и настройка на играчи в отбора</h2>
-              <p className="mb-4">Вече имате създаден отбор - нека го организираме перфектно!</p>
+          {/* Section 1 */}
+          <InstructionSection 
+            isOpen={openSections.section1}
+            toggleOpen={() => toggleSection('section1')}
+            sectionId="section1"
+            title="Лесна организация на футболни срещи"
+            icon={<Users className="w-8 h-8 text-surego-600" />}
+          >
+            <div className="space-y-6">
+              <p className="text-lg">
+                SureGo улеснява организирането на футболни мачове с приятели:
+              </p>
               
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">1. Достъп до секцията за играчи:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li>Отворете раздела „Отбори"</li>
-                    <li>Изберете вашия отбор</li>
-                    <li>Кликнете върху „Играчи"</li>
+              <div className="bg-white rounded-lg p-6 shadow-sm border border-blue-100">
+                <h4 className="font-bold text-lg mb-3 text-surego-600">Мениджърът на отбора:</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-center">
+                    <Checkbox id="s1-1" className="mr-2 border-surego-400" />
+                    <label htmlFor="s1-1">Създава събитие с дата и час.</label>
+                  </li>
+                  <li className="flex items-center">
+                    <Checkbox id="s1-2" className="mr-2 border-surego-400" />
+                    <label htmlFor="s1-2">Определя играчите (основни, резерви, гости).</label>
+                  </li>
+                  <li className="flex items-center">
+                    <Checkbox id="s1-3" className="mr-2 border-surego-400" />
+                    <label htmlFor="s1-3">Автоматично изпраща покани.</label>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 shadow-sm border border-blue-100">
+                <h4 className="font-bold text-lg mb-3 text-surego-600">SureGo автоматично:</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <span className="text-green-500 font-bold text-xl mr-3">✓</span>
+                    <span>Изпраща покани.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 font-bold text-xl mr-3">✓</span>
+                    <span>Проследява потвърждения в реално време.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 font-bold text-xl mr-3">✓</span>
+                    <span>Предоставя контрол и гъвкавост на мениджъра.</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 shadow-sm border border-green-100">
+                <h4 className="font-bold text-lg mb-3 text-surego-600">Допълнителни функции:</h4>
+                <ul className="space-y-2">
+                  <li className="flex items-center">
+                    <DollarSign className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Лесно финансово управление на отбора.</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="w-5 h-5 text-green-500 mr-2" />
+                    <span>Пълна прозрачност за всички играчи.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </InstructionSection>
+          
+          {/* Section 2 */}
+          <InstructionSection 
+            isOpen={openSections.section2}
+            toggleOpen={() => toggleSection('section2')}
+            sectionId="section2"
+            title="Създаване на профил – бързо и удобно!"
+            icon={<Download className="w-8 h-8 text-surego-600" />}
+          >
+            <div className="space-y-6">
+              <p className="text-lg">
+                Регистрацията е лесна и ви дава незабавен достъп:
+              </p>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <StepCard 
+                  title="Изтеглете приложението:"
+                  icon={<Download className="w-6 h-6 text-surego-600" />}
+                >
+                  <div className="space-y-2 mt-4">
+                    <a href="#" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                      <span className="underline">[App Store]</span>
+                    </a>
+                    <a href="#" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                      <span className="underline">[Google Play]</span>
+                    </a>
+                  </div>
+                </StepCard>
+                
+                <StepCard 
+                  title="Изберете метод за регистрация:"
+                  icon={<Mail className="w-6 h-6 text-surego-600" />}
+                >
+                  <ul className="space-y-2 mt-4">
+                    <li>Google акаунт (бързо и удобно)</li>
+                    <li>Apple ID (за потребители на iOS)</li>
+                    <li>Имейл (необходимо потвърждение)</li>
+                  </ul>
+                </StepCard>
+                
+                <StepCard 
+                  title="Активирайте профила:"
+                  icon={<Check className="w-6 h-6 text-surego-600" />}
+                >
+                  <ul className="space-y-2 mt-4">
+                    <li>Потвърдете регистрацията през получения имейл.</li>
+                    <li>Влезте в приложението с вашия имейл и парола.</li>
+                  </ul>
+                </StepCard>
+              </div>
+            </div>
+          </InstructionSection>
+          
+          {/* Section 3 */}
+          <InstructionSection 
+            isOpen={openSections.section3}
+            toggleOpen={() => toggleSection('section3')}
+            sectionId="section3"
+            title="Създаване на вашия отбор"
+            icon={<Users className="w-8 h-8 text-surego-600" />}
+          >
+            <div className="space-y-6">
+              <p className="text-lg">
+                Създайте отбор в няколко лесни стъпки:
+              </p>
+              
+              <div className="bg-white rounded-lg p-6 shadow-sm border border-blue-100">
+                <div className="flex flex-col space-y-4">
+                  <Step number={1} text="Отворете „Отбори"." />
+                  <Step number={2} text="Натиснете „+" (горен десен ъгъл)." />
+                  <Step number={3} text="Попълнете име, държава, град и добавете снимка." />
+                  <Step number={4} text="Натиснете „Запази"." />
+                </div>
+              </div>
+            </div>
+          </InstructionSection>
+          
+          {/* Section 4 */}
+          <InstructionSection 
+            isOpen={openSections.section4}
+            toggleOpen={() => toggleSection('section4')}
+            sectionId="section4"
+            title="Добавяне и управление на играчи"
+            icon={<UserPlus className="w-8 h-8 text-surego-600" />}
+          >
+            <div className="space-y-6">
+              <p className="text-lg">
+                Поддържайте отбора си организиран и готов за игра:
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white rounded-lg p-6 shadow-sm border border-blue-100">
+                  <h4 className="font-bold text-lg mb-4 text-surego-600 flex items-center">
+                    <Plus className="w-5 h-5 mr-2" />
+                    Добавяне на играчи
+                  </h4>
+                  <p className="mb-4">Отворете „Отбори" → Изберете вашия отбор → „Играчи" → „+".</p>
+                  <h5 className="font-semibold mb-2">Добавете играчи чрез:</h5>
+                  <ul className="space-y-2 ml-5 list-disc">
+                    <li>SureGo ID (директно и бързо)</li>
+                    <li>Телефонен номер (лесно свързване)</li>
+                    <li>Контакти от телефона (автоматично и удобно)</li>
                   </ul>
                 </div>
                 
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">2. Добавяне на нов играч:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li>Натиснете „+" (в горния десен ъгъл)</li>
-                    <li>
-                      Изберете удобен за вас метод:
-                      <ul className="list-disc ml-6 space-y-1 mt-1">
-                        <li>Чрез SureGo ID (намерете го в профила на играча)</li>
-                        <li>Чрез телефонен номер (ръчно въвеждане)</li>
-                        <li>От контактите на телефона (автоматично свързване)</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">3. Конфигуриране на играча</h3>
-                  
-                  <div className="ml-6 space-y-4">
+                <div className="bg-white rounded-lg p-6 shadow-sm border border-blue-100">
+                  <h4 className="font-bold text-lg mb-4 text-surego-600 flex items-center">
+                    <ShieldCheck className="w-5 h-5 mr-2" />
+                    Роли и позиции
+                  </h4>
+                  <div className="space-y-4">
                     <div>
-                      <p className="font-medium italic text-[#0f87e9]">Задаване на роля:</p>
-                      <ul className="list-none space-y-1 mt-1">
-                        <li>🏆 Основен (приоритетни покани)</li>
-                        <li>🔄 Резервен (поканват се втори)</li>
-                        <li>👋 Гост (поканват се при нужда)</li>
-                        <li>👀 Наблюдател (само преглед)</li>
+                      <h5 className="font-semibold mb-2">Роли:</h5>
+                      <ul className="space-y-1 ml-5 list-disc">
+                        <li>Основен</li>
+                        <li>Резервен</li>
+                        <li>Гост</li>
+                        <li>Наблюдател</li>
                       </ul>
                     </div>
-                    
                     <div>
-                      <p className="font-medium italic text-[#0f87e9]">Специалност (позиция):</p>
-                      <ul className="list-none space-y-1 mt-1">
-                        <li>🧤 Вратар</li>
-                        <li>🛡️ Защитник</li>
-                        <li>⚙️ Полузащитник</li>
-                        <li>⚡ Нападател</li>
-                      </ul>
-                    </div>
-                    
-                    <div>
-                      <p className="font-medium italic text-[#0f87e9]">Позициите се използват за:</p>
-                      <ul className="list-disc ml-6 space-y-1 mt-1">
-                        <li>Автоматично балансиране на отборите при мачове</li>
-                        <li>Детайлна статистика по пост</li>
-                        <li>Анализ на използваните формации</li>
+                      <h5 className="font-semibold mb-2">Позиции:</h5>
+                      <ul className="space-y-1 ml-5 list-disc">
+                        <li>Вратар</li>
+                        <li>Защитник</li>
+                        <li>Полузащитник</li>
+                        <li>Нападател</li>
                       </ul>
                     </div>
                   </div>
                 </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">4. Ако играчът все още не е в SureGo:</h3>
-                  <p className="ml-6">Можете да му изпратите инвайт линк по SMS, имейл или месинджър – той ще получи директна връзка за изтегляне на приложението и регистрация.</p>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">5. Допълнителни възможности:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-1">
-                    <li>Редактиране на профили по-късно</li>
-                    <li>Промяна на позиции и роли</li>
-                    <li>Индивидуална статистика за всеки играч</li>
-                  </ul>
-                </div>
               </div>
               
-              <div className="mt-6 bg-gradient-to-r from-[#fff9e6] to-[#fffdf5] p-4 rounded-md border border-[#fec000]/30">
-                <p className="font-bold text-[#fec000]">🌟 След като конфигурирате играчите, ще можете:</p>
-                <ul className="list-disc ml-6 space-y-1 mt-2">
-                  <li>Да получавате автоматични предложения за оптимални състави</li>
-                  <li>Да следите производителността по позиции</li>
-                  <li>Да анализирате силните и слабите страни на отбора</li>
+              <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-lg p-6 shadow-sm border border-blue-100">
+                <h4 className="font-bold text-lg mb-4 text-surego-600 flex items-center">
+                  <Award className="w-5 h-5 mr-2" />
+                  Предимства
+                </h4>
+                <ul className="grid md:grid-cols-2 gap-4">
+                  <li className="flex items-start bg-white p-3 rounded shadow-sm">
+                    <Check className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>Автоматично балансиране на отборите</span>
+                  </li>
+                  <li className="flex items-start bg-white p-3 rounded shadow-sm">
+                    <Check className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>Индивидуална статистика за играчите</span>
+                  </li>
+                  <li className="flex items-start bg-white p-3 rounded shadow-sm">
+                    <Check className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>Покани за нови потребители</span>
+                  </li>
+                  <li className="flex items-start bg-white p-3 rounded shadow-sm">
+                    <Check className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                    <span>Анализ на играта на отбора</span>
+                  </li>
                 </ul>
-                <p className="mt-2">Приложението ще ви помогне да управлявате отбора професионално, като ви предоставя всички необходими инструменти за успех! ⚽📊</p>
               </div>
-            </section>
-            
-            {/* Section 5 */}
-            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Създаване на футболно събитие в SureGo</h2>
+            </div>
+          </InstructionSection>
+          
+          {/* Section 5 */}
+          <InstructionSection 
+            isOpen={openSections.section5}
+            toggleOpen={() => toggleSection('section5')}
+            sectionId="section5"
+            title="Създаване на събитие"
+            icon={<CalendarPlus className="w-8 h-8 text-surego-600" />}
+          >
+            <div className="space-y-6">
+              <p className="text-lg">
+                Бързо и ефективно организирайте футболни събития:
+              </p>
               
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">1. Стартиране на ново събитие:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-1">
-                    <li>От екрана на отбора изберете „Събития"</li>
-                    <li>Натиснете „+" (горен десен ъгъл)</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">2. Основна информация:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-1">
-                    <li>Въведете име и описание на събитието</li>
-                    <li>Добавете място (с възможност за точна локация чрез „Карта" бутон)</li>
-                    <li>Натиснете „Напред"</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">3. Настройки на мача:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-1">
-                    <li>Изберете дата и начален час</li>
-                    <li>Задайте продължителност (в минути)</li>
-                    <li>
-                      Изберете повторяемост:
-                      <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="text-[#0f87e9]">🔹</span> Еднократно (само за този ден)</li>
-                        <li><span className="text-[#0f87e9]">🔹</span> Ежеседмично (автоматично повторение)</li>
-                      </ul>
-                    </li>
-                    <li>
-                      Посочете брой отбори:
-                      <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="font-medium text-[#0f87e9]">1 отбор</span> (игра срещу външен отбор - въведете име)</li>
-                        <li><span className="font-medium text-[#0f87e9]">2 отбора</span> (вътрешен мач между играчите ви)</li>
-                      </ul>
-                    </li>
-                    <li>Задайте минимален брой играчи</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">4. Покани за играчи:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-1">
-                    <li>
-                      Настройте времеви интервали за покани:
-                      <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="font-medium text-[#0f87e9]">⏰ Основни играчи</span> (първи получават покана)</li>
-                        <li><span className="font-medium text-[#0f87e9]">⏰ Резерви</span> (получават след основните)</li>
-                        <li><span className="font-medium text-[#0f87e9]">⏰ Гости</span> (получават последни)</li>
-                      </ul>
-                    </li>
-                    <li>
-                      Задайте краен срок за потвърждение:
-                      <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="font-medium text-[#0f87e9]">📅</span> Ако не се събере достатъчно играчи до този момент, събитието се отменя автоматично</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">5. Финанси и допълнения:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-1">
-                    <li>
-                      Въведете цена за участие (по избор):
-                      <ul className="list-none ml-4 space-y-1 mt-1">
-                        <li><span className="font-medium text-[#0f87e9]">💰</span> Възможност за закръгляване на сумата (остатъкът отива в хазната)</li>
-                        <li><span className="font-medium text-[#0f87e9]">🎫</span> Безплатен вариант (ако желаете)</li>
-                      </ul>
-                    </li>
-                    <li>Добавете бележки (по избор)</li>
-                    <li>Завършете с „Създай събитие"</li>
-                  </ul>
-                </div>
+              <div className="bg-white rounded-lg p-6 shadow-sm border border-blue-100">
+                <ol className="space-y-4">
+                  <li className="flex">
+                    <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                      1
+                    </div>
+                    <div>
+                      <p>Изберете вашия отбор → „Събития" → „+".</p>
+                    </div>
+                  </li>
+                  <li className="flex">
+                    <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                      2
+                    </div>
+                    <div>
+                      <p>Попълнете име, описание и локация.</p>
+                    </div>
+                  </li>
+                  <li className="flex">
+                    <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                      3
+                    </div>
+                    <div>
+                      <p>Задайте дата, час, продължителност и повторяемост.</p>
+                    </div>
+                  </li>
+                  <li className="flex">
+                    <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                      4
+                    </div>
+                    <div>
+                      <p>Определете типа мач (един или два отбора).</p>
+                    </div>
+                  </li>
+                  <li className="flex">
+                    <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                      5
+                    </div>
+                    <div>
+                      <p>Настройте времеви интервали за покани (основни, резерви, гости).</p>
+                    </div>
+                  </li>
+                  <li className="flex">
+                    <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                      6
+                    </div>
+                    <div>
+                      <p>Посочете цена за участие или изберете безплатно събитие.</p>
+                    </div>
+                  </li>
+                  <li className="flex">
+                    <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                      7
+                    </div>
+                    <div>
+                      <p>Натиснете „Създай събитие".</p>
+                    </div>
+                  </li>
+                </ol>
               </div>
               
-              <div className="mt-6">
-                <p className="font-bold text-[#0f87e9]">✅ Готово! Събитието е активно и поканите са изпратени според зададените настройки.</p>
+              <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-6 shadow-sm border border-blue-100">
+                <h4 className="font-bold text-lg mb-4 text-surego-600">Автоматични функции:</h4>
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                    <div className="bg-blue-100 p-3 rounded-full mb-3">
+                      <Mail className="w-5 h-5 text-blue-700" />
+                    </div>
+                    <p>Изпращане на покани</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                    <div className="bg-blue-100 p-3 rounded-full mb-3">
+                      <Check className="w-5 h-5 text-blue-700" />
+                    </div>
+                    <p>Проследяване на потвържденията</p>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                    <div className="bg-blue-100 p-3 rounded-full mb-3">
+                      <Users className="w-5 h-5 text-blue-700" />
+                    </div>
+                    <p>Балансиране на отборите</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </InstructionSection>
+          
+          {/* Section 6 */}
+          <InstructionSection 
+            isOpen={openSections.section6}
+            toggleOpen={() => toggleSection('section6')}
+            sectionId="section6"
+            title="Управление на плащанията"
+            icon={<DollarSign className="w-8 h-8 text-surego-600" />}
+          >
+            <div className="space-y-6">
+              <p className="text-lg">
+                Лесно и прозрачно финансово управление на вашите събития:
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white rounded-lg p-6 shadow-sm border border-blue-100">
+                  <h4 className="font-bold text-lg mb-4 text-surego-600">Процес на плащане:</h4>
+                  <ol className="space-y-3">
+                    <li className="flex">
+                      <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                        1
+                      </div>
+                      <div>
+                        <p>Изберете събитие.</p>
+                      </div>
+                    </li>
+                    <li className="flex">
+                      <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                        2
+                      </div>
+                      <div>
+                        <p>Натиснете "$" (в горния десен ъгъл).</p>
+                      </div>
+                    </li>
+                    <li className="flex">
+                      <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                        3
+                      </div>
+                      <div>
+                        <p>Управлявайте плащанията на играчите.</p>
+                      </div>
+                    </li>
+                    <li className="flex">
+                      <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+                        4
+                      </div>
+                      <div>
+                        <p>Потвърдете с бутона в горния десен ъгъл.</p>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
                 
-                <div className="bg-gradient-to-r from-[#fff9e6] to-[#fffdf5] p-4 rounded-md mt-4 border border-[#fec000]/30">
-                  <p className="font-bold text-[#fec000]">🌟 Допълнителни възможности:</p>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li>Автоматично балансиране на отборите (ако е вътрешен мач)</li>
-                    <li>Проследяване на потвърждения в реално време</li>
-                    <li>Известия за промени по събитието</li>
-                    <li>Опция за автоматично попълване на липсващи играчи от резервите</li>
+                <div className="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-6 shadow-sm border border-green-100">
+                  <h4 className="font-bold text-lg mb-4 text-surego-600 flex items-center">
+                    <Award className="w-5 h-5 mr-2" />
+                    Ключови предимства:
+                  </h4>
+                  <ul className="space-y-4">
+                    <li className="flex items-start">
+                      <Check className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                      <span>Удобно и ясно финансово управление.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                      <span>Автоматични изчисления и баланси.</span>
+                    </li>
+                    <li className="flex items-start">
+                      <Check className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
+                      <span>Остатъците се съхраняват автоматично за следващи събития.</span>
+                    </li>
                   </ul>
                   
-                  <p className="mt-2 italic">Приложението ще ви уведоми за всяка промяна в статуса на събитието и ще ви помогне да организирате перфектен мач без главоболия! ⚽📅</p>
+                  <div className="mt-6 bg-white p-4 rounded-lg shadow-sm border border-blue-100">
+                    <p className="text-sm italic">
+                      <span className="font-semibold">Пример:</span> Ако играч плати 20 лв. вместо 15 лв., оставащите 5 лв. се запазват в неговия баланс за следващи събития.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </section>
-            
-            {/* Section 6 */}
-            <section className="bg-gradient-to-br from-[#E7F6FF] to-white rounded-lg p-6 md:p-8 shadow-md border border-[#D3E4FD]">
-              <h2 className="text-xl md:text-2xl font-bold mb-4 text-[#0f87e9]">Управление на плащанията за събитие</h2>
-              
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">Процес на регистрация на плащания:</h3>
-                  <ol className="list-decimal ml-6 space-y-1 mt-2">
-                    <li>Отворете желаното събитие като го изберете от предстоящи или минали</li>
-                    <li>Натиснете бутона "$" в горния десен ъгъл</li>
-                  </ol>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">3. Екран за управление на плащания:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li>Виждате списък с всички участници</li>
-                    <li>В горната част се показва сумата за плащане (която може да се редактира)</li>
-                    <li>
-                      За всеки играч имате възможност да:
-                      <ul className="list-disc ml-6 space-y-1 mt-1">
-                        <li>Добавите допълнителна сума (остава в портфейла на играча за бъдещи събития)</li>
-                        <li>Намалите сумата</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">4. Завършване на процеса:</h3>
-                  <ol className="list-decimal ml-6 space-y-1 mt-2">
-                    <li>Натиснете червения бутон в горния десен ъгъл</li>
-                    <li>
-                      Ще видите обобщение с:
-                      <ul className="list-disc ml-6 space-y-1 mt-1">
-                        <li>Цената на събитието</li>
-                        <li>Общо събрана сума</li>
-                        <li>Сума за хазната на отбора</li>
-                      </ul>
-                    </li>
-                    <li>Потвърдете с "Да"</li>
-                  </ol>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">Допълнителна информация:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li>
-                      Ако има играчи, които не са платили, системата проверява:
-                      <ul className="list-disc ml-6 space-y-1 mt-1">
-                        <li>Дали хазната на отбора може да покрие липсващата сума</li>
-                        <li>Ако няма достатъчно средства, процесът не може да бъде завършен</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <h3 className="font-bold mb-2 text-[#12e8f0]">Предимства на системата:</h3>
-                  <ul className="list-disc ml-6 space-y-1 mt-2">
-                    <li>Удобно управление на плащанията без необходимост от връщане на ресто</li>
-                    <li>Пълна финансова прозрачност</li>
-                    <li>Автоматични изчисления и баланси</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div className="mt-6 bg-gradient-to-r from-[#fff9e6] to-[#fffdf5] p-4 rounded-md border border-[#fec000]/30">
-                <p><span className="font-bold text-[#fec000]">Пример:</span> Ако играч плати 20 лв. вместо 15 лв., оставащите 5 лв. се запазват в неговия баланс за следващи събития.</p>
-                <p className="mt-2">Всички играчи имат достъп до своя баланс и история на плащанията, което гарантира прозрачност.</p>
-              </div>
-            </section>
-          </div>
+            </div>
+          </InstructionSection>
         </div>
       </main>
       <Footer />
+    </div>
+  );
+};
+
+// Helper components
+interface InstructionSectionProps {
+  isOpen: boolean;
+  toggleOpen: () => void;
+  sectionId: string;
+  title: string;
+  icon: React.ReactNode;
+  children: React.ReactNode;
+}
+
+const InstructionSection = ({ isOpen, toggleOpen, sectionId, title, icon, children }: InstructionSectionProps) => {
+  return (
+    <div className="mb-8">
+      <Collapsible open={isOpen} onOpenChange={toggleOpen}>
+        <CollapsibleTrigger asChild>
+          <button 
+            className="w-full flex items-center justify-between bg-white px-6 py-4 rounded-lg shadow-sm border border-blue-100 hover:bg-blue-50 transition-colors"
+            aria-controls={sectionId}
+          >
+            <div className="flex items-center">
+              <div className="mr-4">
+                {icon}
+              </div>
+              <h2 className="text-xl md:text-2xl font-bold text-surego-700">{title}</h2>
+            </div>
+            <ChevronDown 
+              className={`w-5 h-5 text-surego-600 transition-transform ${isOpen ? 'transform rotate-180' : ''}`} 
+            />
+          </button>
+        </CollapsibleTrigger>
+        <CollapsibleContent className="mt-4 bg-white rounded-lg p-6 shadow-sm border border-blue-100">
+          {children}
+        </CollapsibleContent>
+      </Collapsible>
+      <Separator className="mt-8" />
+    </div>
+  );
+};
+
+interface StepCardProps {
+  title: string;
+  icon: React.ReactNode;
+  children: React.ReactNode;
+}
+
+const StepCard = ({ title, icon, children }: StepCardProps) => {
+  return (
+    <div className="bg-white rounded-lg p-6 shadow-sm border border-blue-100 hover:shadow-md transition-shadow">
+      <div className="flex items-center mb-2">
+        {icon}
+        <h4 className="font-bold ml-2">{title}</h4>
+      </div>
+      {children}
+    </div>
+  );
+};
+
+interface StepProps {
+  number: number;
+  text: string;
+}
+
+const Step = ({ number, text }: StepProps) => {
+  return (
+    <div className="flex">
+      <div className="bg-surego-100 rounded-full w-6 h-6 flex items-center justify-center text-surego-700 font-bold mr-3 flex-shrink-0">
+        {number}
+      </div>
+      <div>
+        <p>{text}</p>
+      </div>
     </div>
   );
 };
