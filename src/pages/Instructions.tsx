@@ -216,7 +216,7 @@ const Instructions = () => {
                     <Plus className="w-5 h-5 mr-2" />
                     Добавяне на играчи
                   </h4>
-                  <p className="mb-4">Отворете „Отбори" → Изберете вашия отбор → „Играчи" → „+".</p>
+                  <p className="mb-4">Отворете „Отбори" {'->'} Изберете вашия отбор {'->'} „Играчи" {'->'} „+".</p>
                   <h5 className="font-semibold mb-2">Добавете играчи чрез:</h5>
                   <ul className="space-y-2 ml-5 list-disc">
                     <li>SureGo ID (директно и бързо)</li>
