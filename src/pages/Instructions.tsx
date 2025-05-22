@@ -13,11 +13,11 @@ const Instructions = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="pt-20 pb-16">
-        {/* Wave SVG consistent with main page style */}
+      <main className="pt-16">
+        {/* Wave SVG fixed to connect with header without whitespace */}
         <div className="relative w-full overflow-hidden line-height-0">
           <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-12 sm:h-16 md:h-24 bg-white">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#11e7ef"></path>
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#facc15"></path>
           </svg>
         </div>
 
@@ -28,9 +28,9 @@ const Instructions = () => {
             {/* Section 1 - Easy Organization */}
             <Card className="overflow-hidden border-0 shadow-md">
               <CardContent className="p-0">
-                <div className="bg-gradient-to-r from-[#11e7ef] to-[#11e7ef]/80 p-4 md:p-6">
+                <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                   <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                    <span className="bg-white text-[#11e7ef] w-8 h-8 flex items-center justify-center rounded-full mr-3">1</span>
+                    <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">1</span>
                     Лесна организация на футболни срещи
                   </h2>
                 </div>
@@ -41,25 +41,25 @@ const Instructions = () => {
                   
                   <div className="space-y-5">
                     <div>
-                      <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Мениджърът на отбора:</h3>
+                      <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Мениджърът на отбора:</h3>
                       <ul className="ml-5 space-y-2">
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span> 
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span> 
                           <span>Създава събитие с дата и час.</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                           <span>Определя играчите (основни, резерви, гости).</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                           <span>Автоматично изпраща покани.</span>
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">SureGo автоматично:</h3>
+                      <h3 className="font-bold text-lg mb-3 text-warmyellow-500">SureGo автоматично:</h3>
                       <ul className="ml-5 space-y-2">
                         <li className="flex items-start">
                           <Check className="text-green-500 mr-2 mt-0.5" size={18} />
@@ -77,14 +77,14 @@ const Instructions = () => {
                     </div>
                     
                     <div>
-                      <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Допълнителни функции:</h3>
+                      <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Допълнителни функции:</h3>
                       <ul className="ml-5 space-y-2">
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                           <span>Лесно финансово управление на отбора.</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                           <span>Пълна прозрачност за всички играчи.</span>
                         </li>
                       </ul>
@@ -97,9 +97,9 @@ const Instructions = () => {
             {/* Section 2 - Account Creation */}
             <Card className="overflow-hidden border-0 shadow-md">
               <CardContent className="p-0">
-                <div className="bg-gradient-to-r from-[#11e7ef] to-[#11e7ef]/80 p-4 md:p-6">
+                <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                   <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                    <span className="bg-white text-[#11e7ef] w-8 h-8 flex items-center justify-center rounded-full mr-3">2</span>
+                    <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">2</span>
                     Създаване на профил – бързо и удобно!
                   </h2>
                 </div>
@@ -110,7 +110,7 @@ const Instructions = () => {
                   
                   <div className="space-y-5">
                     <div>
-                      <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Изтеглете приложението:</h3>
+                      <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Изтеглете приложението:</h3>
                       <div className="flex flex-wrap gap-4 ml-5 mt-3">
                         <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center w-auto">
                           <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="h-14 w-auto" />
@@ -122,32 +122,32 @@ const Instructions = () => {
                     </div>
                     
                     <div>
-                      <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Изберете метод за регистрация:</h3>
+                      <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Изберете метод за регистрация:</h3>
                       <ul className="ml-5 space-y-2">
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span> 
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span> 
                           <span>Google акаунт (бързо и удобно)</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                           <span>Apple ID (за потребители на iOS)</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                           <span>Имейл (необходимо потвърждение)</span>
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Активирайте профила:</h3>
+                      <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Активирайте профила:</h3>
                       <ul className="ml-5 space-y-2">
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                           <span>Потвърдете регистрацията през получения имейл.</span>
                         </li>
                         <li className="flex items-start">
-                          <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                          <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                           <span>Влезте в приложението с вашия имейл и парола.</span>
                         </li>
                       </ul>
@@ -160,9 +160,9 @@ const Instructions = () => {
             {/* Section 3 - Team Creation */}
             <Card className="overflow-hidden border-0 shadow-md">
               <CardContent className="p-0">
-                <div className="bg-gradient-to-r from-[#11e7ef] to-[#11e7ef]/80 p-4 md:p-6">
+                <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                   <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                    <span className="bg-white text-[#11e7ef] w-8 h-8 flex items-center justify-center rounded-full mr-3">3</span>
+                    <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">3</span>
                     Създаване на вашия отбор
                   </h2>
                 </div>
@@ -173,19 +173,19 @@ const Instructions = () => {
                   
                   <ul className="ml-5 space-y-3">
                     <li className="flex items-center">
-                      <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">1</span>
+                      <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">1</span>
                       <span>Отворете „Отбори".</span>
                     </li>
                     <li className="flex items-center">
-                      <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">2</span>
+                      <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">2</span>
                       <span>Натиснете „+" (горен десен ъгъл).</span>
                     </li>
                     <li className="flex items-center">
-                      <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">3</span>
+                      <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">3</span>
                       <span>Попълнете име, държава, град и добавете снимка.</span>
                     </li>
                     <li className="flex items-center">
-                      <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">4</span>
+                      <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">4</span>
                       <span>Натиснете „Запази".</span>
                     </li>
                   </ul>
@@ -196,9 +196,9 @@ const Instructions = () => {
             {/* Section 4 - Player Management */}
             <Card className="overflow-hidden border-0 shadow-md">
               <CardContent className="p-0">
-                <div className="bg-gradient-to-r from-[#11e7ef] to-[#11e7ef]/80 p-4 md:p-6">
+                <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                   <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                    <span className="bg-white text-[#11e7ef] w-8 h-8 flex items-center justify-center rounded-full mr-3">4</span>
+                    <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">4</span>
                     Добавяне и управление на играчи
                   </h2>
                 </div>
@@ -212,43 +212,43 @@ const Instructions = () => {
                     
                     <div className="space-y-5">
                       <div>
-                        <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Добавете играчи чрез:</h3>
+                        <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Добавете играчи чрез:</h3>
                         <ul className="ml-5 space-y-2">
                           <li className="flex items-start">
-                            <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span> 
+                            <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span> 
                             <span>SureGo ID (директно и бързо)</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                            <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                             <span>Телефонен номер (лесно свързване)</span>
                           </li>
                           <li className="flex items-start">
-                            <span className="text-[#11e7ef] mr-2 mt-1">{'\u2022'}</span>
+                            <span className="text-warmyellow-500 mr-2 mt-1">{'\u2022'}</span>
                             <span>Контакти от телефона (автоматично и удобно)</span>
                           </li>
                         </ul>
                       </div>
                       
                       <div>
-                        <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Конфигурирайте роли и позиции на играчите:</h3>
+                        <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Конфигурирайте роли и позиции на играчите:</h3>
                         <div className="grid md:grid-cols-2 gap-4 ml-5">
                           <div>
                             <p className="font-medium mb-2">Роли:</p>
                             <ul className="space-y-1">
                               <li className="flex items-center">
-                                <span className="text-[#11e7ef] mr-2">{'\u2022'}</span>
+                                <span className="text-warmyellow-500 mr-2">{'\u2022'}</span>
                                 <span>Основен</span>
                               </li>
                               <li className="flex items-center">
-                                <span className="text-[#11e7ef] mr-2">{'\u2022'}</span>
+                                <span className="text-warmyellow-500 mr-2">{'\u2022'}</span>
                                 <span>Резервен</span>
                               </li>
                               <li className="flex items-center">
-                                <span className="text-[#11e7ef] mr-2">{'\u2022'}</span>
+                                <span className="text-warmyellow-500 mr-2">{'\u2022'}</span>
                                 <span>Гост</span>
                               </li>
                               <li className="flex items-center">
-                                <span className="text-[#11e7ef] mr-2">{'\u2022'}</span>
+                                <span className="text-warmyellow-500 mr-2">{'\u2022'}</span>
                                 <span>Наблюдател</span>
                               </li>
                             </ul>
@@ -257,19 +257,19 @@ const Instructions = () => {
                             <p className="font-medium mb-2">Позиции:</p>
                             <ul className="space-y-1">
                               <li className="flex items-center">
-                                <span className="text-[#11e7ef] mr-2">{'\u2022'}</span>
+                                <span className="text-warmyellow-500 mr-2">{'\u2022'}</span>
                                 <span>Вратар</span>
                               </li>
                               <li className="flex items-center">
-                                <span className="text-[#11e7ef] mr-2">{'\u2022'}</span>
+                                <span className="text-warmyellow-500 mr-2">{'\u2022'}</span>
                                 <span>Защитник</span>
                               </li>
                               <li className="flex items-center">
-                                <span className="text-[#11e7ef] mr-2">{'\u2022'}</span>
+                                <span className="text-warmyellow-500 mr-2">{'\u2022'}</span>
                                 <span>Полузащитник</span>
                               </li>
                               <li className="flex items-center">
-                                <span className="text-[#11e7ef] mr-2">{'\u2022'}</span>
+                                <span className="text-warmyellow-500 mr-2">{'\u2022'}</span>
                                 <span>Нападател</span>
                               </li>
                             </ul>
@@ -278,7 +278,7 @@ const Instructions = () => {
                       </div>
                       
                       <div>
-                        <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Предимства:</h3>
+                        <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Предимства:</h3>
                         <ul className="ml-5 space-y-2">
                           <li className="flex items-start">
                             <Check className="text-green-500 mr-2 mt-0.5" size={18} />
@@ -303,9 +303,9 @@ const Instructions = () => {
             {/* Section 5 - Event Creation */}
             <Card className="overflow-hidden border-0 shadow-md">
               <CardContent className="p-0">
-                <div className="bg-gradient-to-r from-[#11e7ef] to-[#11e7ef]/80 p-4 md:p-6">
+                <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                   <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                    <span className="bg-white text-[#11e7ef] w-8 h-8 flex items-center justify-center rounded-full mr-3">5</span>
+                    <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">5</span>
                     Създаване на събитие
                   </h2>
                 </div>
@@ -318,50 +318,50 @@ const Instructions = () => {
                     <div>
                       <ul className="ml-0 space-y-3">
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">1</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">1</span>
                           <span>Изберете вашия отбор {'->'}  „Събития" {'->'}  „+".</span>
                         </li>
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">2</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">2</span>
                           <span>Попълнете име, описание и локация.</span>
                         </li>
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">3</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">3</span>
                           <span>Задайте дата, час, продължителност и повторяемост.</span>
                         </li>
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">4</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">4</span>
                           <span>Определете типа мач (един или два отбора).</span>
                         </li>
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">5</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">5</span>
                           <span>Настройте времеви интервали за покани (основни, резерви, гости).</span>
                         </li>
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">6</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">6</span>
                           <span>Посочете цена за участие или изберете безплатно събитие.</span>
                         </li>
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">7</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">7</span>
                           <span>Натиснете „Създай събитие".</span>
                         </li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Автоматични функции:</h3>
-                      <div className="bg-blue-50 p-4 rounded-md ml-0">
+                      <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Автоматични функции:</h3>
+                      <div className="bg-warmyellow-50 p-4 rounded-md ml-0">
                         <ul className="ml-2 space-y-2">
                           <li className="flex items-start">
-                            <Calendar className="text-[#11e7ef] mr-3 mt-0.5" size={18} />
+                            <Calendar className="text-warmyellow-500 mr-3 mt-0.5" size={18} />
                             <span>Изпращане на покани.</span>
                           </li>
                           <li className="flex items-start">
-                            <Users className="text-[#11e7ef] mr-3 mt-0.5" size={18} />
+                            <Users className="text-warmyellow-500 mr-3 mt-0.5" size={18} />
                             <span>Проследяване на потвържденията.</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-[#11e7ef] mr-3 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-3 mt-0.5" size={18} />
                             <span>Балансиране на отборите.</span>
                           </li>
                         </ul>
@@ -375,9 +375,9 @@ const Instructions = () => {
             {/* Section 6 - Payment Management */}
             <Card className="overflow-hidden border-0 shadow-md">
               <CardContent className="p-0">
-                <div className="bg-gradient-to-r from-[#11e7ef] to-[#11e7ef]/80 p-4 md:p-6">
+                <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                   <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                    <span className="bg-white text-[#11e7ef] w-8 h-8 flex items-center justify-center rounded-full mr-3">6</span>
+                    <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">6</span>
                     Управление на плащанията
                   </h2>
                 </div>
@@ -390,34 +390,34 @@ const Instructions = () => {
                     <div>
                       <ol className="ml-0 space-y-3">
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">1</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">1</span>
                           <span>Изберете събитие и натиснете "$".</span>
                         </li>
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">2</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">2</span>
                           <span>Управлявайте плащанията на играчите (добавяйте или намалявайте суми).</span>
                         </li>
                         <li className="flex items-center">
-                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-[#11e7ef] font-semibold mr-3">3</span>
+                          <span className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">3</span>
                           <span>Завършете процеса с потвърждение.</span>
                         </li>
                       </ol>
                     </div>
                     
                     <div>
-                      <h3 className="font-bold text-lg mb-3 text-[#11e7ef]">Ключови предимства:</h3>
-                      <div className="bg-green-50 p-4 rounded-md">
+                      <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Ключови предимства:</h3>
+                      <div className="bg-warmyellow-50 p-4 rounded-md">
                         <ul className="ml-2 space-y-2">
                           <li className="flex items-start">
-                            <DollarSign className="text-green-600 mr-3 mt-0.5" size={18} />
+                            <DollarSign className="text-warmyellow-600 mr-3 mt-0.5" size={18} />
                             <span>Удобно и ясно финансово управление.</span>
                           </li>
                           <li className="flex items-start">
-                            <DollarSign className="text-green-600 mr-3 mt-0.5" size={18} />
+                            <DollarSign className="text-warmyellow-600 mr-3 mt-0.5" size={18} />
                             <span>Автоматични изчисления и баланси.</span>
                           </li>
                           <li className="flex items-start">
-                            <DollarSign className="text-green-600 mr-3 mt-0.5" size={18} />
+                            <DollarSign className="text-warmyellow-600 mr-3 mt-0.5" size={18} />
                             <span>Остатъците се съхраняват автоматично за следващи събития.</span>
                           </li>
                         </ul>
