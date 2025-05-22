@@ -32,7 +32,7 @@ const Instructions = () => {
                 <CardContent className="p-0 h-full flex flex-col">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                     <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">1</span>
+                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">1</span>
                       Лесна организация на футболни срещи
                     </h2>
                   </div>
@@ -46,15 +46,15 @@ const Instructions = () => {
                         <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Мениджърът на отбора:</h3>
                         <ul className="ml-5 space-y-2">
                           <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                             <span>Създава събитие с дата и час.</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                             <span>Определя играчите (основни, резерви, гости).</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                             <span>Автоматично изпраща покани.</span>
                           </li>
                         </ul>
@@ -64,15 +64,15 @@ const Instructions = () => {
                         <h3 className="font-bold text-lg mb-3 text-warmyellow-500">SureGo автоматично:</h3>
                         <ul className="ml-5 space-y-2">
                           <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                             <span>Изпраща покани.</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                             <span>Проследява потвърждения в реално време.</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                             <span>Предоставя контрол и гъвкавост на мениджъра.</span>
                           </li>
                         </ul>
@@ -87,7 +87,7 @@ const Instructions = () => {
                 <CardContent className="p-0 h-full flex flex-col">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                     <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">2</span>
+                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">2</span>
                       Създаване на профил – бързо и удобно!
                     </h2>
                   </div>
@@ -113,15 +113,15 @@ const Instructions = () => {
                         <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Изберете метод за регистрация:</h3>
                         <ul className="ml-5 space-y-2">
                           <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                             <span>Google акаунт (бързо и удобно)</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                             <span>Apple ID (за потребители на iOS)</span>
                           </li>
                           <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                             <span>Имейл (необходимо потвърждение)</span>
                           </li>
                         </ul>
@@ -136,7 +136,7 @@ const Instructions = () => {
                 <CardContent className="p-0 h-full flex flex-col">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                     <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">3</span>
+                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">3</span>
                       Създаване на вашия отбор
                     </h2>
                   </div>
@@ -147,19 +147,19 @@ const Instructions = () => {
                     
                     <ul className="ml-5 space-y-3">
                       <li className="flex items-center">
-                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">1</div>
+                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">1</div>
                         <span>Отворете „Отбори".</span>
                       </li>
                       <li className="flex items-center">
-                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">2</div>
+                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">2</div>
                         <span>Натиснете „+" (горен десен ъгъл).</span>
                       </li>
                       <li className="flex items-center">
-                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">3</div>
+                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">3</div>
                         <span>Попълнете име, държава, град и добавете снимка.</span>
                       </li>
                       <li className="flex items-center">
-                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">4</div>
+                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">4</div>
                         <span>Натиснете „Запази".</span>
                       </li>
                     </ul>
@@ -172,7 +172,7 @@ const Instructions = () => {
                 <CardContent className="p-0 h-full flex flex-col">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                     <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">4</span>
+                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">4</span>
                       Добавяне и управление на играчи
                     </h2>
                   </div>
@@ -189,15 +189,15 @@ const Instructions = () => {
                           <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Добавете играчи чрез:</h3>
                           <ul className="ml-5 space-y-2">
                             <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                              <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                               <span>SureGo ID (директно и бързо)</span>
                             </li>
                             <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                              <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                               <span>Телефонен номер (лесно свързване)</span>
                             </li>
                             <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-2 mt-0.5" size={18} />
+                              <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
                               <span>Контакти от телефона (автоматично и удобно)</span>
                             </li>
                           </ul>
@@ -213,7 +213,7 @@ const Instructions = () => {
                 <CardContent className="p-0 h-full flex flex-col">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                     <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">5</span>
+                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">5</span>
                       Създаване на събитие
                     </h2>
                   </div>
@@ -226,15 +226,15 @@ const Instructions = () => {
                       <div>
                         <ul className="ml-0 space-y-3">
                           <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">1</div>
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">1</div>
                             <span>Изберете вашия отбор {'->'}  „Събития" {'->'}  „+".</span>
                           </li>
                           <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">2</div>
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">2</div>
                             <span>Попълнете име, описание и локация.</span>
                           </li>
                           <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">3</div>
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">3</div>
                             <span>Задайте дата, час, продължителност и повторяемост.</span>
                           </li>
                         </ul>
@@ -245,15 +245,15 @@ const Instructions = () => {
                         <div className="bg-warmyellow-50 p-4 rounded-md ml-0">
                           <ul className="ml-2 space-y-2">
                             <li className="flex items-start">
-                              <Calendar className="text-warmyellow-500 mr-3 mt-0.5" size={18} />
+                              <Calendar className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
                               <span>Изпращане на покани.</span>
                             </li>
                             <li className="flex items-start">
-                              <Users className="text-warmyellow-500 mr-3 mt-0.5" size={18} />
+                              <Users className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
                               <span>Проследяване на потвържденията.</span>
                             </li>
                             <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-3 mt-0.5" size={18} />
+                              <Check className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
                               <span>Балансиране на отборите.</span>
                             </li>
                           </ul>
@@ -269,7 +269,7 @@ const Instructions = () => {
                 <CardContent className="p-0 h-full flex flex-col">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
                     <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3">6</span>
+                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">6</span>
                       Управление на плащанията
                     </h2>
                   </div>
@@ -282,15 +282,15 @@ const Instructions = () => {
                       <div>
                         <ol className="ml-0 space-y-3">
                           <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">1</div>
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">1</div>
                             <span>Изберете събитие и натиснете "$".</span>
                           </li>
                           <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">2</div>
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">2</div>
                             <span>Управлявайте плащанията на играчите.</span>
                           </li>
                           <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3">3</div>
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">3</div>
                             <span>Завършете процеса с потвърждение.</span>
                           </li>
                         </ol>
@@ -301,15 +301,15 @@ const Instructions = () => {
                         <div className="bg-warmyellow-50 p-4 rounded-md">
                           <ul className="ml-2 space-y-2">
                             <li className="flex items-start">
-                              <DollarSign className="text-warmyellow-500 mr-3 mt-0.5" size={18} />
+                              <DollarSign className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
                               <span>Удобно и ясно финансово управление.</span>
                             </li>
                             <li className="flex items-start">
-                              <DollarSign className="text-warmyellow-500 mr-3 mt-0.5" size={18} />
+                              <DollarSign className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
                               <span>Автоматични изчисления и баланси.</span>
                             </li>
                             <li className="flex items-start">
-                              <DollarSign className="text-warmyellow-500 mr-3 mt-0.5" size={18} />
+                              <DollarSign className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
                               <span>Остатъците се съхраняват автоматично.</span>
                             </li>
                           </ul>
