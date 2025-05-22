@@ -17,7 +17,7 @@ const Instructions = () => {
         {/* Wave SVG fixed to connect with header without gap */}
         <div className="relative w-full overflow-hidden line-height-0 -mt-1">
           <svg viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-12 sm:h-16 md:h-24 bg-white">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#1EAEDB"></path>
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#12e8f0"></path>
           </svg>
         </div>
 
@@ -323,6 +323,8 @@ const Instructions = () => {
           </div>
         </div>
       </main>
+      {/* Added margin before footer */}
+      <div className="mt-16 md:mt-24"></div>
       <Footer />
     </div>
   );
