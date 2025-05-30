@@ -31,304 +31,424 @@ const Instructions = () => {
         </div>
 
         <div className="app-container px-4 sm:px-6 mt-8 md:mt-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Инструкции</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center">Инструкции</h1>
           
-          <div className="max-w-7xl mx-auto">
-            {/* Grid layout for cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-              {/* Card 1 - Easy Organization */}
-              <Card className="overflow-hidden border-0 shadow-md h-full">
-                <CardContent className="p-0 h-full flex flex-col">
-                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
-                    <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">1</span>
+          <div className="max-w-7xl mx-auto space-y-16">
+            
+            {/* Instruction 1 - Easy Organization */}
+            <div className="w-full">
+              <Card className="overflow-hidden border-0 shadow-md">
+                <CardContent className="p-0">
+                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
+                      <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">1</span>
                       Лесна организация на футболни срещи
                     </h2>
                   </div>
-                  <div className="p-6 space-y-4 flex-grow">
-                    <p className="text-gray-700">
-                      SureGo улеснява организирането на футболни мачове с приятели:
-                    </p>
-                    
-                    <div className="space-y-4">
-                      <div>
-                        <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Мениджърът на отбора:</h3>
-                        <ul className="ml-5 space-y-2">
-                          <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                            <span>Създава събитие с дата и час.</span>
-                          </li>
-                          <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                            <span>Определя играчите (основни, резерви, гости).</span>
-                          </li>
-                          <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                            <span>Автоматично изпраща покани.</span>
-                          </li>
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h3 className="font-bold text-lg mb-3 text-warmyellow-500">SureGo автоматично:</h3>
-                        <ul className="ml-5 space-y-2">
-                          <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                            <span>Изпраща покани.</span>
-                          </li>
-                          <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                            <span>Проследява потвърждения в реално време.</span>
-                          </li>
-                          <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                            <span>Предоставя контрол и гъвкавост на мениджъра.</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              {/* Card 2 - Account Creation */}
-              <Card className="overflow-hidden border-0 shadow-md h-full">
-                <CardContent className="p-0 h-full flex flex-col">
-                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
-                    <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">2</span>
-                      Създаване на профил – бързо и удобно!
-                    </h2>
-                  </div>
-                  <div className="p-6 space-y-4 flex-grow">
-                    <p className="text-gray-700">
-                      Регистрацията е лесна и ви дава незабавен достъп:
-                    </p>
-                    
-                    <div className="space-y-4">
-                      <div>
-                        <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Изтеглете приложението:</h3>
-                        <div className="flex flex-wrap gap-4 ml-5 mt-3">
-                          <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center w-auto">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="h-14 w-auto" />
-                          </a>
-                          <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center w-auto">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" className="h-14 w-auto" />
-                          </a>
-                        </div>
-                      </div>
-                      
-                      <div>
-                        <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Изберете метод за регистрация:</h3>
-                        <ul className="ml-5 space-y-2">
-                          <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                            <span>Google акаунт (бързо и удобно)</span>
-                          </li>
-                          <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                            <span>Apple ID (за потребители на iOS)</span>
-                          </li>
-                          <li className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                            <span>Имейл (необходимо потвърждение)</span>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              {/* Card 3 - Team Creation */}
-              <Card className="overflow-hidden border-0 shadow-md h-full">
-                <CardContent className="p-0 h-full flex flex-col">
-                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
-                    <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">3</span>
-                      Създаване на вашия отбор
-                    </h2>
-                  </div>
-                  <div className="p-6 space-y-4 flex-grow">
-                    <p className="text-gray-700">
-                      Създайте отбор в няколко лесни стъпки:
-                    </p>
-                    
-                    <ul className="ml-5 space-y-3">
-                      <li className="flex items-center">
-                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">1</div>
-                        <span>Отворете „Отбори".</span>
-                      </li>
-                      <li className="flex items-center">
-                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">2</div>
-                        <span>Натиснете „+" (горен десен ъгъл).</span>
-                      </li>
-                      <li className="flex items-center">
-                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">3</div>
-                        <span>Попълнете име, държава, град и добавете снимка.</span>
-                      </li>
-                      <li className="flex items-center">
-                        <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">4</div>
-                        <span>Натиснете „Запази".</span>
-                      </li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              {/* Card 4 - Player Management */}
-              <Card className="overflow-hidden border-0 shadow-md h-full">
-                <CardContent className="p-0 h-full flex flex-col">
-                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
-                    <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">4</span>
-                      Добавяне и управление на играчи
-                    </h2>
-                  </div>
-                  <div className="p-6 space-y-4 flex-grow">
-                    <p className="text-gray-700">
-                      Поддържайте отбора си организиран и готов за игра:
-                    </p>
-                    
-                    <div className="ml-0">
-                      <p className="mb-3 font-medium">Отворете „Отбори" {'->'}  Изберете вашия отбор {'->'}  „Играчи" {'->'}  „+".</p>
-                      
-                      <div className="space-y-4">
+                  <div className="p-6 md:p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                      <div className="space-y-6">
+                        <p className="text-gray-700 text-lg">
+                          SureGo улеснява организирането на футболни мачове с приятели:
+                        </p>
+                        
                         <div>
-                          <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Добавете играчи чрез:</h3>
-                          <ul className="ml-5 space-y-2">
+                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Мениджърът на отбора:</h3>
+                          <ul className="ml-5 space-y-3">
                             <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                              <span>SureGo ID (директно и бързо)</span>
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Създава събитие с дата и час.</span>
                             </li>
                             <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                              <span>Телефонен номер (лесно свързване)</span>
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Определя играчите (основни, резерви, гости).</span>
                             </li>
                             <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-2 mt-0.5 flex-shrink-0" size={18} />
-                              <span>Контакти от телефона (автоматично и удобно)</span>
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Автоматично изпраща покани.</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">SureGo автоматично:</h3>
+                          <ul className="ml-5 space-y-3">
+                            <li className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Изпраща покани.</span>
+                            </li>
+                            <li className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Проследява потвърждения в реално време.</span>
+                            </li>
+                            <li className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Предоставя контрол и гъвкавост на мениджъра.</span>
                             </li>
                           </ul>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              {/* Card 5 - Event Creation */}
-              <Card className="overflow-hidden border-0 shadow-md h-full">
-                <CardContent className="p-0 h-full flex flex-col">
-                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
-                    <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">5</span>
-                      Създаване на събитие
-                    </h2>
-                  </div>
-                  <div className="p-6 space-y-4 flex-grow">
-                    <p className="text-gray-700">
-                      Бързо и ефективно организирайте футболни събития:
-                    </p>
-                    
-                    <div className="space-y-4">
-                      <div>
-                        <ul className="ml-0 space-y-3">
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">1</div>
-                            <span>Изберете вашия отбор {'->'}  „Събития" {'->'}  „+".</span>
-                          </li>
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">2</div>
-                            <span>Попълнете име, описание и локация.</span>
-                          </li>
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">3</div>
-                            <span>Задайте дата, час, продължителност и повторяемост.</span>
-                          </li>
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Автоматични функции:</h3>
-                        <div className="bg-warmyellow-50 p-4 rounded-md ml-0">
-                          <ul className="ml-2 space-y-2">
-                            <li className="flex items-start">
-                              <Calendar className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
-                              <span>Изпращане на покани.</span>
-                            </li>
-                            <li className="flex items-start">
-                              <Users className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
-                              <span>Проследяване на потвържденията.</span>
-                            </li>
-                            <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
-                              <span>Балансиране на отборите.</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              {/* Card 6 - Payment Management */}
-              <Card className="overflow-hidden border-0 shadow-md h-full">
-                <CardContent className="p-0 h-full flex flex-col">
-                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-4 md:p-6">
-                    <h2 className="text-xl md:text-2xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-8 h-8 flex items-center justify-center rounded-full mr-3 flex-shrink-0">6</span>
-                      Управление на плащанията
-                    </h2>
-                  </div>
-                  <div className="p-6 space-y-4 flex-grow">
-                    <p className="text-gray-700">
-                      Лесно и прозрачно финансово управление на вашите събития:
-                    </p>
-                    
-                    <div className="space-y-4">
-                      <div>
-                        <ol className="ml-0 space-y-3">
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">1</div>
-                            <span>Изберете събитие и натиснете "$".</span>
-                          </li>
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">2</div>
-                            <span>Управлявайте плащанията на играчите.</span>
-                          </li>
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-7 h-7 text-warmyellow-500 font-semibold mr-3 flex-shrink-0">3</div>
-                            <span>Завършете процеса с потвърждение.</span>
-                          </li>
-                        </ol>
-                      </div>
-                      
-                      <div>
-                        <h3 className="font-bold text-lg mb-3 text-warmyellow-500">Ключови предимства:</h3>
-                        <div className="bg-warmyellow-50 p-4 rounded-md">
-                          <ul className="ml-2 space-y-2">
-                            <li className="flex items-start">
-                              <DollarSign className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
-                              <span>Удобно и ясно финансово управление.</span>
-                            </li>
-                            <li className="flex items-start">
-                              <DollarSign className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
-                              <span>Автоматични изчисления и баланси.</span>
-                            </li>
-                            <li className="flex items-start">
-                              <DollarSign className="text-warmyellow-500 mr-3 mt-0.5 flex-shrink-0" size={18} />
-                              <span>Остатъците се съхраняват автоматично.</span>
-                            </li>
-                          </ul>
-                        </div>
+                      <div className="space-y-4">
+                        <img 
+                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
+                          alt="Screenshot 1" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
+                          alt="Screenshot 2" 
+                          className="w-full rounded-lg shadow-md"
+                        />
                       </div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
             </div>
+
+            {/* Instruction 2 - Account Creation */}
+            <div className="w-full">
+              <Card className="overflow-hidden border-0 shadow-md">
+                <CardContent className="p-0">
+                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
+                      <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">2</span>
+                      Създаване на профил – бързо и удобно!
+                    </h2>
+                  </div>
+                  <div className="p-6 md:p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                      <div className="space-y-6">
+                        <p className="text-gray-700 text-lg">
+                          Регистрацията е лесна и ви дава незабавен достъп:
+                        </p>
+                        
+                        <div>
+                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Изтеглете приложението:</h3>
+                          <div className="flex flex-wrap gap-4 ml-5 mt-3">
+                            <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center w-auto">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="h-14 w-auto" />
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center w-auto">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" className="h-14 w-auto" />
+                            </a>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Изберете метод за регистрация:</h3>
+                          <ul className="ml-5 space-y-3">
+                            <li className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Google акаунт (бързо и удобно)</span>
+                            </li>
+                            <li className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Apple ID (за потребители на iOS)</span>
+                            </li>
+                            <li className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Имейл (необходимо потвърждение)</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="space-y-4">
+                        <img 
+                          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
+                          alt="Download app screenshot" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
+                          alt="Registration screenshot" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Instruction 3 - Team Creation */}
+            <div className="w-full">
+              <Card className="overflow-hidden border-0 shadow-md">
+                <CardContent className="p-0">
+                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
+                      <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">3</span>
+                      Създаване на вашия отбор
+                    </h2>
+                  </div>
+                  <div className="p-6 md:p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                      <div className="space-y-6">
+                        <p className="text-gray-700 text-lg">
+                          Създайте отбор в няколко лесни стъпки:
+                        </p>
+                        
+                        <ul className="ml-0 space-y-4">
+                          <li className="flex items-center">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">1</div>
+                            <span className="text-lg">Отворете „Отбори".</span>
+                          </li>
+                          <li className="flex items-center">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">2</div>
+                            <span className="text-lg">Натиснете „+" (горен десен ъгъл).</span>
+                          </li>
+                          <li className="flex items-center">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">3</div>
+                            <span className="text-lg">Попълнете име, държава, град и добавете снимка.</span>
+                          </li>
+                          <li className="flex items-center">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">4</div>
+                            <span className="text-lg">Натиснете „Запази".</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="space-y-4">
+                        <img 
+                          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
+                          alt="Step 1 screenshot" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
+                          alt="Step 2 screenshot" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
+                          alt="Step 3 screenshot" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
+                          alt="Step 4 screenshot" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Instruction 4 - Player Management */}
+            <div className="w-full">
+              <Card className="overflow-hidden border-0 shadow-md">
+                <CardContent className="p-0">
+                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
+                      <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">4</span>
+                      Добавяне и управление на играчи
+                    </h2>
+                  </div>
+                  <div className="p-6 md:p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                      <div className="space-y-6">
+                        <p className="text-gray-700 text-lg">
+                          Поддържайте отбора си организиран и готов за игра:
+                        </p>
+                        
+                        <p className="mb-4 font-medium text-lg">Отворете „Отбори" {'->'}  Изберете вашия отбор {'->'}  „Играчи" {'->'}  „+".</p>
+                        
+                        <div>
+                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Добавете играчи чрез:</h3>
+                          <ul className="ml-5 space-y-3">
+                            <li className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">SureGo ID (директно и бързо)</span>
+                            </li>
+                            <li className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Телефонен номер (лесно свързване)</span>
+                            </li>
+                            <li className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                              <span className="text-lg">Контакти от телефона (автоматично и удобно)</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div className="space-y-4">
+                        <img 
+                          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
+                          alt="Player management step 1" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
+                          alt="Player management step 2" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
+                          alt="Player management step 3" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Instruction 5 - Event Creation */}
+            <div className="w-full">
+              <Card className="overflow-hidden border-0 shadow-md">
+                <CardContent className="p-0">
+                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
+                      <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">5</span>
+                      Създаване на събитие
+                    </h2>
+                  </div>
+                  <div className="p-6 md:p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                      <div className="space-y-6">
+                        <p className="text-gray-700 text-lg">
+                          Бързо и ефективно организирайте футболни събития:
+                        </p>
+                        
+                        <div>
+                          <ul className="ml-0 space-y-4">
+                            <li className="flex items-center">
+                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">1</div>
+                              <span className="text-lg">Изберете вашия отбор {'->'}  „Събития" {'->'}  „+".</span>
+                            </li>
+                            <li className="flex items-center">
+                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">2</div>
+                              <span className="text-lg">Попълнете име, описание и локация.</span>
+                            </li>
+                            <li className="flex items-center">
+                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">3</div>
+                              <span className="text-lg">Задайте дата, час, продължителност и повторяемост.</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Автоматични функции:</h3>
+                          <div className="bg-warmyellow-50 p-6 rounded-md">
+                            <ul className="ml-2 space-y-3">
+                              <li className="flex items-start">
+                                <Calendar className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                                <span className="text-lg">Изпращане на покани.</span>
+                              </li>
+                              <li className="flex items-start">
+                                <Users className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                                <span className="text-lg">Проследяване на потвържденията.</span>
+                              </li>
+                              <li className="flex items-start">
+                                <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                                <span className="text-lg">Балансиране на отборите.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="space-y-4">
+                        <img 
+                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
+                          alt="Event creation step 1" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
+                          alt="Event creation step 2" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
+                          alt="Event creation step 3" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Instruction 6 - Payment Management */}
+            <div className="w-full">
+              <Card className="overflow-hidden border-0 shadow-md">
+                <CardContent className="p-0">
+                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
+                      <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">6</span>
+                      Управление на плащанията
+                    </h2>
+                  </div>
+                  <div className="p-6 md:p-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                      <div className="space-y-6">
+                        <p className="text-gray-700 text-lg">
+                          Лесно и прозрачно финансово управление на вашите събития:
+                        </p>
+                        
+                        <div>
+                          <ol className="ml-0 space-y-4">
+                            <li className="flex items-center">
+                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">1</div>
+                              <span className="text-lg">Изберете събитие и натиснете "$".</span>
+                            </li>
+                            <li className="flex items-center">
+                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">2</div>
+                              <span className="text-lg">Управлявайте плащанията на играчите.</span>
+                            </li>
+                            <li className="flex items-center">
+                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">3</div>
+                              <span className="text-lg">Завършете процеса с потвърждение.</span>
+                            </li>
+                          </ol>
+                        </div>
+                        
+                        <div>
+                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Ключови предимства:</h3>
+                          <div className="bg-warmyellow-50 p-6 rounded-md">
+                            <ul className="ml-2 space-y-3">
+                              <li className="flex items-start">
+                                <DollarSign className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                                <span className="text-lg">Удобно и ясно финансово управление.</span>
+                              </li>
+                              <li className="flex items-start">
+                                <DollarSign className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                                <span className="text-lg">Автоматични изчисления и баланси.</span>
+                              </li>
+                              <li className="flex items-start">
+                                <DollarSign className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
+                                <span className="text-lg">Остатъците се съхраняват автоматично.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="space-y-4">
+                        <img 
+                          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
+                          alt="Payment management step 1" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
+                          alt="Payment management step 2" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                        <img 
+                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
+                          alt="Payment management step 3" 
+                          className="w-full rounded-lg shadow-md"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
           </div>
         </div>
       </main>
@@ -340,3 +460,4 @@ const Instructions = () => {
 };
 
 export default Instructions;
+
