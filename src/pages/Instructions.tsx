@@ -1,5 +1,4 @@
 
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -22,6 +21,7 @@ const Instructions = () => {
             preserveAspectRatio="none" 
             xmlns="http://www.w3.org/2000/svg" 
             className="absolute top-0 left-0 w-full h-full"
+            style={{ transform: 'translateY(-1px)' }}
           >
             <path 
               d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
@@ -33,7 +33,7 @@ const Instructions = () => {
         <div className="app-container px-4 sm:px-6 mt-8 md:mt-12">
           <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center">Инструкции</h1>
           
-          <div className="max-w-7xl mx-auto space-y-16">
+          <div className="max-w-4xl mx-auto space-y-16">
             
             {/* Instruction 1 - Easy Organization */}
             <div className="w-full">
@@ -46,7 +46,7 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div className="space-y-8">
                       <div className="space-y-6">
                         <p className="text-gray-700 text-lg">
                           SureGo улеснява организирането на футболни мачове с приятели:
@@ -88,15 +88,16 @@ const Instructions = () => {
                           </ul>
                         </div>
                       </div>
-                      <div className="space-y-4">
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <img 
                           src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                          alt="Screenshot 1" 
+                          alt="Създаване на събитие" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                          alt="Screenshot 2" 
+                          alt="Управление на играчи" 
                           className="w-full rounded-lg shadow-md"
                         />
                       </div>
@@ -117,7 +118,7 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div className="space-y-8">
                       <div className="space-y-6">
                         <p className="text-gray-700 text-lg">
                           Регистрацията е лесна и ви дава незабавен достъп:
@@ -153,15 +154,16 @@ const Instructions = () => {
                           </ul>
                         </div>
                       </div>
-                      <div className="space-y-4">
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <img 
                           src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
-                          alt="Download app screenshot" 
+                          alt="Изтегляне на приложението" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
-                          alt="Registration screenshot" 
+                          alt="Регистрация в приложението" 
                           className="w-full rounded-lg shadow-md"
                         />
                       </div>
@@ -182,7 +184,7 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div className="space-y-8">
                       <div className="space-y-6">
                         <p className="text-gray-700 text-lg">
                           Създайте отбор в няколко лесни стъпки:
@@ -207,25 +209,26 @@ const Instructions = () => {
                           </li>
                         </ul>
                       </div>
-                      <div className="space-y-4">
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <img 
                           src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
-                          alt="Step 1 screenshot" 
+                          alt="Стъпка 1: Отваряне на отбори" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                          alt="Step 2 screenshot" 
+                          alt="Стъпка 2: Натискане на плюс" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                          alt="Step 3 screenshot" 
+                          alt="Стъпка 3: Попълване на данни" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
-                          alt="Step 4 screenshot" 
+                          alt="Стъпка 4: Запазване на отбора" 
                           className="w-full rounded-lg shadow-md"
                         />
                       </div>
@@ -246,7 +249,7 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div className="space-y-8">
                       <div className="space-y-6">
                         <p className="text-gray-700 text-lg">
                           Поддържайте отбора си организиран и готов за игра:
@@ -272,20 +275,21 @@ const Instructions = () => {
                           </ul>
                         </div>
                       </div>
-                      <div className="space-y-4">
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <img 
                           src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
-                          alt="Player management step 1" 
+                          alt="Добавяне чрез SureGo ID" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
-                          alt="Player management step 2" 
+                          alt="Добавяне чрез телефон" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                          alt="Player management step 3" 
+                          alt="Добавяне от контакти" 
                           className="w-full rounded-lg shadow-md"
                         />
                       </div>
@@ -306,7 +310,7 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div className="space-y-8">
                       <div className="space-y-6">
                         <p className="text-gray-700 text-lg">
                           Бързо и ефективно организирайте футболни събития:
@@ -349,20 +353,21 @@ const Instructions = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="space-y-4">
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <img 
                           src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                          alt="Event creation step 1" 
+                          alt="Стъпка 1: Отваряне на събития" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
-                          alt="Event creation step 2" 
+                          alt="Стъпка 2: Попълване на детайли" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
-                          alt="Event creation step 3" 
+                          alt="Стъпка 3: Настройка на дата и час" 
                           className="w-full rounded-lg shadow-md"
                         />
                       </div>
@@ -383,7 +388,7 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                    <div className="space-y-8">
                       <div className="space-y-6">
                         <p className="text-gray-700 text-lg">
                           Лесно и прозрачно финансово управление на вашите събития:
@@ -426,20 +431,21 @@ const Instructions = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="space-y-4">
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <img 
                           src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
-                          alt="Payment management step 1" 
+                          alt="Стъпка 1: Избор на събитие" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                          alt="Payment management step 2" 
+                          alt="Стъпка 2: Управление на плащания" 
                           className="w-full rounded-lg shadow-md"
                         />
                         <img 
                           src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                          alt="Payment management step 3" 
+                          alt="Стъпка 3: Потвърждение" 
                           className="w-full rounded-lg shadow-md"
                         />
                       </div>
@@ -460,4 +466,3 @@ const Instructions = () => {
 };
 
 export default Instructions;
-
