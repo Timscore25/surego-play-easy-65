@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -52,16 +51,6 @@ const Instructions = () => {
                       <div className="space-y-4">
                         <h3 className="font-bold text-xl text-warmyellow-500">Свалете приложението</h3>
                         <p className="text-gray-700">Достъпно е в:</p>
-                        <div className="space-y-2">
-                          <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm">App Store (за iPhone)</a>
-                          </div>
-                          <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm">Google Play (за Android)</a>
-                          </div>
-                        </div>
                         
                         {/* App Store and Google Play Badges */}
                         <div className="space-y-3 pt-4">
