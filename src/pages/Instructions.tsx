@@ -32,9 +32,9 @@ const Instructions = () => {
         <div className="app-container px-4 sm:px-6 mt-8 md:mt-12">
           <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center">Инструкции</h1>
           
-          <div className="max-w-4xl mx-auto space-y-16">
+          <div className="max-w-7xl mx-auto space-y-16">
             
-            {/* Instruction 1 - Profile Creation */}
+            {/* Instruction 1 - Profile Creation - Horizontal Layout */}
             <div className="w-full">
               <Card className="overflow-hidden border-0 shadow-md">
                 <CardContent className="p-0">
@@ -45,151 +45,108 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="space-y-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       
-                      {/* Step 1: Download App */}
-                      <div>
-                        <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Свалете приложението</h3>
-                        <p className="text-gray-700 text-lg mb-4">Достъпно е в:</p>
-                        <div className="space-y-3 mb-6">
+                      {/* Column 1: Download App */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Свалете приложението</h3>
+                        <p className="text-gray-700">Достъпно е в:</p>
+                        <div className="space-y-2">
                           <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-3 flex-shrink-0" size={20} />
-                            <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:underline">App Store (за iPhone)</a>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm">App Store (за iPhone)</a>
                           </div>
                           <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-3 flex-shrink-0" size={20} />
-                            <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:underline">Google Play (за Android)</a>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm">Google Play (за Android)</a>
                           </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          <img 
-                            src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=400&fit=crop" 
-                            alt="Свалете приложението от App Store" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                          <img 
-                            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                            alt="Свалете приложението от Google Play" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                        </div>
+                        <img 
+                          src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop" 
+                          alt="Свалете приложението" 
+                          className="w-full rounded-lg shadow-md"
+                        />
                       </div>
 
-                      {/* Step 2: Choose Registration Method */}
-                      <div>
-                        <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Изберете начин за регистрация</h3>
-                        <p className="text-gray-700 text-lg mb-4">Можете да се регистрирате чрез:</p>
-                        <div className="space-y-3 mb-6">
+                      {/* Column 2: Choose Registration Method */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Изберете начин за регистрация</h3>
+                        <p className="text-gray-700">Можете да се регистрирате чрез:</p>
+                        <div className="space-y-2">
                           <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-3 flex-shrink-0" size={20} />
-                            <span className="text-lg">Google акаунт</span>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span className="text-sm">Google акаунт</span>
                           </div>
                           <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-3 flex-shrink-0" size={20} />
-                            <span className="text-lg">Apple ID</span>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span className="text-sm">Apple ID</span>
                           </div>
                           <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-3 flex-shrink-0" size={20} />
-                            <span className="text-lg">Имейл (изберете „Създай профил")</span>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span className="text-sm">Имейл (изберете „Създай профил")</span>
                           </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                          <img 
-                            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
-                            alt="Регистрация с Google акаунт" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                          <img 
-                            src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&h=400&fit=crop" 
-                            alt="Регистрация с Apple ID" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                          <img 
-                            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" 
-                            alt="Регистрация с имейл" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                        </div>
+                        <img 
+                          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop" 
+                          alt="Изберете начин за регистрация" 
+                          className="w-full rounded-lg shadow-md"
+                        />
                       </div>
 
-                      {/* Step 3: Email Registration Process */}
-                      <div>
-                        <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Ако сте избрали имейл регистрация:</h3>
-                        <div className="space-y-3 mb-6">
-                          <div className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">1</div>
-                            <span className="text-lg">Въведете вашия имейл и парола</span>
+                      {/* Column 3: Email Registration Process */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Ако сте избрали имейл регистрация:</h3>
+                        <div className="space-y-2">
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
+                            <span className="text-sm">Въведете вашия имейл и парола</span>
                           </div>
-                          <div className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">2</div>
-                            <span className="text-lg">Натиснете „Създай профил"</span>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
+                            <span className="text-sm">Натиснете „Създай профил"</span>
                           </div>
-                          <div className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">3</div>
-                            <span className="text-lg">Проверете имейла си за потвърждаващ линк</span>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
+                            <span className="text-sm">Проверете имейла си за потвърждаващ линк</span>
                           </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                          <img 
-                            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
-                            alt="Въведете имейл и парола" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                          <img 
-                            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop" 
-                            alt="Натиснете Създай профил" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                          <img 
-                            src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop" 
-                            alt="Проверете имейла за потвърждение" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                        </div>
+                        <img 
+                          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop" 
+                          alt="Имейл регистрация" 
+                          className="w-full rounded-lg shadow-md"
+                        />
                       </div>
 
-                      {/* Step 4: Activate Profile */}
-                      <div>
-                        <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Активирайте профила си</h3>
-                        <div className="space-y-3 mb-6">
-                          <div className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">1</div>
-                            <span className="text-lg">Отворете имейла и кликнете върху линка за потвърждение</span>
+                      {/* Column 4: Activate Profile */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Активирайте профила си</h3>
+                        <div className="space-y-2">
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
+                            <span className="text-sm">Отворете имейла и кликнете върху линка за потвърждение</span>
                           </div>
-                          <div className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">2</div>
-                            <span className="text-lg">Върнете се в приложението и изберете „Вход с имейл"</span>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
+                            <span className="text-sm">Върнете се в приложението и изберете „Вход с имейл"</span>
                           </div>
-                          <div className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">3</div>
-                            <span className="text-lg">Въведете имейл и парола – и готово!</span>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
+                            <span className="text-sm">Въведете имейл и парола – и готово!</span>
                           </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                          <img 
-                            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                            alt="Отворете имейла за потвърждение" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                          <img 
-                            src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&h=400&fit=crop" 
-                            alt="Върнете се в приложението" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                          <img 
-                            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                            alt="Въведете данните за вход" 
-                            className="w-full rounded-lg shadow-md"
-                          />
-                        </div>
+                        <img 
+                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop" 
+                          alt="Активирайте профила си" 
+                          className="w-full rounded-lg shadow-md"
+                        />
                       </div>
+                    </div>
 
-                      {/* Success Message */}
-                      <div className="bg-warmyellow-50 p-6 rounded-md">
-                        <p className="text-lg font-medium text-warmyellow-700 text-center">
-                          Вече имате активен профил и сте готови да започнете да използвате SureGo!
-                        </p>
-                      </div>
+                    {/* Success Message */}
+                    <div className="bg-warmyellow-50 p-6 rounded-md mt-8">
+                      <p className="text-lg font-medium text-warmyellow-700 text-center">
+                        Вече имате активен профил и сте готови да започнете да използвате SureGo!
+                      </p>
                     </div>
                   </div>
                 </CardContent>
