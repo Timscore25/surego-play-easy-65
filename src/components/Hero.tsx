@@ -31,11 +31,11 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 -translate-y-4 scale-110 bg-gradient-to-b from-[#ffc100] to-[#ffc100] rounded-[3rem] transform rotate-6"></div>
+              <div className="absolute inset-0 -translate-y-3 scale-95 bg-gradient-to-b from-[#ffc100] to-[#ffc100] rounded-[3rem] transform rotate-6"></div>
               <img 
                 alt="SureGo App Screenshot" 
                 className="relative z-10 w-72 sm:w-80 md:w-96 lg:w-[28rem] h-auto rounded-[2.5rem]" 
-                src="/lovable-uploads/17766a79-2e88-44e3-9903-80404c181c1b.png" 
+                src="/lovable-uploads/5abce6fb-d576-4966-8d96-b538774bd209.png" 
               />
             </div>
           </div>
