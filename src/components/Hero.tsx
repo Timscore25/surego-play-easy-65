@@ -35,7 +35,7 @@ const Hero = () => {
               <img 
                 alt="SureGo App Screenshot" 
                 className="relative z-10 w-72 sm:w-80 md:w-96 lg:w-[28rem] h-auto rounded-[2.5rem]" 
-                src="/lovable-uploads/d35149cf-ad77-43fb-a4b1-db00ec745eda.png" 
+                src="/lovable-uploads/17766a79-2e88-44e3-9903-80404c181c1b.png" 
               />
             </div>
           </div>
