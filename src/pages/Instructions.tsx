@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -90,6 +89,15 @@ const Instructions = () => {
                             <span className="text-sm">Имейл (изберете „Създай профил")</span>
                           </div>
                         </div>
+                        
+                        {/* Mobile Screenshot - Below this section */}
+                        <div className="mt-4 flex justify-center">
+                          <img 
+                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            alt="SureGo Registration Screenshot" 
+                            className="max-w-full h-auto rounded-lg max-h-48"
+                          />
+                        </div>
                       </div>
 
                       {/* Column 3: Email Registration Process */}
@@ -109,6 +117,15 @@ const Instructions = () => {
                             <span className="text-sm">Проверете имейла си за потвърждаващ линк</span>
                           </div>
                         </div>
+                        
+                        {/* Mobile Screenshot - Below this section */}
+                        <div className="mt-4 flex justify-center">
+                          <img 
+                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            alt="SureGo Email Registration Screenshot" 
+                            className="max-w-full h-auto rounded-lg max-h-48"
+                          />
+                        </div>
                       </div>
 
                       {/* Column 4: Activate Profile */}
@@ -127,6 +144,15 @@ const Instructions = () => {
                             <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
                             <span className="text-sm">Въведете имейл и парола – и готово!</span>
                           </div>
+                        </div>
+                        
+                        {/* Mobile Screenshot - Below this section */}
+                        <div className="mt-4 flex justify-center">
+                          <img 
+                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            alt="SureGo Profile Activation Screenshot" 
+                            className="max-w-full h-auto rounded-lg max-h-48"
+                          />
                         </div>
                       </div>
                     </div>
