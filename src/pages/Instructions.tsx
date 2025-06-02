@@ -89,11 +89,6 @@ const Instructions = () => {
                             <span className="text-sm">Имейл (изберете „Създай профил")</span>
                           </div>
                         </div>
-                        <img 
-                          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop" 
-                          alt="Изберете начин за регистрация" 
-                          className="w-full rounded-lg shadow-md"
-                        />
                       </div>
 
                       {/* Column 3: Email Registration Process */}
@@ -113,11 +108,6 @@ const Instructions = () => {
                             <span className="text-sm">Проверете имейла си за потвърждаващ линк</span>
                           </div>
                         </div>
-                        <img 
-                          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop" 
-                          alt="Имейл регистрация" 
-                          className="w-full rounded-lg shadow-md"
-                        />
                       </div>
 
                       {/* Column 4: Activate Profile */}
@@ -137,11 +127,6 @@ const Instructions = () => {
                             <span className="text-sm">Въведете имейл и парола – и готово!</span>
                           </div>
                         </div>
-                        <img 
-                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop" 
-                          alt="Активирайте профила си" 
-                          className="w-full rounded-lg shadow-md"
-                        />
                       </div>
                     </div>
 
