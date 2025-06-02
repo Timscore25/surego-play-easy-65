@@ -141,66 +141,70 @@ const Instructions = () => {
               </Card>
             </div>
 
-            {/* Instruction 2 - Account Creation */}
+            {/* Instruction 2 - Team Creation - Horizontal Layout */}
             <div className="w-full">
               <Card className="overflow-hidden border-0 shadow-md">
                 <CardContent className="p-0">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">2</span>
-                      Създаване на профил – бързо и удобно!
+                      Създайте своя отбор
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="space-y-8">
-                      <div className="space-y-6">
-                        <p className="text-gray-700 text-lg">
-                          Регистрацията е лесна и ви дава незабавен достъп:
-                        </p>
-                        
-                        <div>
-                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Изтеглете приложението:</h3>
-                          <div className="flex flex-wrap gap-4 ml-5 mt-3">
-                            <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center w-auto">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store" className="h-14 w-auto" />
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="inline-flex justify-center w-auto">
-                              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" className="h-14 w-auto" />
-                            </a>
-                          </div>
-                        </div>
-                        
-                        <div>
-                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Изберете метод за регистрация:</h3>
-                          <ul className="ml-5 space-y-3">
-                            <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                              <span className="text-lg">Google акаунт (бързо и удобно)</span>
-                            </li>
-                            <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                              <span className="text-lg">Apple ID (за потребители на iOS)</span>
-                            </li>
-                            <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                              <span className="text-lg">Имейл (необходимо потвърждение)</span>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-6 gap-8">
                       
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Column 1: Open Teams */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Отворете раздела</h3>
+                        <div className="flex items-start">
+                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
+                          <span className="text-sm">Отворете раздела „Отбори"</span>
+                        </div>
+                      </div>
+
+                      {/* Column 2: Press Plus */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Натиснете „+"</h3>
+                        <div className="flex items-start">
+                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
+                          <span className="text-sm">Натиснете „+" (в горния десен ъгъл)</span>
+                        </div>
+                      </div>
+
+                      {/* Column 3: Fill Information */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Попълнете данни</h3>
+                        <div className="flex items-start">
+                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
+                          <span className="text-sm">Попълнете име, държава, град и добавете снимка</span>
+                        </div>
+                      </div>
+
+                      {/* Column 4: Save */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Запазете</h3>
+                        <div className="flex items-start">
+                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">4</div>
+                          <span className="text-sm">Натиснете „Запази" – и готово!</span>
+                        </div>
+                      </div>
+
+                      {/* Column 5: Mobile Screenshot */}
+                      <div className="lg:col-span-2 flex justify-center items-center">
                         <img 
-                          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
-                          alt="Изтегляне на приложението" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
-                          alt="Регистрация в приложението" 
-                          className="w-full rounded-lg shadow-md"
+                          src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                          alt="SureGo Teams Mobile App Screenshot" 
+                          className="max-w-full h-auto rounded-lg shadow-lg max-h-96"
                         />
                       </div>
+                    </div>
+
+                    {/* Success Message */}
+                    <div className="bg-warmyellow-50 p-6 rounded-md mt-8">
+                      <p className="text-lg font-medium text-warmyellow-700 text-center">
+                        Вече сте готови да организирате мачовете си без главоболия!
+                      </p>
                     </div>
                   </div>
                 </CardContent>
