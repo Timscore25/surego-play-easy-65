@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -61,11 +62,24 @@ const Instructions = () => {
                             <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm">Google Play (за Android)</a>
                           </div>
                         </div>
-                        <img 
-                          src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop" 
-                          alt="Свалете приложението" 
-                          className="w-full rounded-lg shadow-md"
-                        />
+                        
+                        {/* App Store and Google Play Badges */}
+                        <div className="space-y-3 pt-4">
+                          <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="block">
+                            <img 
+                              src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
+                              alt="Download on the App Store" 
+                              className="h-12 w-auto"
+                            />
+                          </a>
+                          <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="block">
+                            <img 
+                              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                              alt="Get it on Google Play" 
+                              className="h-12 w-auto"
+                            />
+                          </a>
+                        </div>
                       </div>
 
                       {/* Column 2: Choose Registration Method */}
