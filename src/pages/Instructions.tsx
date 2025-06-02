@@ -171,14 +171,6 @@ const Instructions = () => {
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
                           <span className="text-sm">Натиснете „+" (в горния десен ъгъл)</span>
                         </div>
-                        {/* Mobile Screenshot - Below Натиснете „+" */}
-                        <div className="mt-4 flex justify-center">
-                          <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                            alt="SureGo Teams Mobile App Screenshot" 
-                            className="max-w-full h-auto rounded-lg max-h-64"
-                          />
-                        </div>
                       </div>
 
                       {/* Column 3: Fill Information */}
@@ -187,14 +179,6 @@ const Instructions = () => {
                         <div className="flex items-start">
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
                           <span className="text-sm">Попълнете име, държава, град и добавете снимка</span>
-                        </div>
-                        {/* Mobile Screenshot - Below Попълнете данни */}
-                        <div className="mt-4 flex justify-center">
-                          <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                            alt="SureGo Teams Fill Data Screenshot" 
-                            className="max-w-full h-auto rounded-lg max-h-64"
-                          />
                         </div>
                       </div>
 
@@ -205,14 +189,31 @@ const Instructions = () => {
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">4</div>
                           <span className="text-sm">Натиснете „Запази" – и готово!</span>
                         </div>
-                        {/* Mobile Screenshot - Below Запазете */}
-                        <div className="mt-4 flex justify-center">
-                          <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                            alt="SureGo Teams Save Screenshot" 
-                            className="max-w-full h-auto rounded-lg max-h-64"
-                          />
-                        </div>
+                      </div>
+                    </div>
+
+                    {/* Mobile Screenshots - All on the same line */}
+                    <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div className="flex justify-center">
+                        <img 
+                          src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                          alt="SureGo Teams Mobile App Screenshot" 
+                          className="max-w-full h-auto rounded-lg max-h-64"
+                        />
+                      </div>
+                      <div className="flex justify-center">
+                        <img 
+                          src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                          alt="SureGo Teams Fill Data Screenshot" 
+                          className="max-w-full h-auto rounded-lg max-h-64"
+                        />
+                      </div>
+                      <div className="flex justify-center">
+                        <img 
+                          src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                          alt="SureGo Teams Save Screenshot" 
+                          className="max-w-full h-auto rounded-lg max-h-64"
+                        />
                       </div>
                     </div>
 
