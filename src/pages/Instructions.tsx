@@ -153,7 +153,7 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       
                       {/* Column 1: Open Teams */}
                       <div className="space-y-4">
@@ -173,16 +173,7 @@ const Instructions = () => {
                         </div>
                       </div>
 
-                      {/* Column 3: Mobile Screenshot */}
-                      <div className="flex justify-center items-center">
-                        <img 
-                          src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                          alt="SureGo Teams Mobile App Screenshot" 
-                          className="max-w-full h-auto rounded-lg shadow-lg max-h-96"
-                        />
-                      </div>
-
-                      {/* Column 4: Fill Information */}
+                      {/* Column 3: Fill Information */}
                       <div className="space-y-4">
                         <h3 className="font-bold text-xl text-warmyellow-500">Попълнете данни</h3>
                         <div className="flex items-start">
@@ -191,13 +182,24 @@ const Instructions = () => {
                         </div>
                       </div>
 
-                      {/* Column 5: Save */}
+                      {/* Column 4: Save */}
                       <div className="space-y-4">
                         <h3 className="font-bold text-xl text-warmyellow-500">Запазете</h3>
                         <div className="flex items-start">
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">4</div>
                           <span className="text-sm">Натиснете „Запази" – и готово!</span>
                         </div>
+                      </div>
+                    </div>
+
+                    {/* Mobile Screenshot - Below the instructions */}
+                    <div className="mt-12 flex justify-center">
+                      <div className="bg-white p-4 rounded-lg shadow-lg border border-gray-200">
+                        <img 
+                          src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                          alt="SureGo Teams Mobile App Screenshot" 
+                          className="max-w-full h-auto rounded-lg max-h-96"
+                        />
                       </div>
                     </div>
 
