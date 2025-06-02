@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -194,13 +193,11 @@ const Instructions = () => {
 
                     {/* Mobile Screenshot - Below the instructions */}
                     <div className="mt-12 flex justify-center">
-                      <div className="bg-white p-4 rounded-lg shadow-lg border border-gray-200">
-                        <img 
-                          src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                          alt="SureGo Teams Mobile App Screenshot" 
-                          className="max-w-full h-auto rounded-lg max-h-96"
-                        />
-                      </div>
+                      <img 
+                        src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                        alt="SureGo Teams Mobile App Screenshot" 
+                        className="max-w-full h-auto rounded-lg max-h-96"
+                      />
                     </div>
 
                     {/* Success Message */}
