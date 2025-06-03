@@ -1,5 +1,3 @@
-
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -15,8 +13,8 @@ const Instructions = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        {/* Wave SVG - positioned directly under header with no gap */}
-        <div className="relative w-full h-16 md:h-24 overflow-hidden">
+        {/* Wave SVG - positioned at the bottom of the header */}
+        <div className="relative w-full h-16 md:h-24 overflow-hidden mt-16 md:mt-20 -mb-1">
           <svg 
             viewBox="0 0 1200 120" 
             preserveAspectRatio="none" 
@@ -107,15 +105,15 @@ const Instructions = () => {
                         <div className="space-y-2">
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Въведете вашия имейл и парола</span>
+                            <span>Въведете вашия имейл и парола</span>
                           </div>
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Натиснете „Създай профил"</span>
+                            <span>Натиснете „Създай профил"</span>
                           </div>
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Проверете имейла си за потвърждаващ линк</span>
+                            <span>Проверете имейла си за потвърждаващ линк</span>
                           </div>
                         </div>
                         
