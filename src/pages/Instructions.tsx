@@ -1,4 +1,5 @@
 
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -13,9 +14,9 @@ const Instructions = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="pt-20 md:pt-24">
-        {/* Wave SVG - properly positioned with margin for header */}
-        <div className="relative w-full h-16 md:h-24 overflow-hidden">
+      <main>
+        {/* Wave SVG - positioned directly under header with no gap */}
+        <div className="relative w-full h-16 md:h-24 overflow-hidden mt-16 md:mt-20">
           <svg 
             viewBox="0 0 1200 120" 
             preserveAspectRatio="none" 
