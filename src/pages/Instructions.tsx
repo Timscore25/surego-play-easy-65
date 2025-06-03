@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Check, Users, DollarSign } from "lucide-react";
+import { ArrowRight, Calendar, Check, Users, DollarSign, Shield, Zap, Settings, Eye } from "lucide-react";
 
 const Instructions = () => {
   const { language } = useLanguage();
@@ -265,134 +265,224 @@ const Instructions = () => {
               </Card>
             </div>
 
-            {/* Instruction 3 - Profile Creation */}
+            {/* Instruction 3 - Player Management */}
             <div className="w-full">
               <Card className="overflow-hidden border-0 shadow-md">
                 <CardContent className="p-0">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">3</span>
-                      Създаване на профил в SureGo – бързо и лесно!
+                      Добавяне и настройка на играчи в отбора
                     </h2>
+                    <p className="text-white/90 text-lg">Вече имате създаден отбор - нека го организираме перфектно!</p>
                   </div>
-                  <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                  <div className="p-6 md:p-8 space-y-8">
+                    
+                    {/* Section 1: Access Players Section */}
+                    <div className="border-l-4 border-warmyellow-400 pl-6">
+                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                        1. Достъп до секцията за играчи:
+                      </h3>
+                      <div className="space-y-2">
+                        <div className="flex items-center">
+                          <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Отворете раздела „Отбори"</span>
+                        </div>
+                        <div className="flex items-center">
+                          <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Изберете вашия отбор</span>
+                        </div>
+                        <div className="flex items-center">
+                          <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Кликнете върху „Играчи"</span>
+                        </div>
+                      </div>
                       
-                      {/* Column 1: Download App */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Свалете приложението</h3>
-                        <p className="text-gray-700">Достъпно е в:</p>
-                        <div className="space-y-2">
-                          <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">[App Store] (за iPhone)</span>
-                          </div>
-                          <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">[Google Play] (за Android)</span>
+                      {/* Screenshot */}
+                      <div className="mt-4 flex justify-center">
+                        <img 
+                          src="/lovable-uploads/88a5450c-bbf4-4fdb-ab1a-5cb9d1f6eeff.png" 
+                          alt="Достъп до играчи" 
+                          className="max-w-full h-auto rounded-lg max-h-64 shadow-md"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Section 2: Adding New Player */}
+                    <div className="border-l-4 border-warmyellow-400 pl-6">
+                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                        2. Добавяне на нов играч:
+                      </h3>
+                      <div className="space-y-3">
+                        <div className="flex items-center">
+                          <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Натиснете „+" (в горния десен ъгъл)</span>
+                        </div>
+                        <div className="ml-6">
+                          <p className="font-medium mb-2">Изберете удобен за вас метод:</p>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <Users className="text-blue-500 mr-2 flex-shrink-0" size={16} />
+                              <span>Чрез SureGo ID (намерете го в профила на играча)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <Users className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                              <span>Чрез телефонен номер (ръчно въвеждане)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <Users className="text-purple-500 mr-2 flex-shrink-0" size={16} />
+                              <span>От контактите на телефона (автоматично свързване)</span>
+                            </div>
                           </div>
                         </div>
+                      </div>
+                      
+                      {/* Screenshot */}
+                      <div className="mt-4 flex justify-center">
+                        <img 
+                          src="/lovable-uploads/f8f352a3-c07d-45f8-bf42-b78833e9aebf.png" 
+                          alt="Добавяне на играч" 
+                          className="max-w-full h-auto rounded-lg max-h-64 shadow-md"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Section 3: Player Configuration */}
+                    <div className="border-l-4 border-warmyellow-400 pl-6">
+                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                        3. Конфигуриране на играча
+                      </h3>
+                      
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         
-                        {/* Mobile Screenshot - Below this section */}
-                        <div className="mt-4 flex justify-center">
-                          <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                            alt="SureGo App Download Screenshot" 
-                            className="max-w-full h-auto rounded-lg max-h-48"
-                          />
+                        {/* Role Configuration */}
+                        <div className="bg-warmyellow-50 p-4 rounded-lg">
+                          <h4 className="font-bold text-lg mb-3 text-warmyellow-600">Задаване на роля:</h4>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <span className="mr-2">🏆</span>
+                              <span className="font-medium">Основен</span>
+                              <span className="text-sm text-gray-600 ml-2">(приоритетни покани)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-2">🔄</span>
+                              <span className="font-medium">Резервен</span>
+                              <span className="text-sm text-gray-600 ml-2">(поканват се втори)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-2">👋</span>
+                              <span className="font-medium">Гост</span>
+                              <span className="text-sm text-gray-600 ml-2">(поканват се при нужда)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-2">👀</span>
+                              <span className="font-medium">Наблюдател</span>
+                              <span className="text-sm text-gray-600 ml-2">(само преглед)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Position Configuration */}
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-bold text-lg mb-3 text-blue-600">Специалност (позиция):</h4>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <span className="mr-2">🧤</span>
+                              <span className="font-medium">Вратар</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-2">🛡️</span>
+                              <span className="font-medium">Защитник</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-2">⚙️</span>
+                              <span className="font-medium">Полузащитник</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-2">⚡</span>
+                              <span className="font-medium">Нападател</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
-                      {/* Column 2: Choose Registration Method */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Изберете начин за регистрация</h3>
-                        <p className="text-gray-700">Можете да се регистрирате чрез:</p>
-                        <div className="space-y-2">
+                      {/* Position Usage Information */}
+                      <div className="bg-gray-50 p-4 rounded-lg mt-4">
+                        <h5 className="font-medium text-gray-700 mb-2">Позициите се използват за:</h5>
+                        <div className="space-y-1 text-sm text-gray-600">
                           <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">Google акаунт</span>
-                          </div>
-                          <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">Apple ID</span>
+                            <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
+                            <span>Автоматично балансиране на отборите при мачове</span>
                           </div>
                           <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">Имейл (изберете „Създай профил")</span>
+                            <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
+                            <span>Детайлна статистика по пост</span>
                           </div>
-                        </div>
-                        
-                        {/* Mobile Screenshot - Below this section */}
-                        <div className="mt-4 flex justify-center">
-                          <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                            alt="SureGo Registration Method Screenshot" 
-                            className="max-w-full h-auto rounded-lg max-h-48"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Column 3: Email Registration Process */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Ако сте избрали имейл регистрация:</h3>
-                        <div className="space-y-2">
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Въведете вашия имейл и парола</span>
+                          <div className="flex items-center">
+                            <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
+                            <span>Анализ на използваните формации</span>
                           </div>
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Натиснете „Създай профил"</span>
-                          </div>
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Проверете имейла си за потвърждаващ линк</span>
-                          </div>
-                        </div>
-                        
-                        {/* Mobile Screenshot - Below this section */}
-                        <div className="mt-4 flex justify-center">
-                          <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                            alt="SureGo Email Registration Process Screenshot" 
-                            className="max-w-full h-auto rounded-lg max-h-48"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Column 4: Activate Profile */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Активирайте профила си</h3>
-                        <div className="space-y-2">
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Отворете имейла и кликнете върху линка за потвърждение</span>
-                          </div>
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Върнете се в приложението и изберете „Вход с имейл"</span>
-                          </div>
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Въведете имейл и парола – и готово!</span>
-                          </div>
-                        </div>
-                        
-                        {/* Mobile Screenshot - Below this section */}
-                        <div className="mt-4 flex justify-center">
-                          <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                            alt="SureGo Profile Activation Screenshot" 
-                            className="max-w-full h-auto rounded-lg max-h-48"
-                          />
                         </div>
                       </div>
                     </div>
 
-                    {/* Success Message */}
-                    <div className="bg-warmyellow-50 p-6 rounded-md mt-8">
-                      <p className="text-lg font-medium text-warmyellow-700 text-center">
-                        Вече имате активен профил и сте готови да започнете да използвате SureGo!
+                    {/* Section 4: If Player Not in SureGo */}
+                    <div className="border-l-4 border-blue-400 pl-6">
+                      <h3 className="font-bold text-xl text-blue-500 mb-4">
+                        4. Ако играчът все още не е в SureGo:
+                      </h3>
+                      <p className="text-gray-700">
+                        Можете да му изпратите инвайт линк по SMS, имейл или месинджър – той ще получи директна връзка за изтегляне на приложението и регистрация.
+                      </p>
+                    </div>
+
+                    {/* Section 5: Additional Features */}
+                    <div className="border-l-4 border-green-400 pl-6">
+                      <h3 className="font-bold text-xl text-green-500 mb-4">
+                        5. Допълнителни възможности:
+                      </h3>
+                      <div className="space-y-2">
+                        <div className="flex items-center">
+                          <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Редактиране на профили по-късно</span>
+                        </div>
+                        <div className="flex items-center">
+                          <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Промяна на позиции и роли</span>
+                        </div>
+                        <div className="flex items-center">
+                          <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Индивидуална статистика за всеки играч</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Benefits Section */}
+                    <div className="bg-gradient-to-r from-warmyellow-100 to-warmyellow-50 p-6 rounded-lg">
+                      <h3 className="font-bold text-xl text-warmyellow-600 mb-4 flex items-center">
+                        <span className="mr-2">🌟</span>
+                        След като конфигурирате играчите, ще можете:
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="flex items-start">
+                          <Users className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Да получавате автоматични предложения за оптимални състави</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Settings className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Да следите производителността по позиции</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Да анализирате силните и слабите страни на отбора</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Final Message */}
+                    <div className="bg-warmyellow-50 p-6 rounded-md text-center">
+                      <p className="text-lg font-medium text-warmyellow-700">
+                        Приложението ще ви помогне да управлявате отбора професионално, като ви предоставя всички необходими инструменти за успех! ⚽📊
                       </p>
                     </div>
                   </div>
