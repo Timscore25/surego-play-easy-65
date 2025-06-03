@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -1009,84 +1008,6 @@ const Instructions = () => {
                       <p className="text-lg font-medium text-warmyellow-700">
                         Системата за плащания в SureGo прави финансовото управление лесно, прозрачно и ефективно за всички! 💰⚡
                       </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Instruction 6 - Payment Management */}
-            <div className="w-full">
-              <Card className="overflow-hidden border-0 shadow-md">
-                <CardContent className="p-0">
-                  <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
-                    <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
-                      <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">6</span>
-                      Управление на плащанията
-                    </h2>
-                  </div>
-                  <div className="p-6 md:p-8">
-                    <div className="space-y-8">
-                      <div className="space-y-6">
-                        <p className="text-gray-700 text-lg">
-                          Лесно и прозрачно финансово управление на вашите събития:
-                        </p>
-                        
-                        <div>
-                          <ol className="ml-0 space-y-4">
-                            <li className="flex items-center">
-                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">1</div>
-                              <span className="text-lg">Изберете събитие и натиснете "$".</span>
-                            </li>
-                            <li className="flex items-center">
-                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">2</div>
-                              <span className="text-lg">Управлявайте плащанията на играчите.</span>
-                            </li>
-                            <li className="flex items-center">
-                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">3</div>
-                              <span className="text-lg">Завършете процеса с потвърждение.</span>
-                            </li>
-                          </ol>
-                        </div>
-                        
-                        <div>
-                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Ключови предимства:</h3>
-                          <div className="bg-warmyellow-50 p-6 rounded-md">
-                            <ul className="ml-2 space-y-3">
-                              <li className="flex items-start">
-                                <DollarSign className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                                <span className="text-lg">Удобно и ясно финансово управление.</span>
-                              </li>
-                              <li className="flex items-start">
-                                <DollarSign className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                                <span className="text-lg">Автоматични изчисления и баланси.</span>
-                              </li>
-                              <li className="flex items-start">
-                                <DollarSign className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                                <span className="text-lg">Остатъците се съхраняват автоматично.</span>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <img 
-                          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
-                          alt="Стъпка 1: Избор на събитие" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                          alt="Стъпка 2: Управление на плащания" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                          alt="Стъпка 3: Потвърждение" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                      </div>
                     </div>
                   </div>
                 </CardContent>
