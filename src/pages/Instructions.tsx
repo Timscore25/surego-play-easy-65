@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -796,78 +795,184 @@ const Instructions = () => {
               </Card>
             </div>
 
-            {/* Instruction 5 - Event Creation */}
+            {/* Instruction 5 - Payment Management */}
             <div className="w-full">
               <Card className="overflow-hidden border-0 shadow-md">
                 <CardContent className="p-0">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">5</span>
-                      Създаване на събитие
+                      Управление на плащанията за събитие
                     </h2>
+                    <p className="text-white/90 text-lg">Ефективно и прозрачно управление на финансите за всяко събитие!</p>
                   </div>
-                  <div className="p-6 md:p-8">
-                    <div className="space-y-8">
-                      <div className="space-y-6">
-                        <p className="text-gray-700 text-lg">
-                          Бързо и ефективно организирайте футболни събития:
-                        </p>
-                        
-                        <div>
-                          <ul className="ml-0 space-y-4">
-                            <li className="flex items-center">
-                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">1</div>
-                              <span className="text-lg">Изберете вашия отбор {'->'}  „Събития" {'->'}  „+".</span>
-                            </li>
-                            <li className="flex items-center">
-                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">2</div>
-                              <span className="text-lg">Попълнете име, описание и локация.</span>
-                            </li>
-                            <li className="flex items-center">
-                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">3</div>
-                              <span className="text-lg">Задайте дата, час, продължителност и повторяемост.</span>
-                            </li>
-                          </ul>
+                  <div className="p-6 md:p-8 space-y-8">
+                    
+                    {/* Section 1: Event Selection */}
+                    <div className="border-l-4 border-warmyellow-400 pl-6">
+                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                        Процес на регистрация на плащания:
+                      </h3>
+                      <div className="space-y-2">
+                        <div className="flex items-center">
+                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-3 flex-shrink-0 text-xs">1</div>
+                          <span>Отворете желаното събитие като го изберете от предстоящи или минали</span>
                         </div>
-                        
-                        <div>
-                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Автоматични функции:</h3>
-                          <div className="bg-warmyellow-50 p-6 rounded-md">
-                            <ul className="ml-2 space-y-3">
-                              <li className="flex items-start">
-                                <Calendar className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                                <span className="text-lg">Изпращане на покани.</span>
-                              </li>
-                              <li className="flex items-start">
-                                <Users className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                                <span className="text-lg">Проследяване на потвържденията.</span>
-                              </li>
-                              <li className="flex items-start">
-                                <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                                <span className="text-lg">Балансиране на отборите.</span>
-                              </li>
-                            </ul>
+                        <div className="flex items-center">
+                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-3 flex-shrink-0 text-xs">2</div>
+                          <span>Натиснете бутона "$" в горния десен ъгъл</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Section 2: Payment Management Screen */}
+                    <div className="border-l-4 border-blue-400 pl-6">
+                      <h3 className="font-bold text-xl text-blue-500 mb-4">
+                        3. Екран за управление на плащания:
+                      </h3>
+                      
+                      <div className="bg-blue-50 p-6 rounded-lg mb-4">
+                        <div className="space-y-3">
+                          <div className="flex items-center">
+                            <Users className="text-blue-500 mr-3 flex-shrink-0" size={20} />
+                            <span>Виждате списък с всички участници</span>
+                          </div>
+                          <div className="flex items-center">
+                            <DollarSign className="text-blue-500 mr-3 flex-shrink-0" size={20} />
+                            <span>В горната част се показва сумата за плащане (която може да се редактира)</span>
                           </div>
                         </div>
                       </div>
-                      
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <img 
-                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                          alt="Стъпка 1: Отваряне на събития" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                          alt="Стъпка 2: Попълване на детайли" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
-                          alt="Стъпка 3: Настройка на дата и час" 
-                          className="w-full rounded-lg shadow-md"
-                        />
+
+                      <div className="bg-gray-50 p-4 rounded-lg">
+                        <h4 className="font-bold text-lg mb-3 text-gray-700">За всеки играч имате възможност да:</h4>
+                        <div className="space-y-2">
+                          <div className="flex items-center">
+                            <span className="mr-3">💰</span>
+                            <span>Добавите допълнителна сума (остава в портфейла на играча за бъдещи събития)</span>
+                          </div>
+                          <div className="flex items-center">
+                            <span className="mr-3">📉</span>
+                            <span>Намалите сумата</span>
+                          </div>
+                        </div>
                       </div>
+                    </div>
+
+                    {/* Section 3: Process Completion */}
+                    <div className="border-l-4 border-green-400 pl-6">
+                      <h3 className="font-bold text-xl text-green-500 mb-4">
+                        4. Завършване на процеса:
+                      </h3>
+                      
+                      <div className="space-y-4">
+                        <div className="flex items-center">
+                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">1</div>
+                          <span>Натиснете червения бутон в горния десен ъгъл</span>
+                        </div>
+                        
+                        <div className="ml-9">
+                          <div className="flex items-center mb-2">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">2</div>
+                            <span>Ще видите обобщение с:</span>
+                          </div>
+                          <div className="bg-green-50 p-4 rounded-lg ml-9">
+                            <div className="space-y-2">
+                              <div className="flex items-center">
+                                <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                                <span>Цената на събитието</span>
+                              </div>
+                              <div className="flex items-center">
+                                <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                                <span>Общо събрана сума</span>
+                              </div>
+                              <div className="flex items-center">
+                                <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                                <span>Сума за хазната на отбора</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div className="flex items-center">
+                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">3</div>
+                          <span>Потвърдете с "Да"</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Additional Information */}
+                    <div className="border-l-4 border-orange-400 pl-6">
+                      <h3 className="font-bold text-xl text-orange-500 mb-4">
+                        Допълнителна информация:
+                      </h3>
+                      
+                      <div className="bg-orange-50 p-4 rounded-lg">
+                        <p className="text-orange-700 mb-2">
+                          Ако има играчи, които не са платили, системата проверява:
+                        </p>
+                        <div className="space-y-2 ml-4">
+                          <div className="flex items-center">
+                            <Shield className="text-orange-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Дали хазната на отбора може да покрие липсващата сума</span>
+                          </div>
+                          <div className="flex items-center">
+                            <Shield className="text-orange-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Ако няма достатъчно средства, процесът не може да бъде завършен</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* System Advantages */}
+                    <div className="bg-gradient-to-r from-warmyellow-100 to-warmyellow-50 p-6 rounded-lg">
+                      <h3 className="font-bold text-xl text-warmyellow-600 mb-4 flex items-center">
+                        <span className="mr-2">🌟</span>
+                        Предимства на системата:
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="flex items-start">
+                          <Zap className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Удобно управление на плащанията без необходимост от връщане на ресто</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Eye className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Пълна финансова прозрачност</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Settings className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Автоматични изчисления и баланси</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Example Section */}
+                    <div className="bg-blue-50 p-6 rounded-lg">
+                      <h3 className="font-bold text-xl text-blue-600 mb-3 flex items-center">
+                        <span className="mr-2">💡</span>
+                        Пример:
+                      </h3>
+                      <p className="text-blue-700">
+                        Ако играч плати 20 лв. вместо 15 лв., оставащите 5 лв. се запазват в неговия баланс за следващи събития.
+                      </p>
+                    </div>
+
+                    {/* Transparency Note */}
+                    <div className="bg-green-50 p-6 rounded-lg">
+                      <h3 className="font-bold text-xl text-green-600 mb-3 flex items-center">
+                        <Star className="mr-2" size={24} />
+                        Прозрачност:
+                      </h3>
+                      <p className="text-green-700">
+                        Всички играчи имат достъп до своя баланс и история на плащанията, което гарантира прозрачност.
+                      </p>
+                    </div>
+
+                    {/* Final Message */}
+                    <div className="bg-warmyellow-50 p-6 rounded-md text-center">
+                      <p className="text-lg font-medium text-warmyellow-700">
+                        Системата за плащания в SureGo прави финансовото управление лесно, прозрачно и ефективно за всички! 💰⚡
+                      </p>
                     </div>
                   </div>
                 </CardContent>
