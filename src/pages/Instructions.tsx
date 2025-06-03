@@ -105,15 +105,15 @@ const Instructions = () => {
                         <h3 className="font-bold text-xl text-warmyellow-500">Ако сте избрали имейл регистрация:</h3>
                         <div className="space-y-2">
                           <div className="flex items-start">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
                             <span className="text-sm">Въведете вашия имейл и парола</span>
                           </div>
                           <div className="flex items-start">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
                             <span className="text-sm">Натиснете „Създай профил"</span>
                           </div>
                           <div className="flex items-start">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
                             <span className="text-sm">Проверете имейла си за потвърждаващ линк</span>
                           </div>
                         </div>
@@ -133,15 +133,15 @@ const Instructions = () => {
                         <h3 className="font-bold text-xl text-warmyellow-500">Активирайте профила си</h3>
                         <div className="space-y-2">
                           <div className="flex items-start">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
                             <span className="text-sm">Отворете имейла и кликнете върху линка за потвърждение</span>
                           </div>
                           <div className="flex items-start">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
                             <span className="text-sm">Върнете се в приложението и изберете „Вход с имейл"</span>
                           </div>
                           <div className="flex items-start">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
                             <span className="text-sm">Въведете имейл и парола – и готово!</span>
                           </div>
                         </div>
@@ -265,65 +265,99 @@ const Instructions = () => {
               </Card>
             </div>
 
-            {/* Instruction 3 - Team Creation */}
+            {/* Instruction 3 - Profile Creation - NEW CONTENT */}
             <div className="w-full">
               <Card className="overflow-hidden border-0 shadow-md">
                 <CardContent className="p-0">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">3</span>
-                      Създаване на вашия отбор
+                      Създаване на профил в SureGo – бързо и лесно!
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="space-y-8">
-                      <div className="space-y-6">
-                        <p className="text-gray-700 text-lg">
-                          Създайте отбор в няколко лесни стъпки:
-                        </p>
-                        
-                        <ul className="ml-0 space-y-4">
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">1</div>
-                            <span className="text-lg">Отворете „Отбори".</span>
-                          </li>
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">2</div>
-                            <span className="text-lg">Натиснете „+" (горен десен ъгъл).</span>
-                          </li>
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">3</div>
-                            <span className="text-lg">Попълнете име, държава, град и добавете снимка.</span>
-                          </li>
-                          <li className="flex items-center">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-8 h-8 text-warmyellow-500 font-semibold mr-4 flex-shrink-0">4</div>
-                            <span className="text-lg">Натиснете „Запази".</span>
-                          </li>
-                        </ul>
-                      </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <img 
-                          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
-                          alt="Стъпка 1: Отваряне на отбори" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                          alt="Стъпка 2: Натискане на плюс" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                          alt="Стъпка 3: Попълване на данни" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" 
-                          alt="Стъпка 4: Запазване на отбора" 
-                          className="w-full rounded-lg shadow-md"
-                        />
+                      {/* Column 1: Download App */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Свалете приложението</h3>
+                        <p className="text-gray-700">Достъпно е в:</p>
+                        <div className="space-y-2">
+                          <div className="flex items-center">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span className="text-sm">[App Store] (за iPhone)</span>
+                          </div>
+                          <div className="flex items-center">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span className="text-sm">[Google Play] (за Android)</span>
+                          </div>
+                        </div>
                       </div>
+
+                      {/* Column 2: Choose Registration Method */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Изберете начин за регистрация</h3>
+                        <p className="text-gray-700">Можете да се регистрирате чрез:</p>
+                        <div className="space-y-2">
+                          <div className="flex items-center">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span className="text-sm">Google акаунт</span>
+                          </div>
+                          <div className="flex items-center">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span className="text-sm">Apple ID</span>
+                          </div>
+                          <div className="flex items-center">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span className="text-sm">Имейл (изберете „Създай профил")</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Column 3: Email Registration Process */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Ако сте избрали имейл регистрация:</h3>
+                        <div className="space-y-2">
+                          <div className="flex items-start">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                            <span className="text-sm">Въведете вашия имейл и парола</span>
+                          </div>
+                          <div className="flex items-start">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                            <span className="text-sm">Натиснете „Създай профил"</span>
+                          </div>
+                          <div className="flex items-start">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                            <span className="text-sm">Проверете имейла си за потвърждаващ линк</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Column 4: Activate Profile */}
+                      <div className="space-y-4">
+                        <h3 className="font-bold text-xl text-warmyellow-500">Активирайте профила си</h3>
+                        <div className="space-y-2">
+                          <div className="flex items-start">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                            <span className="text-sm">Отворете имейла и кликнете върху линка за потвърждение</span>
+                          </div>
+                          <div className="flex items-start">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                            <span className="text-sm">Върнете се в приложението и изберете „Вход с имейл"</span>
+                          </div>
+                          <div className="flex items-start">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                            <span className="text-sm">Въведете имейл и парола – и готово!</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Success Message */}
+                    <div className="bg-warmyellow-50 p-6 rounded-md mt-8">
+                      <p className="text-lg font-medium text-warmyellow-700 text-center">
+                        Вече имате активен профил и сте готови да започнете да използвате SureGo!
+                      </p>
                     </div>
                   </div>
                 </CardContent>
