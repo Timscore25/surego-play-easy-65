@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -818,86 +819,121 @@ const Instructions = () => {
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-3 flex-shrink-0 text-xs">1</div>
                           <span>Отворете желаното събитие като го изберете от предстоящи или минали</span>
                         </div>
-                        <div className="flex items-center">
-                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-3 flex-shrink-0 text-xs">2</div>
-                          <span>Натиснете бутона "$" в горния десен ъгъл</span>
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mt-4">
+                          <div className="lg:col-span-2">
+                            <div className="flex items-center">
+                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-3 flex-shrink-0 text-xs">2</div>
+                              <span>Натиснете бутона "$" в горния десен ъгъл</span>
+                            </div>
+                          </div>
+                          
+                          {/* Screenshot for step 2 */}
+                          <div className="flex justify-center lg:justify-end">
+                            <img 
+                              src="/lovable-uploads/b9137157-1ecc-4198-888b-422fe59b63d0.png" 
+                              alt="Натиснете бутона $ в горния десен ъгъл" 
+                              className="max-w-full h-auto rounded-lg max-h-96 lg:max-h-80"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
 
                     {/* Section 2: Payment Management Screen */}
-                    <div className="border-l-4 border-blue-400 pl-6">
-                      <h3 className="font-bold text-xl text-blue-500 mb-4">
-                        3. Екран за управление на плащания:
-                      </h3>
-                      
-                      <div className="bg-blue-50 p-6 rounded-lg mb-4">
-                        <div className="space-y-3">
-                          <div className="flex items-center">
-                            <Users className="text-blue-500 mr-3 flex-shrink-0" size={20} />
-                            <span>Виждате списък с всички участници</span>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-blue-400 pl-6">
+                      <div className="lg:col-span-2">
+                        <h3 className="font-bold text-xl text-blue-500 mb-4">
+                          3. Екран за управление на плащания:
+                        </h3>
+                        
+                        <div className="bg-blue-50 p-6 rounded-lg mb-4">
+                          <div className="space-y-3">
+                            <div className="flex items-center">
+                              <Users className="text-blue-500 mr-3 flex-shrink-0" size={20} />
+                              <span>Виждате списък с всички участници</span>
+                            </div>
+                            <div className="flex items-center">
+                              <DollarSign className="text-blue-500 mr-3 flex-shrink-0" size={20} />
+                              <span>В горната част се показва сумата за плащане (която може да се редактира)</span>
+                            </div>
                           </div>
-                          <div className="flex items-center">
-                            <DollarSign className="text-blue-500 mr-3 flex-shrink-0" size={20} />
-                            <span>В горната част се показва сумата за плащане (която може да се редактира)</span>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-lg">
+                          <h4 className="font-bold text-lg mb-3 text-gray-700">За всеки играч имате възможност да:</h4>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <span className="mr-3">💰</span>
+                              <span>Добавите допълнителна сума (остава в портфейла на играча за бъдещи събития)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-3">📉</span>
+                              <span>Намалите сумата</span>
+                            </div>
                           </div>
                         </div>
                       </div>
-
-                      <div className="bg-gray-50 p-4 rounded-lg">
-                        <h4 className="font-bold text-lg mb-3 text-gray-700">За всеки играч имате възможност да:</h4>
-                        <div className="space-y-2">
-                          <div className="flex items-center">
-                            <span className="mr-3">💰</span>
-                            <span>Добавите допълнителна сума (остава в портфейла на играча за бъдещи събития)</span>
-                          </div>
-                          <div className="flex items-center">
-                            <span className="mr-3">📉</span>
-                            <span>Намалите сумата</span>
-                          </div>
-                        </div>
+                      
+                      {/* Screenshot for payment management screen */}
+                      <div className="flex justify-center lg:justify-end">
+                        <img 
+                          src="/lovable-uploads/71eed540-ad0f-4cd9-b92f-a56c9fec5218.png" 
+                          alt="Екран за управление на плащания" 
+                          className="max-w-full h-auto rounded-lg max-h-96 lg:max-h-80"
+                        />
                       </div>
                     </div>
 
                     {/* Section 3: Process Completion */}
-                    <div className="border-l-4 border-green-400 pl-6">
-                      <h3 className="font-bold text-xl text-green-500 mb-4">
-                        4. Завършване на процеса:
-                      </h3>
-                      
-                      <div className="space-y-4">
-                        <div className="flex items-center">
-                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">1</div>
-                          <span>Натиснете червения бутон в горния десен ъгъл</span>
-                        </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-green-400 pl-6">
+                      <div className="lg:col-span-2">
+                        <h3 className="font-bold text-xl text-green-500 mb-4">
+                          4. Завършване на процеса:
+                        </h3>
                         
-                        <div className="ml-9">
-                          <div className="flex items-center mb-2">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">2</div>
-                            <span>Ще видите обобщение с:</span>
+                        <div className="space-y-4">
+                          <div className="flex items-center">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">1</div>
+                            <span>Натиснете червения бутон в горния десен ъгъл</span>
                           </div>
-                          <div className="bg-green-50 p-4 rounded-lg ml-9">
-                            <div className="space-y-2">
-                              <div className="flex items-center">
-                                <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                                <span>Цената на събитието</span>
-                              </div>
-                              <div className="flex items-center">
-                                <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                                <span>Общо събрана сума</span>
-                              </div>
-                              <div className="flex items-center">
-                                <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                                <span>Сума за хазната на отбора</span>
+                          
+                          <div className="ml-9">
+                            <div className="flex items-center mb-2">
+                              <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">2</div>
+                              <span>Ще видите обобщение с:</span>
+                            </div>
+                            <div className="bg-green-50 p-4 rounded-lg ml-9">
+                              <div className="space-y-2">
+                                <div className="flex items-center">
+                                  <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                                  <span>Цената на събитието</span>
+                                </div>
+                                <div className="flex items-center">
+                                  <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                                  <span>Общо събрана сума</span>
+                                </div>
+                                <div className="flex items-center">
+                                  <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                                  <span>Сума за хазната на отбора</span>
+                                </div>
                               </div>
                             </div>
                           </div>
+                          
+                          <div className="flex items-center">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">3</div>
+                            <span>Потвърдете с "Да"</span>
+                          </div>
                         </div>
-                        
-                        <div className="flex items-center">
-                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">3</div>
-                          <span>Потвърдете с "Да"</span>
-                        </div>
+                      </div>
+                      
+                      {/* Screenshot for process completion */}
+                      <div className="flex justify-center lg:justify-end">
+                        <img 
+                          src="/lovable-uploads/9255faf1-6101-422c-92e6-3bcb0da928c4.png" 
+                          alt="Завършване на процеса" 
+                          className="max-w-full h-auto rounded-lg max-h-96 lg:max-h-80"
+                        />
                       </div>
                     </div>
 
