@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Check, Users, DollarSign, Shield, Zap, Settings, Eye } from "lucide-react";
+import { ArrowRight, Calendar, Check, Users, DollarSign, Shield, Zap, Settings, Eye, Clock, MapPin, Star } from "lucide-react";
 
 const Instructions = () => {
   const { language } = useLanguage();
@@ -508,61 +508,243 @@ const Instructions = () => {
               </Card>
             </div>
 
-            {/* Instruction 4 - Player Management */}
+            {/* Instruction 4 - Event Creation */}
             <div className="w-full">
               <Card className="overflow-hidden border-0 shadow-md">
                 <CardContent className="p-0">
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">4</span>
-                      Добавяне и управление на играчи
+                      Създаване на футболно събитие в SureGo
                     </h2>
+                    <p className="text-white/90 text-lg">Организирайте перфектни мачове с няколко лесни стъпки!</p>
                   </div>
-                  <div className="p-6 md:p-8">
-                    <div className="space-y-8">
-                      <div className="space-y-6">
-                        <p className="text-gray-700 text-lg">
-                          Поддържайте отбора си организиран и готов за игра:
-                        </p>
-                        
-                        <p className="mb-4 font-medium text-lg">Отворете „Отбори" {'->'}  Изберете вашия отбор {'->'}  „Играчи" {'->'}  „+".</p>
-                        
-                        <div>
-                          <h3 className="font-bold text-xl mb-4 text-warmyellow-500">Добавете играчи чрез:</h3>
-                          <ul className="ml-5 space-y-3">
-                            <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                              <span className="text-lg">SureGo ID (директно и бързо)</span>
-                            </li>
-                            <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                              <span className="text-lg">Телефонен номер (лесно свързване)</span>
-                            </li>
-                            <li className="flex items-start">
-                              <Check className="text-warmyellow-500 mr-3 mt-1 flex-shrink-0" size={20} />
-                              <span className="text-lg">Контакти от телефона (автоматично и удобно)</span>
-                            </li>
-                          </ul>
+                  <div className="p-6 md:p-8 space-y-8">
+                    
+                    {/* Section 1: Start New Event */}
+                    <div className="border-l-4 border-warmyellow-400 pl-6">
+                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                        1. Стартиране на ново събитие:
+                      </h3>
+                      <div className="space-y-2">
+                        <div className="flex items-center">
+                          <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                          <span>От екрана на отбора изберете „Събития"</span>
+                        </div>
+                        <div className="flex items-center">
+                          <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Натиснете „+" (горен десен ъгъл)</span>
                         </div>
                       </div>
-                      
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <img 
-                          src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop" 
-                          alt="Добавяне чрез SureGo ID" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop" 
-                          alt="Добавяне чрез телефон" 
-                          className="w-full rounded-lg shadow-md"
-                        />
-                        <img 
-                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop" 
-                          alt="Добавяне от контакти" 
-                          className="w-full rounded-lg shadow-md"
-                        />
+                    </div>
+
+                    {/* Section 2: Basic Information */}
+                    <div className="border-l-4 border-warmyellow-400 pl-6">
+                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                        2. Основна информация:
+                      </h3>
+                      <div className="space-y-2">
+                        <div className="flex items-center">
+                          <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Въведете име и описание на събитието</span>
+                        </div>
+                        <div className="flex items-center">
+                          <MapPin className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Добавете място (с възможност за точна локация чрез „Карта" бутон)</span>
+                        </div>
+                        <div className="flex items-center">
+                          <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                          <span>Натиснете „Напред"</span>
+                        </div>
                       </div>
+                    </div>
+
+                    {/* Section 3: Match Settings */}
+                    <div className="border-l-4 border-warmyellow-400 pl-6">
+                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                        3. Настройки на мача:
+                      </h3>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                        {/* DateTime and Duration */}
+                        <div className="bg-warmyellow-50 p-4 rounded-lg">
+                          <h4 className="font-bold text-lg mb-3 text-warmyellow-600">Дата и време:</h4>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <Calendar className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                              <span>Изберете дата и начален час</span>
+                            </div>
+                            <div className="flex items-center">
+                              <Clock className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                              <span>Задайте продължителност (в минути)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Repeat Settings */}
+                        <div className="bg-blue-50 p-4 rounded-lg">
+                          <h4 className="font-bold text-lg mb-3 text-blue-600">Повторяемост:</h4>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <span className="mr-2">🔹</span>
+                              <span className="font-medium">Еднократно</span>
+                              <span className="text-sm text-gray-600 ml-2">(само за този ден)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-2">🔹</span>
+                              <span className="font-medium">Ежеседмично</span>
+                              <span className="text-sm text-gray-600 ml-2">(автоматично повторение)</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {/* Teams Configuration */}
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-bold text-lg mb-3 text-green-600">Брой отбори:</h4>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <span className="mr-2">1️⃣</span>
+                              <span className="font-medium">1 отбор</span>
+                              <span className="text-sm text-gray-600 ml-2">(игра срещу външен отбор)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-2">2️⃣</span>
+                              <span className="font-medium">2 отбора</span>
+                              <span className="text-sm text-gray-600 ml-2">(вътрешен мач)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Player Count */}
+                        <div className="bg-purple-50 p-4 rounded-lg">
+                          <h4 className="font-bold text-lg mb-3 text-purple-600">Играчи:</h4>
+                          <div className="flex items-center">
+                            <Users className="text-purple-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Задайте минимален брой играчи</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Section 4: Player Invitations */}
+                    <div className="border-l-4 border-blue-400 pl-6">
+                      <h3 className="font-bold text-xl text-blue-500 mb-4">
+                        4. Покани за играчи:
+                      </h3>
+                      
+                      <div className="bg-blue-50 p-4 rounded-lg mb-4">
+                        <h4 className="font-bold text-lg mb-3 text-blue-600">Времеви интервали за покани:</h4>
+                        <div className="space-y-2">
+                          <div className="flex items-center">
+                            <span className="mr-2">⏰</span>
+                            <span className="font-medium">Основни играчи</span>
+                            <span className="text-sm text-gray-600 ml-2">(първи получават покана)</span>
+                          </div>
+                          <div className="flex items-center">
+                            <span className="mr-2">⏰</span>
+                            <span className="font-medium">Резерви</span>
+                            <span className="text-sm text-gray-600 ml-2">(получават след основните)</span>
+                          </div>
+                          <div className="flex items-center">
+                            <span className="mr-2">⏰</span>
+                            <span className="font-medium">Гости</span>
+                            <span className="text-sm text-gray-600 ml-2">(получават последни)</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="bg-orange-50 p-4 rounded-lg">
+                        <h4 className="font-bold text-lg mb-2 text-orange-600">Краен срок за потвърждение:</h4>
+                        <div className="flex items-start">
+                          <span className="mr-2">📅</span>
+                          <span className="text-sm">Ако не се събере достатъчно играчи до този момент, събитието се отменя автоматично</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Section 5: Finance and Additional */}
+                    <div className="border-l-4 border-green-400 pl-6">
+                      <h3 className="font-bold text-xl text-green-500 mb-4">
+                        5. Финанси и допълнения:
+                      </h3>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+                        {/* Financial Settings */}
+                        <div className="bg-green-50 p-4 rounded-lg">
+                          <h4 className="font-bold text-lg mb-3 text-green-600">Цена за участие:</h4>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <span className="mr-2">💰</span>
+                              <span className="text-sm">Възможност за закръгляване на сумата (остатъкът отива в хазната)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <span className="mr-2">🎫</span>
+                              <span className="text-sm">Безплатен вариант (ако желаете)</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Final Steps */}
+                        <div className="bg-gray-50 p-4 rounded-lg">
+                          <h4 className="font-bold text-lg mb-3 text-gray-600">Финализиране:</h4>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <Check className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                              <span className="text-sm">Добавете бележки (по избор)</span>
+                            </div>
+                            <div className="flex items-center">
+                              <Check className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                              <span className="text-sm">Завършете с „Създай събитие"</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Success Message */}
+                    <div className="bg-warmyellow-50 p-6 rounded-md">
+                      <h3 className="font-bold text-xl text-warmyellow-600 mb-3 flex items-center">
+                        <span className="mr-2">✅</span>
+                        Готово! 
+                      </h3>
+                      <p className="text-warmyellow-700 mb-4">
+                        Събитието е активно и поканите са изпратени според зададените настройки.
+                      </p>
+                    </div>
+
+                    {/* Additional Features */}
+                    <div className="bg-gradient-to-r from-warmyellow-100 to-warmyellow-50 p-6 rounded-lg">
+                      <h3 className="font-bold text-xl text-warmyellow-600 mb-4 flex items-center">
+                        <span className="mr-2">🌟</span>
+                        Допълнителни възможности:
+                      </h3>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="flex items-start">
+                          <Users className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Автоматично балансиране на отборите (ако е вътрешен мач)</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Eye className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Проследяване на потвърждения в реално време</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Zap className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Известия за промени по събитието</span>
+                        </div>
+                        <div className="flex items-start">
+                          <Settings className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
+                          <span>Опция за автоматично попълване на липсващи играчи от резервите</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Final Message */}
+                    <div className="bg-warmyellow-50 p-6 rounded-md text-center">
+                      <p className="text-lg font-medium text-warmyellow-700">
+                        Приложението ще ви уведоми за всяка промяна в статуса на събитието и ще ви помогне да организирате перфектен мач без главоболия! ⚽📅
+                      </p>
                     </div>
                   </div>
                 </CardContent>
