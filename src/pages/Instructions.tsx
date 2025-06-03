@@ -566,7 +566,7 @@ const Instructions = () => {
                         <img 
                           src="/lovable-uploads/b20c0027-a11f-4e38-bcfc-3908e8d244d0.png" 
                           alt="Основна информация за събитието" 
-                          className="max-w-full h-auto rounded-lg shadow-lg max-h-96 lg:max-h-80"
+                          className="max-w-full h-auto rounded-lg max-h-96 lg:max-h-80"
                         />
                       </div>
                     </div>
@@ -646,7 +646,7 @@ const Instructions = () => {
                         <img 
                           src="/lovable-uploads/4444e586-7ebd-49f0-9012-6a0b9d653755.png" 
                           alt="Настройки на мача" 
-                          className="max-w-full h-auto rounded-lg shadow-lg max-h-96 lg:max-h-80"
+                          className="max-w-full h-auto rounded-lg max-h-96 lg:max-h-80"
                         />
                       </div>
                     </div>
@@ -693,7 +693,7 @@ const Instructions = () => {
                         <img 
                           src="/lovable-uploads/26d739f0-92dc-4f98-b9d6-ac7078aa9027.png" 
                           alt="Покани за играчи" 
-                          className="max-w-full h-auto rounded-lg shadow-lg max-h-96 lg:max-h-80"
+                          className="max-w-full h-auto rounded-lg max-h-96 lg:max-h-80"
                         />
                       </div>
                     </div>
@@ -743,7 +743,7 @@ const Instructions = () => {
                         <img 
                           src="/lovable-uploads/6ba0458e-2518-4c24-a53a-56cb1bfe1a77.png" 
                           alt="Финанси и допълнения" 
-                          className="max-w-full h-auto rounded-lg shadow-lg max-h-96 lg:max-h-80"
+                          className="max-w-full h-auto rounded-lg max-h-96 lg:max-h-80"
                         />
                       </div>
                     </div>
