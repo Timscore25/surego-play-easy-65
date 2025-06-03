@@ -265,7 +265,7 @@ const Instructions = () => {
               </Card>
             </div>
 
-            {/* Instruction 3 - Profile Creation - NEW CONTENT */}
+            {/* Instruction 3 - Profile Creation */}
             <div className="w-full">
               <Card className="overflow-hidden border-0 shadow-md">
                 <CardContent className="p-0">
@@ -292,6 +292,15 @@ const Instructions = () => {
                             <span className="text-sm">[Google Play] (за Android)</span>
                           </div>
                         </div>
+                        
+                        {/* Mobile Screenshot - Below this section */}
+                        <div className="mt-4 flex justify-center">
+                          <img 
+                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            alt="SureGo App Download Screenshot" 
+                            className="max-w-full h-auto rounded-lg max-h-48"
+                          />
+                        </div>
                       </div>
 
                       {/* Column 2: Choose Registration Method */}
@@ -312,6 +321,15 @@ const Instructions = () => {
                             <span className="text-sm">Имейл (изберете „Създай профил")</span>
                           </div>
                         </div>
+                        
+                        {/* Mobile Screenshot - Below this section */}
+                        <div className="mt-4 flex justify-center">
+                          <img 
+                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            alt="SureGo Registration Method Screenshot" 
+                            className="max-w-full h-auto rounded-lg max-h-48"
+                          />
+                        </div>
                       </div>
 
                       {/* Column 3: Email Registration Process */}
@@ -331,6 +349,15 @@ const Instructions = () => {
                             <span className="text-sm">Проверете имейла си за потвърждаващ линк</span>
                           </div>
                         </div>
+                        
+                        {/* Mobile Screenshot - Below this section */}
+                        <div className="mt-4 flex justify-center">
+                          <img 
+                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            alt="SureGo Email Registration Process Screenshot" 
+                            className="max-w-full h-auto rounded-lg max-h-48"
+                          />
+                        </div>
                       </div>
 
                       {/* Column 4: Activate Profile */}
@@ -349,6 +376,15 @@ const Instructions = () => {
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
                             <span className="text-sm">Въведете имейл и парола – и готово!</span>
                           </div>
+                        </div>
+                        
+                        {/* Mobile Screenshot - Below this section */}
+                        <div className="mt-4 flex justify-center">
+                          <img 
+                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            alt="SureGo Profile Activation Screenshot" 
+                            className="max-w-full h-auto rounded-lg max-h-48"
+                          />
                         </div>
                       </div>
                     </div>
