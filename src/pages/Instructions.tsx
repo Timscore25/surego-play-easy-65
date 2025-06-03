@@ -305,7 +305,7 @@ const Instructions = () => {
                         <img 
                           src="/lovable-uploads/4f6a85b5-6b5f-48a5-8e9f-32b85f72760a.png" 
                           alt="Достъп до играчи" 
-                          className="max-w-full h-auto rounded-lg max-h-48"
+                          className="max-w-full h-auto rounded-lg max-h-80"
                         />
                       </div>
                     </div>
@@ -346,7 +346,7 @@ const Instructions = () => {
                         <img 
                           src="/lovable-uploads/75e94b9e-02cc-4bb4-b7bf-40c1db665d4e.png" 
                           alt="Добавяне на играч" 
-                          className="max-w-full h-auto rounded-lg max-h-48"
+                          className="max-w-full h-auto rounded-lg max-h-80"
                         />
                       </div>
                     </div>
@@ -435,14 +435,14 @@ const Instructions = () => {
                         <img 
                           src="/lovable-uploads/4047db49-2425-4ba4-bef2-19818a4f2a04.png" 
                           alt="Конфигуриране на играч" 
-                          className="max-w-full h-auto rounded-lg max-h-48"
+                          className="max-w-full h-auto rounded-lg max-h-80"
                         />
                       </div>
                     </div>
 
                     {/* Section 4: If Player Not in SureGo */}
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-blue-400 pl-6">
-                      <div className="lg:col-span-2">
+                    <div className="grid grid-cols-1 gap-6 items-start border-l-4 border-blue-400 pl-6">
+                      <div>
                         <h3 className="font-bold text-xl text-blue-500 mb-4">
                           4. Ако играчът все още не е в SureGo:
                         </h3>
@@ -450,20 +450,11 @@ const Instructions = () => {
                           Можете да му изпратите инвайт линк по SMS, имейл или месинджър – той ще получи директна връзка за изтегляне на приложението и регистрация.
                         </p>
                       </div>
-                      
-                      {/* Screenshot */}
-                      <div className="flex justify-center lg:justify-end">
-                        <img 
-                          src="/lovable-uploads/75e94b9e-02cc-4bb4-b7bf-40c1db665d4e.png" 
-                          alt="Инвайт линк" 
-                          className="max-w-full h-auto rounded-lg max-h-48"
-                        />
-                      </div>
                     </div>
 
                     {/* Section 5: Additional Features */}
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-green-400 pl-6">
-                      <div className="lg:col-span-2">
+                    <div className="grid grid-cols-1 gap-6 items-start border-l-4 border-green-400 pl-6">
+                      <div>
                         <h3 className="font-bold text-xl text-green-500 mb-4">
                           5. Допълнителни възможности:
                         </h3>
@@ -481,15 +472,6 @@ const Instructions = () => {
                             <span>Индивидуална статистика за всеки играч</span>
                           </div>
                         </div>
-                      </div>
-                      
-                      {/* Screenshot */}
-                      <div className="flex justify-center lg:justify-end">
-                        <img 
-                          src="/lovable-uploads/4f6a85b5-6b5f-48a5-8e9f-32b85f72760a.png" 
-                          alt="Допълнителни възможности" 
-                          className="max-w-full h-auto rounded-lg max-h-48"
-                        />
                       </div>
                     </div>
 
