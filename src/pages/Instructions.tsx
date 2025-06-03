@@ -134,15 +134,15 @@ const Instructions = () => {
                         <div className="space-y-2">
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Отворете имейла и кликнете върху линка за потвърждение</span>
+                            <span>Отворете имейла и кликнете върху линка за потвърждение</span>
                           </div>
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Върнете се в приложението и изберете „Вход с имейл"</span>
+                            <span>Върнете се в приложението и изберете „Вход с имейл"</span>
                           </div>
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span className="text-sm">Въведете имейл и парола – и готово!</span>
+                            <span>Въведете имейл и парола – и готово!</span>
                           </div>
                         </div>
                         
@@ -303,7 +303,7 @@ const Instructions = () => {
                       {/* Screenshot */}
                       <div className="flex justify-center lg:justify-end">
                         <img 
-                          src="/lovable-uploads/88a5450c-bbf4-4fdb-ab1a-5cb9d1f6eeff.png" 
+                          src="/lovable-uploads/4f6a85b5-6b5f-48a5-8e9f-32b85f72760a.png" 
                           alt="Достъп до играчи" 
                           className="max-w-full h-auto rounded-lg max-h-48"
                         />
@@ -344,7 +344,7 @@ const Instructions = () => {
                       {/* Screenshot */}
                       <div className="flex justify-center lg:justify-end">
                         <img 
-                          src="/lovable-uploads/f8f352a3-c07d-45f8-bf42-b78833e9aebf.png" 
+                          src="/lovable-uploads/75e94b9e-02cc-4bb4-b7bf-40c1db665d4e.png" 
                           alt="Добавяне на играч" 
                           className="max-w-full h-auto rounded-lg max-h-48"
                         />
@@ -433,7 +433,7 @@ const Instructions = () => {
                       {/* Screenshot */}
                       <div className="flex justify-center lg:justify-end">
                         <img 
-                          src="/lovable-uploads/88a5450c-bbf4-4fdb-ab1a-5cb9d1f6eeff.png" 
+                          src="/lovable-uploads/4047db49-2425-4ba4-bef2-19818a4f2a04.png" 
                           alt="Конфигуриране на играч" 
                           className="max-w-full h-auto rounded-lg max-h-48"
                         />
@@ -454,7 +454,7 @@ const Instructions = () => {
                       {/* Screenshot */}
                       <div className="flex justify-center lg:justify-end">
                         <img 
-                          src="/lovable-uploads/f8f352a3-c07d-45f8-bf42-b78833e9aebf.png" 
+                          src="/lovable-uploads/75e94b9e-02cc-4bb4-b7bf-40c1db665d4e.png" 
                           alt="Инвайт линк" 
                           className="max-w-full h-auto rounded-lg max-h-48"
                         />
@@ -486,7 +486,7 @@ const Instructions = () => {
                       {/* Screenshot */}
                       <div className="flex justify-center lg:justify-end">
                         <img 
-                          src="/lovable-uploads/88a5450c-bbf4-4fdb-ab1a-5cb9d1f6eeff.png" 
+                          src="/lovable-uploads/4f6a85b5-6b5f-48a5-8e9f-32b85f72760a.png" 
                           alt="Допълнителни възможности" 
                           className="max-w-full h-auto rounded-lg max-h-48"
                         />
