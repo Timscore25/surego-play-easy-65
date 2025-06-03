@@ -279,181 +279,217 @@ const Instructions = () => {
                   <div className="p-6 md:p-8 space-y-8">
                     
                     {/* Section 1: Access Players Section */}
-                    <div className="border-l-4 border-warmyellow-400 pl-6">
-                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                        1. Достъп до секцията за играчи:
-                      </h3>
-                      <div className="space-y-2">
-                        <div className="flex items-center">
-                          <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                          <span>Отворете раздела „Отбори"</span>
-                        </div>
-                        <div className="flex items-center">
-                          <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                          <span>Изберете вашия отбор</span>
-                        </div>
-                        <div className="flex items-center">
-                          <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                          <span>Кликнете върху „Играчи"</span>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-warmyellow-400 pl-6">
+                      <div className="lg:col-span-2">
+                        <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                          1. Достъп до секцията за играчи:
+                        </h3>
+                        <div className="space-y-2">
+                          <div className="flex items-center">
+                            <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Отворете раздела „Отбори"</span>
+                          </div>
+                          <div className="flex items-center">
+                            <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Изберете вашия отбор</span>
+                          </div>
+                          <div className="flex items-center">
+                            <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Кликнете върху „Играчи"</span>
+                          </div>
                         </div>
                       </div>
                       
                       {/* Screenshot */}
-                      <div className="mt-4 flex justify-center">
+                      <div className="flex justify-center lg:justify-end">
                         <img 
                           src="/lovable-uploads/88a5450c-bbf4-4fdb-ab1a-5cb9d1f6eeff.png" 
                           alt="Достъп до играчи" 
-                          className="max-w-full h-auto rounded-lg max-h-64 shadow-md"
+                          className="max-w-full h-auto rounded-lg max-h-48"
                         />
                       </div>
                     </div>
 
                     {/* Section 2: Adding New Player */}
-                    <div className="border-l-4 border-warmyellow-400 pl-6">
-                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                        2. Добавяне на нов играч:
-                      </h3>
-                      <div className="space-y-3">
-                        <div className="flex items-center">
-                          <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                          <span>Натиснете „+" (в горния десен ъгъл)</span>
-                        </div>
-                        <div className="ml-6">
-                          <p className="font-medium mb-2">Изберете удобен за вас метод:</p>
-                          <div className="space-y-2">
-                            <div className="flex items-center">
-                              <Users className="text-blue-500 mr-2 flex-shrink-0" size={16} />
-                              <span>Чрез SureGo ID (намерете го в профила на играча)</span>
-                            </div>
-                            <div className="flex items-center">
-                              <Users className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                              <span>Чрез телефонен номер (ръчно въвеждане)</span>
-                            </div>
-                            <div className="flex items-center">
-                              <Users className="text-purple-500 mr-2 flex-shrink-0" size={16} />
-                              <span>От контактите на телефона (автоматично свързване)</span>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-warmyellow-400 pl-6">
+                      <div className="lg:col-span-2">
+                        <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                          2. Добавяне на нов играч:
+                        </h3>
+                        <div className="space-y-3">
+                          <div className="flex items-center">
+                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Натиснете „+" (в горния десен ъгъл)</span>
+                          </div>
+                          <div className="ml-6">
+                            <p className="font-medium mb-2">Изберете удобен за вас метод:</p>
+                            <div className="space-y-2">
+                              <div className="flex items-center">
+                                <Users className="text-blue-500 mr-2 flex-shrink-0" size={16} />
+                                <span>Чрез SureGo ID (намерете го в профила на играча)</span>
+                              </div>
+                              <div className="flex items-center">
+                                <Users className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                                <span>Чрез телефонен номер (ръчно въвеждане)</span>
+                              </div>
+                              <div className="flex items-center">
+                                <Users className="text-purple-500 mr-2 flex-shrink-0" size={16} />
+                                <span>От контактите на телефона (автоматично свързване)</span>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                       
                       {/* Screenshot */}
-                      <div className="mt-4 flex justify-center">
+                      <div className="flex justify-center lg:justify-end">
                         <img 
                           src="/lovable-uploads/f8f352a3-c07d-45f8-bf42-b78833e9aebf.png" 
                           alt="Добавяне на играч" 
-                          className="max-w-full h-auto rounded-lg max-h-64 shadow-md"
+                          className="max-w-full h-auto rounded-lg max-h-48"
                         />
                       </div>
                     </div>
 
                     {/* Section 3: Player Configuration */}
-                    <div className="border-l-4 border-warmyellow-400 pl-6">
-                      <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                        3. Конфигуриране на играча
-                      </h3>
-                      
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-warmyellow-400 pl-6">
+                      <div className="lg:col-span-2">
+                        <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
+                          3. Конфигуриране на играча
+                        </h3>
                         
-                        {/* Role Configuration */}
-                        <div className="bg-warmyellow-50 p-4 rounded-lg">
-                          <h4 className="font-bold text-lg mb-3 text-warmyellow-600">Задаване на роля:</h4>
-                          <div className="space-y-2">
-                            <div className="flex items-center">
-                              <span className="mr-2">🏆</span>
-                              <span className="font-medium">Основен</span>
-                              <span className="text-sm text-gray-600 ml-2">(приоритетни покани)</span>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                          {/* Role Configuration */}
+                          <div className="bg-warmyellow-50 p-4 rounded-lg">
+                            <h4 className="font-bold text-lg mb-3 text-warmyellow-600">Задаване на роля:</h4>
+                            <div className="space-y-2">
+                              <div className="flex items-center">
+                                <span className="mr-2">🏆</span>
+                                <span className="font-medium">Основен</span>
+                                <span className="text-sm text-gray-600 ml-2">(приоритетни покани)</span>
+                              </div>
+                              <div className="flex items-center">
+                                <span className="mr-2">🔄</span>
+                                <span className="font-medium">Резервен</span>
+                                <span className="text-sm text-gray-600 ml-2">(поканват се втори)</span>
+                              </div>
+                              <div className="flex items-center">
+                                <span className="mr-2">👋</span>
+                                <span className="font-medium">Гост</span>
+                                <span className="text-sm text-gray-600 ml-2">(поканват се при нужда)</span>
+                              </div>
+                              <div className="flex items-center">
+                                <span className="mr-2">👀</span>
+                                <span className="font-medium">Наблюдател</span>
+                                <span className="text-sm text-gray-600 ml-2">(само преглед)</span>
+                              </div>
                             </div>
-                            <div className="flex items-center">
-                              <span className="mr-2">🔄</span>
-                              <span className="font-medium">Резервен</span>
-                              <span className="text-sm text-gray-600 ml-2">(поканват се втори)</span>
-                            </div>
-                            <div className="flex items-center">
-                              <span className="mr-2">👋</span>
-                              <span className="font-medium">Гост</span>
-                              <span className="text-sm text-gray-600 ml-2">(поканват се при нужда)</span>
-                            </div>
-                            <div className="flex items-center">
-                              <span className="mr-2">👀</span>
-                              <span className="font-medium">Наблюдател</span>
-                              <span className="text-sm text-gray-600 ml-2">(само преглед)</span>
+                          </div>
+
+                          {/* Position Configuration */}
+                          <div className="bg-blue-50 p-4 rounded-lg">
+                            <h4 className="font-bold text-lg mb-3 text-blue-600">Специалност (позиция):</h4>
+                            <div className="space-y-2">
+                              <div className="flex items-center">
+                                <span className="mr-2">🧤</span>
+                                <span className="font-medium">Вратар</span>
+                              </div>
+                              <div className="flex items-center">
+                                <span className="mr-2">🛡️</span>
+                                <span className="font-medium">Защитник</span>
+                              </div>
+                              <div className="flex items-center">
+                                <span className="mr-2">⚙️</span>
+                                <span className="font-medium">Полузащитник</span>
+                              </div>
+                              <div className="flex items-center">
+                                <span className="mr-2">⚡</span>
+                                <span className="font-medium">Нападател</span>
+                              </div>
                             </div>
                           </div>
                         </div>
 
-                        {/* Position Configuration */}
-                        <div className="bg-blue-50 p-4 rounded-lg">
-                          <h4 className="font-bold text-lg mb-3 text-blue-600">Специалност (позиция):</h4>
-                          <div className="space-y-2">
+                        {/* Position Usage Information */}
+                        <div className="bg-gray-50 p-4 rounded-lg">
+                          <h5 className="font-medium text-gray-700 mb-2">Позициите се използват за:</h5>
+                          <div className="space-y-1 text-sm text-gray-600">
                             <div className="flex items-center">
-                              <span className="mr-2">🧤</span>
-                              <span className="font-medium">Вратар</span>
+                              <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
+                              <span>Автоматично балансиране на отборите при мачове</span>
                             </div>
                             <div className="flex items-center">
-                              <span className="mr-2">🛡️</span>
-                              <span className="font-medium">Защитник</span>
+                              <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
+                              <span>Детайлна статистика по пост</span>
                             </div>
                             <div className="flex items-center">
-                              <span className="mr-2">⚙️</span>
-                              <span className="font-medium">Полузащитник</span>
-                            </div>
-                            <div className="flex items-center">
-                              <span className="mr-2">⚡</span>
-                              <span className="font-medium">Нападател</span>
+                              <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
+                              <span>Анализ на използваните формации</span>
                             </div>
                           </div>
                         </div>
                       </div>
-
-                      {/* Position Usage Information */}
-                      <div className="bg-gray-50 p-4 rounded-lg mt-4">
-                        <h5 className="font-medium text-gray-700 mb-2">Позициите се използват за:</h5>
-                        <div className="space-y-1 text-sm text-gray-600">
-                          <div className="flex items-center">
-                            <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
-                            <span>Автоматично балансиране на отборите при мачове</span>
-                          </div>
-                          <div className="flex items-center">
-                            <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
-                            <span>Детайлна статистика по пост</span>
-                          </div>
-                          <div className="flex items-center">
-                            <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
-                            <span>Анализ на използваните формации</span>
-                          </div>
-                        </div>
+                      
+                      {/* Screenshot */}
+                      <div className="flex justify-center lg:justify-end">
+                        <img 
+                          src="/lovable-uploads/88a5450c-bbf4-4fdb-ab1a-5cb9d1f6eeff.png" 
+                          alt="Конфигуриране на играч" 
+                          className="max-w-full h-auto rounded-lg max-h-48"
+                        />
                       </div>
                     </div>
 
                     {/* Section 4: If Player Not in SureGo */}
-                    <div className="border-l-4 border-blue-400 pl-6">
-                      <h3 className="font-bold text-xl text-blue-500 mb-4">
-                        4. Ако играчът все още не е в SureGo:
-                      </h3>
-                      <p className="text-gray-700">
-                        Можете да му изпратите инвайт линк по SMS, имейл или месинджър – той ще получи директна връзка за изтегляне на приложението и регистрация.
-                      </p>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-blue-400 pl-6">
+                      <div className="lg:col-span-2">
+                        <h3 className="font-bold text-xl text-blue-500 mb-4">
+                          4. Ако играчът все още не е в SureGo:
+                        </h3>
+                        <p className="text-gray-700">
+                          Можете да му изпратите инвайт линк по SMS, имейл или месинджър – той ще получи директна връзка за изтегляне на приложението и регистрация.
+                        </p>
+                      </div>
+                      
+                      {/* Screenshot */}
+                      <div className="flex justify-center lg:justify-end">
+                        <img 
+                          src="/lovable-uploads/f8f352a3-c07d-45f8-bf42-b78833e9aebf.png" 
+                          alt="Инвайт линк" 
+                          className="max-w-full h-auto rounded-lg max-h-48"
+                        />
+                      </div>
                     </div>
 
                     {/* Section 5: Additional Features */}
-                    <div className="border-l-4 border-green-400 pl-6">
-                      <h3 className="font-bold text-xl text-green-500 mb-4">
-                        5. Допълнителни възможности:
-                      </h3>
-                      <div className="space-y-2">
-                        <div className="flex items-center">
-                          <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                          <span>Редактиране на профили по-късно</span>
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-green-400 pl-6">
+                      <div className="lg:col-span-2">
+                        <h3 className="font-bold text-xl text-green-500 mb-4">
+                          5. Допълнителни възможности:
+                        </h3>
+                        <div className="space-y-2">
+                          <div className="flex items-center">
+                            <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Редактиране на профили по-късно</span>
+                          </div>
+                          <div className="flex items-center">
+                            <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Промяна на позиции и роли</span>
+                          </div>
+                          <div className="flex items-center">
+                            <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
+                            <span>Индивидуална статистика за всеки играч</span>
+                          </div>
                         </div>
-                        <div className="flex items-center">
-                          <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                          <span>Промяна на позиции и роли</span>
-                        </div>
-                        <div className="flex items-center">
-                          <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                          <span>Индивидуална статистика за всеки играч</span>
-                        </div>
+                      </div>
+                      
+                      {/* Screenshot */}
+                      <div className="flex justify-center lg:justify-end">
+                        <img 
+                          src="/lovable-uploads/88a5450c-bbf4-4fdb-ab1a-5cb9d1f6eeff.png" 
+                          alt="Допълнителни възможности" 
+                          className="max-w-full h-auto rounded-lg max-h-48"
+                        />
                       </div>
                     </div>
 
