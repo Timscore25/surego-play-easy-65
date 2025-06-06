@@ -30,7 +30,7 @@ const Instructions = () => {
         </div>
 
         <div className="container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold mb-8 text-center text-gray-900">{t('instructions')}</h1>
+          <h1 className="text-3xl font-bold mb-8 text-center text-gray-900 mt-8">{t('instructions')}</h1>
           
           <div className="max-w-7xl mx-auto space-y-16">
             
@@ -93,7 +93,7 @@ const Instructions = () => {
                         {/* Mobile Screenshot - Below this section */}
                         <div className="mt-4 flex justify-center">
                           <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            src="/lovable-uploads/725b6e85-7d86-40e2-af08-5c84f3003734.png" 
                             alt="SureGo Registration Screenshot" 
                             className="max-w-full h-auto rounded-lg max-h-48"
                           />
@@ -121,7 +121,7 @@ const Instructions = () => {
                         {/* Mobile Screenshot - Below this section */}
                         <div className="mt-4 flex justify-center">
                           <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            src="/lovable-uploads/ba86bf50-12d1-407f-acb3-937e90167e87.png" 
                             alt="SureGo Email Registration Screenshot" 
                             className="max-w-full h-auto rounded-lg max-h-48"
                           />
@@ -149,7 +149,7 @@ const Instructions = () => {
                         {/* Mobile Screenshot - Below this section */}
                         <div className="mt-4 flex justify-center">
                           <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            src="/lovable-uploads/c2e265b6-f413-40cb-bb89-c051823235b1.png" 
                             alt="SureGo Profile Activation Screenshot" 
                             className="max-w-full h-auto rounded-lg max-h-48"
                           />
