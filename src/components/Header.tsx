@@ -3,15 +3,31 @@ import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { language, t, changeLanguage } = useLanguage();
+  const location = useLocation();
+  const navigate = useNavigate();
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleSectionNavigation = (sectionId: string) => {
+    if (location.pathname === '/instructions') {
+      // If on instructions page, navigate to main page and then scroll to section
+      navigate('/', { state: { scrollTo: sectionId } });
+    } else {
+      // If already on main page, just scroll to section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setIsMenuOpen(false);
   };
 
   useEffect(() => {
@@ -44,18 +60,30 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
-          <a href="#features" className="text-gray-600 hover:text-primary transition-colors font-medium">
+          <button 
+            onClick={() => handleSectionNavigation('features')} 
+            className="text-gray-600 hover:text-primary transition-colors font-medium"
+          >
             {t('features')}
-          </a>
-          <a href="#how-it-works" className="text-gray-600 hover:text-primary transition-colors font-medium">
+          </button>
+          <button 
+            onClick={() => handleSectionNavigation('how-it-works')} 
+            className="text-gray-600 hover:text-primary transition-colors font-medium"
+          >
             {t('howItWorks')}
-          </a>
-          <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors font-medium">
+          </button>
+          <button 
+            onClick={() => handleSectionNavigation('testimonials')} 
+            className="text-gray-600 hover:text-primary transition-colors font-medium"
+          >
             {t('testimonials')}
-          </a>
-          <a href="#faq" className="text-gray-600 hover:text-primary transition-colors font-medium">
+          </button>
+          <button 
+            onClick={() => handleSectionNavigation('faq')} 
+            className="text-gray-600 hover:text-primary transition-colors font-medium"
+          >
             {t('faq')}
-          </a>
+          </button>
           <Link to="/instructions" className="text-gray-600 hover:text-primary transition-colors font-medium">
             Инструкции
           </Link>
@@ -87,18 +115,30 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white py-4 px-4 border-t shadow-lg animate-fade-in">
           <nav className="flex flex-col space-y-3">
-            <a href="#features" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
+            <button 
+              onClick={() => handleSectionNavigation('features')} 
+              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium text-left"
+            >
               {t('features')}
-            </a>
-            <a href="#how-it-works" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
+            </button>
+            <button 
+              onClick={() => handleSectionNavigation('how-it-works')} 
+              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium text-left"
+            >
               {t('howItWorks')}
-            </a>
-            <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
+            </button>
+            <button 
+              onClick={() => handleSectionNavigation('testimonials')} 
+              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium text-left"
+            >
               {t('testimonials')}
-            </a>
-            <a href="#faq" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
+            </button>
+            <button 
+              onClick={() => handleSectionNavigation('faq')} 
+              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium text-left"
+            >
               {t('faq')}
-            </a>
+            </button>
             <Link to="/instructions" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
               Инструкции
             </Link>

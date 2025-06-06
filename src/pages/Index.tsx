@@ -1,4 +1,6 @@
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import RegistrationShowcase from "@/components/RegistrationShowcase";
@@ -12,6 +14,8 @@ import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  const location = useLocation();
+  
   // Define the app showcase screenshots in the order specified by the user
   const appScreenshots = [
     "/lovable-uploads/78087210-3661-4383-a7df-163b48ab4965.png", // Invite Players  
@@ -19,6 +23,20 @@ const Index = () => {
     "/lovable-uploads/d405336c-4d6f-40e8-b3f3-631cf1b3ab98.png", // Assign Players
     "/lovable-uploads/8c82ea02-2341-4e73-bd3e-36f5db5a2f5d.png", // Organize and Play!
   ];
+
+  useEffect(() => {
+    // Handle scrolling to section when navigating from instructions page
+    if (location.state?.scrollTo) {
+      const timer = setTimeout(() => {
+        const element = document.getElementById(location.state.scrollTo);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100); // Small delay to ensure page is rendered
+
+      return () => clearTimeout(timer);
+    }
+  }, [location.state]);
 
   return (
     <div className="min-h-screen bg-white">
