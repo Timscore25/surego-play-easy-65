@@ -13,6 +13,9 @@ export const translations = {
     heroTitle: "Кажи сбогом на хаоса при футболните срещи!",
     heroSubtitle: "Управлявай събития, играчи и плащания – директно от телефона си.",
     
+    // Instructions
+    instructions: "Инструкции",
+    
     // Newsletter
     newsletterTitle: "Абонирай се за новини и функции",
     newsletterSubtitle: "Бъдете първите, които научават за нови функции, събития и съвети за организиране на мачове.",
@@ -120,6 +123,9 @@ export const translations = {
     // Hero
     heroTitle: "Say goodbye to chaos in football meetings!",
     heroSubtitle: "Manage events, players and payments - directly from your phone.",
+    
+    // Instructions
+    instructions: "Instructions",
     
     // Newsletter
     newsletterTitle: "Subscribe for news and features",
