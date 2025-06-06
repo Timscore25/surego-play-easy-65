@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -29,7 +30,7 @@ const Instructions = () => {
         </div>
 
         <div className="container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold mb-6">Instructions</h1>
+          <h1 className="text-3xl font-bold mb-6 text-center">{t('instructions')}</h1>
           
           <div className="max-w-7xl mx-auto space-y-16">
             
