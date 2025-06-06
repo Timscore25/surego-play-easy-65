@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import React, { createContext, useContext, useState, ReactNode } from "react";
 
 // Define our translations
 export const translations = {
@@ -97,7 +97,7 @@ export const translations = {
     faqTitle: "Често задавани въпроси",
     faqSubtitle: "Отговори на най-често задаваните въпроси за използването на SureGo",
     faq1Question: "Как се добавят играчи?",
-    faq1Answer: "Можете да добавяте играчи по няколко начина: чрез изпращане на покана по имейл или телефон, споделяне на код за присъединяване или търsenе по SureGo ID. След като играч приеме поканата, той автоматично се добавя към вашия отбор.",
+    faq1Answer: "Можете да добавяте играчи по няколко начина: чрез изпращане на покана по имейл или телефон, споделяне на код за присъединяване или търсене по SureGo ID. След като играч приеме поканата, той автоматично се добавя към вашия отбор.",
     faq2Question: "Мога ли да променям състави?",
     faq2Answer: "Да, можете лесно да променяте съставите по всяко време. Просто отидете в секцията за управление на събития, изберете мача и преместете играчите между отборите. Системата също предлага автоматично балансиране на отборите според зададените умения на играчите.",
     faq3Question: "Как се следят плащанията?",
@@ -109,46 +109,6 @@ export const translations = {
     ctaTitle: "Готов ли си да играеш без главоболия?",
     ctaSubtitle: "Свали SureGo сега и започни да организираш футболни събития лесно и бързо.",
     downloadApp: "Свали SureGo",
-    
-    // Instructions page
-    instructionsTitle: "SureGo Instructions",
-    instructionsSubtitle: "Learn how to use all the app features",
-    downloadTitle: "Download the App",
-    downloadDesc: "You can download SureGo for free from:",
-    setupTitle: "Initial Setup", 
-    setupDesc: "After installing the app:",
-    setupStep1: "Open SureGo",
-    setupStep2: "Create a profile with email or social networks",
-    setupStep3: "Fill in basic information for your profile",
-    createTeamTitle: "Create a Team",
-    createTeamDesc: "To start organizing matches:",
-    createTeamStep1: "Press 'Create Team'",
-    createTeamStep2: "Enter team name",
-    createTeamStep3: "Add description and photo (optional)",
-    createTeamStep4: "Set basic rules",
-    invitePlayersTitle: "Add Players",
-    invitePlayersDesc: "There are several ways to invite players:",
-    inviteMethod1: "Share join code",
-    inviteMethod2: "Send invitation by email",
-    inviteMethod3: "Share via phone",
-    inviteMethod4: "Search by SureGo ID",
-    organizeEventTitle: "Organize an Event",
-    organizeEventDesc: "Create a match or training:",
-    organizeStep1: "Choose event type (match/training)",
-    organizeStep2: "Set date and time",
-    organizeStep3: "Add location",
-    organizeStep4: "Set participation fee",
-    organizeStep5: "Send invitations to players",
-    manageTitle: "Management and Tracking",
-    manageDesc: "After creating the event:",
-    manageStep1: "Track participation confirmations",
-    manageStep2: "Manage payments",
-    manageStep3: "Balance teams",
-    manageStep4: "Send reminders",
-    supportTitle: "Support",
-    supportDesc: "If you have questions or problems:",
-    supportEmail: "Send email to: support@surego.bg",
-    supportResponse: "We respond within 24 hours",
   },
   en: {
     // Header
@@ -257,46 +217,6 @@ export const translations = {
     ctaTitle: "Ready to play without headaches?",
     ctaSubtitle: "Download SureGo now and start organizing football events easily and quickly.",
     downloadApp: "Download SureGo",
-    
-    // Instructions page
-    instructionsTitle: "SureGo Instructions",
-    instructionsSubtitle: "Learn how to use all the app features",
-    downloadTitle: "Download the App",
-    downloadDesc: "You can download SureGo for free from:",
-    setupTitle: "Initial Setup", 
-    setupDesc: "After installing the app:",
-    setupStep1: "Open SureGo",
-    setupStep2: "Create a profile with email or social networks",
-    setupStep3: "Fill in basic information for your profile",
-    createTeamTitle: "Create a Team",
-    createTeamDesc: "To start organizing matches:",
-    createTeamStep1: "Press 'Create Team'",
-    createTeamStep2: "Enter team name",
-    createTeamStep3: "Add description and photo (optional)",
-    createTeamStep4: "Set basic rules",
-    invitePlayersTitle: "Add Players",
-    invitePlayersDesc: "There are several ways to invite players:",
-    inviteMethod1: "Share join code",
-    inviteMethod2: "Send invitation by email",
-    inviteMethod3: "Share via phone",
-    inviteMethod4: "Search by SureGo ID",
-    organizeEventTitle: "Organize an Event",
-    organizeEventDesc: "Create a match or training:",
-    organizeStep1: "Choose event type (match/training)",
-    organizeStep2: "Set date and time",
-    organizeStep3: "Add location",
-    organizeStep4: "Set participation fee",
-    organizeStep5: "Send invitations to players",
-    manageTitle: "Management and Tracking",
-    manageDesc: "After creating the event:",
-    manageStep1: "Track participation confirmations",
-    manageStep2: "Manage payments",
-    manageStep3: "Balance teams",
-    manageStep4: "Send reminders",
-    supportTitle: "Support",
-    supportDesc: "If you have questions or problems:",
-    supportEmail: "Send email to: support@surego.bg",
-    supportResponse: "We respond within 24 hours",
   }
 };
 
@@ -312,11 +232,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>(() => {
-    // Load saved language from localStorage or default to Bulgarian
-    const savedLanguage = localStorage.getItem('surego-language') as Language;
-    return savedLanguage || "bg";
-  });
+  const [language, setLanguage] = useState<Language>("bg");
 
   const t = (key: TranslationKeys): string => {
     return translations[language]?.[key] || translations.bg[key];
@@ -324,7 +240,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 
   const changeLanguage = (lang: Language) => {
     setLanguage(lang);
-    localStorage.setItem('surego-language', lang);
   };
 
   return (
