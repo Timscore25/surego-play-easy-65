@@ -93,7 +93,7 @@ const Instructions = () => {
                         {/* Mobile Screenshot - Below this section */}
                         <div className="mt-4 flex justify-center">
                           <img 
-                            src="/lovable-uploads/725b6e85-7d86-40e2-af08-5c84f3003734.png" 
+                            src="/lovable-uploads/501f51f3-0232-4e24-a34b-1c67dca7c87f.png" 
                             alt="SureGo Registration Screenshot" 
                             className="max-w-full h-auto rounded-lg max-h-48"
                           />
@@ -121,7 +121,7 @@ const Instructions = () => {
                         {/* Mobile Screenshot - Below this section */}
                         <div className="mt-4 flex justify-center">
                           <img 
-                            src="/lovable-uploads/ba86bf50-12d1-407f-acb3-937e90167e87.png" 
+                            src="/lovable-uploads/ca7b67e1-1774-474a-bab0-619adb140776.png" 
                             alt="SureGo Email Registration Screenshot" 
                             className="max-w-full h-auto rounded-lg max-h-48"
                           />
@@ -149,7 +149,7 @@ const Instructions = () => {
                         {/* Mobile Screenshot - Below this section */}
                         <div className="mt-4 flex justify-center">
                           <img 
-                            src="/lovable-uploads/c2e265b6-f413-40cb-bb89-c051823235b1.png" 
+                            src="/lovable-uploads/243ab4bd-b874-4b78-a5c6-34df233a34a5.png" 
                             alt="SureGo Profile Activation Screenshot" 
                             className="max-w-full h-auto rounded-lg max-h-48"
                           />
