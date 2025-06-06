@@ -15,7 +15,7 @@ const Instructions = () => {
       <Header />
       <main>
         {/* Wave SVG - positioned at the bottom of the header */}
-        <div className="relative w-full h-16 md:h-24 overflow-hidden mt-[4.5rem] -mb-1 border-0 outline-0">
+        <div className="relative w-full h-16 md:h-24 overflow-hidden mt-[4.5rem] border-0 outline-0">
           <svg 
             className="absolute top-0 left-0 w-full h-full border-0 outline-0"
             viewBox="0 0 1200 120" 
@@ -30,7 +30,7 @@ const Instructions = () => {
         </div>
 
         <div className="container mx-auto px-4 py-8">
-          <h1 className="text-3xl font-bold mb-6 text-center">{t('instructions')}</h1>
+          <h1 className="text-3xl font-bold mb-8 text-center text-gray-900">{t('instructions')}</h1>
           
           <div className="max-w-7xl mx-auto space-y-16">
             
