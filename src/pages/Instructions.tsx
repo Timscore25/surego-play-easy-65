@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -8,19 +7,19 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Check, Users, DollarSign, Shield, Zap, Settings, Eye, Clock, MapPin, Star } from "lucide-react";
 
 const Instructions = () => {
-  const { language } = useLanguage();
+  const { t } = useLanguage();
   
   return (
     <div className="min-h-screen bg-white">
       <Header />
       <main>
         {/* Wave SVG - positioned at the bottom of the header */}
-        <div className="relative w-full h-16 md:h-24 overflow-hidden mt-16 md:mt-20 -mb-1 border-0 outline-0">
+        <div className="relative w-full h-16 md:h-24 overflow-hidden mt-[4.5rem] -mb-1 border-0 outline-0">
           <svg 
+            className="absolute top-0 left-0 w-full h-full border-0 outline-0"
             viewBox="0 0 1200 120" 
             preserveAspectRatio="none" 
-            xmlns="http://www.w3.org/2000/svg" 
-            className="absolute top-0 left-0 w-full h-full border-0 outline-0"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path 
               d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" 
@@ -29,8 +28,8 @@ const Instructions = () => {
           </svg>
         </div>
 
-        <div className="app-container px-4 sm:px-6 mt-8 md:mt-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center">Инструкции</h1>
+        <div className="container mx-auto px-4 py-8">
+          <h1 className="text-3xl font-bold mb-6">Instructions</h1>
           
           <div className="max-w-7xl mx-auto space-y-16">
             
