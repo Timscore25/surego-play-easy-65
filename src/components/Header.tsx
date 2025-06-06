@@ -1,40 +1,17 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X, Loader2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const { language, t, changeLanguage, isLoading } = useLanguage();
-  const navigate = useNavigate();
-  const location = useLocation();
+  const { language, t, changeLanguage } = useLanguage();
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleNavClick = (sectionId: string) => {
-    setIsMenuOpen(false);
-    
-    if (location.pathname !== '/') {
-      // Navigate to home page first, then scroll
-      navigate('/');
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    } else {
-      // Already on home page, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
   };
 
   useEffect(() => {
@@ -67,49 +44,35 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
-          <button 
-            onClick={() => handleNavClick('features')} 
-            className="text-gray-600 hover:text-primary transition-colors font-medium cursor-pointer"
-          >
+          <a href="#features" className="text-gray-600 hover:text-primary transition-colors font-medium">
             {t('features')}
-          </button>
-          <button 
-            onClick={() => handleNavClick('how-it-works')} 
-            className="text-gray-600 hover:text-primary transition-colors font-medium cursor-pointer"
-          >
+          </a>
+          <a href="#how-it-works" className="text-gray-600 hover:text-primary transition-colors font-medium">
             {t('howItWorks')}
-          </button>
-          <button 
-            onClick={() => handleNavClick('testimonials')} 
-            className="text-gray-600 hover:text-primary transition-colors font-medium cursor-pointer"
-          >
+          </a>
+          <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors font-medium">
             {t('testimonials')}
-          </button>
-          <button 
-            onClick={() => handleNavClick('faq')} 
-            className="text-gray-600 hover:text-primary transition-colors font-medium cursor-pointer"
-          >
+          </a>
+          <a href="#faq" className="text-gray-600 hover:text-primary transition-colors font-medium">
             {t('faq')}
-          </button>
+          </a>
           <Link to="/instructions" className="text-gray-600 hover:text-primary transition-colors font-medium">
-            {t('instructionsTitle') || 'Инструкции'}
+            Инструкции
           </Link>
           <div className="flex items-center space-x-2 border-l pl-4 border-gray-200">
             <button 
-              className={`p-2 rounded-full transition-colors flex items-center justify-center ${language === "bg" ? "bg-gray-100" : "hover:bg-gray-100"}`} 
+              className={`p-2 rounded-full transition-colors ${language === "bg" ? "bg-gray-100" : "hover:bg-gray-100"}`} 
               aria-label="Български език"
               onClick={() => changeLanguage("bg")}
-              disabled={isLoading}
             >
-              {isLoading && language !== "bg" ? <Loader2 className="h-4 w-4 animate-spin" /> : "🇧🇬"}
+              🇧🇬
             </button>
             <button 
-              className={`p-2 rounded-full transition-colors flex items-center justify-center ${language === "en" ? "bg-gray-100" : "hover:bg-gray-100"}`}
+              className={`p-2 rounded-full transition-colors ${language === "en" ? "bg-gray-100" : "hover:bg-gray-100"}`}
               aria-label="English"
               onClick={() => changeLanguage("en")}
-              disabled={isLoading}
             >
-              {isLoading && language !== "en" ? <Loader2 className="h-4 w-4 animate-spin" /> : "🇬🇧"}
+              🇬🇧
             </button>
           </div>
         </nav>
@@ -124,49 +87,35 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white py-4 px-4 border-t shadow-lg animate-fade-in">
           <nav className="flex flex-col space-y-3">
-            <button 
-              onClick={() => handleNavClick('features')} 
-              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium text-left"
-            >
+            <a href="#features" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
               {t('features')}
-            </button>
-            <button 
-              onClick={() => handleNavClick('how-it-works')} 
-              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium text-left"
-            >
+            </a>
+            <a href="#how-it-works" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
               {t('howItWorks')}
-            </button>
-            <button 
-              onClick={() => handleNavClick('testimonials')} 
-              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium text-left"
-            >
+            </a>
+            <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
               {t('testimonials')}
-            </button>
-            <button 
-              onClick={() => handleNavClick('faq')} 
-              className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium text-left"
-            >
+            </a>
+            <a href="#faq" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
               {t('faq')}
-            </button>
+            </a>
             <Link to="/instructions" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
-              {t('instructionsTitle') || 'Инструкции'}
+              Инструкции
             </Link>
             <div className="flex items-center space-x-2 border-t pt-3 mt-1">
               <button 
-                className={`p-2 rounded-full transition-colors flex items-center justify-center ${language === "bg" ? "bg-gray-100" : "hover:bg-gray-100"}`} 
+                className={`p-2 rounded-full transition-colors ${language === "bg" ? "bg-gray-100" : "hover:bg-gray-100"}`} 
                 aria-label="Български език"
                 onClick={() => changeLanguage("bg")}
-                disabled={isLoading}
               >
-                {isLoading && language !== "bg" ? <Loader2 className="h-4 w-4 animate-spin" /> : "🇧🇬"}
+                🇧🇬
               </button>
               <button 
-                className={`p-2 rounded-full transition-colors flex items-center justify-center ${language === "en" ? "bg-gray-100" : "hover:bg-gray-100"}`}
+                className={`p-2 rounded-full transition-colors ${language === "en" ? "bg-gray-100" : "hover:bg-gray-100"}`}
                 aria-label="English"
                 onClick={() => changeLanguage("en")}
-                disabled={isLoading}
               >
-                {isLoading && language !== "en" ? <Loader2 className="h-4 w-4 animate-spin" /> : "🇬🇧"}
+                🇬🇧
               </button>
             </div>
           </nav>

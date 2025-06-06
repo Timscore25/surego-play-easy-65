@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import React, { createContext, useContext, useState, ReactNode } from "react";
 
 // Define our translations
 export const translations = {
@@ -109,48 +109,6 @@ export const translations = {
     ctaTitle: "Готов ли си да играеш без главоболия?",
     ctaSubtitle: "Свали SureGo сега и започни да организираш футболни събития лесно и бързо.",
     downloadApp: "Свали SureGo",
-    
-    // Instructions page
-    instructionsTitle: "Инструкции за използване на SureGo",
-    instructionsSubtitle: "Научете как да използвате всички функции на приложението",
-    gettingStartedTitle: "Първи стъпки",
-    gettingStartedDesc: "Започнете с основните функции на SureGo",
-    downloadTitle: "1. Изтеглете приложението",
-    downloadDesc: "Намерете SureGo в App Store или Google Play Store и го инсталирайте безплатно на вашето устройство.",
-    registerTitle: "2. Създайте профил",
-    registerDesc: "Регистрирайте се с имейл, Google или Apple ID. Попълнете основната информация за вашия профил.",
-    createTeamTitle: "3. Създайте отбор",
-    createTeamDesc: "Дайте име на вашия отбор, добавете описание и настройте основните параметри.",
-    addPlayersTitle: "4. Добавете играчи",
-    addPlayersDesc: "Поканете приятели чрез телефон, имейл или SureGo ID. Те ще получат покана за присъединяване.",
-    organizeEventTitle: "5. Организирайте събитие",
-    organizeEventDesc: "Създайте мач или тренировка, задайте дата, час и локация.",
-    manageTitle: "Управление на отбори и събития",
-    manageDesc: "Разширени функции за организатори",
-    teamBalancingTitle: "Балансиране на отбори",
-    teamBalancingDesc: "Използвайте автоматичното балансиране или ръчно разпределете играчите по отбори според техните умения.",
-    paymentTrackingTitle: "Проследяване на плащания",
-    paymentTrackingDesc: "Следете кой е платил участието си, изпращайте напомняния и управлявайте общия баланс.",
-    notificationsTitle: "Управление на известия",
-    notificationsDesc: "Настройте автоматични покани, напомняния и актуализации за вашите играчи.",
-    statisticsTitle: "Статистики и анализи",
-    statisticsDesc: "Преглеждайте данни за посещаемост, представяне и история на мачовете.",
-    tipsTitle: "Съвети за успешно организиране",
-    tipsDesc: "Най-добри практики от опитни организатори",
-    tip1Title: "Планирайте предварително",
-    tip1Desc: "Създавайте събития поне седмица преди датата, за да дадете време на играчите да планират.",
-    tip2Title: "Ясна комуникация",
-    tip2Desc: "Винаги уточнявайте локация, час и изисквания за участие в описанието на събитието.",
-    tip3Title: "Редовни напомняния",
-    tip3Desc: "Изпращайте напомняния 2-3 дни преди мача и в деня на събитието.",
-    tip4Title: "Резервни играчи",
-    tip4Desc: "Винаги имайте списък с резервни играчи за случаи на отказ в последния момент.",
-    supportTitle: "Поддръжка и помощ",
-    supportDesc: "Нуждаете се от помощ? Ние сме тук за вас",
-    contactSupport: "Свържете се с поддръжката",
-    emailSupport: "support@surego.app",
-    faqLink: "Често задавани въпроси",
-    communityLink: "Общност на потребителите",
   },
   en: {
     // Header
@@ -259,48 +217,6 @@ export const translations = {
     ctaTitle: "Ready to play without headaches?",
     ctaSubtitle: "Download SureGo now and start organizing football events easily and quickly.",
     downloadApp: "Download SureGo",
-    
-    // Instructions page
-    instructionsTitle: "SureGo Usage Instructions",
-    instructionsSubtitle: "Learn how to use all the application features",
-    gettingStartedTitle: "Getting Started",
-    gettingStartedDesc: "Begin with SureGo's basic features",
-    downloadTitle: "1. Download the App",
-    downloadDesc: "Find SureGo in the App Store or Google Play Store and install it for free on your device.",
-    registerTitle: "2. Create an Account",
-    registerDesc: "Register with email, Google, or Apple ID. Fill in basic information for your profile.",
-    createTeamTitle: "3. Create a Team",
-    createTeamDesc: "Give your team a name, add a description, and set up basic parameters.",
-    addPlayersTitle: "4. Add Players",
-    addPlayersDesc: "Invite friends via phone, email, or SureGo ID. They will receive an invitation to join.",
-    organizeEventTitle: "5. Organize an Event",
-    organizeEventDesc: "Create a match or training session, set date, time, and location.",
-    manageTitle: "Team and Event Management",
-    manageDesc: "Advanced features for organizers",
-    teamBalancingTitle: "Team Balancing",
-    teamBalancingDesc: "Use automatic balancing or manually distribute players across teams based on their skills.",
-    paymentTrackingTitle: "Payment Tracking",
-    paymentTrackingDesc: "Track who has paid for participation, send reminders, and manage the overall balance.",
-    notificationsTitle: "Notification Management",
-    notificationsDesc: "Set up automatic invitations, reminders, and updates for your players.",
-    statisticsTitle: "Statistics and Analytics",
-    statisticsDesc: "Review data on attendance, performance, and match history.",
-    tipsTitle: "Tips for Successful Organization",
-    tipsDesc: "Best practices from experienced organizers",
-    tip1Title: "Plan Ahead",
-    tip1Desc: "Create events at least a week before the date to give players time to plan.",
-    tip2Title: "Clear Communication",
-    tip2Desc: "Always specify location, time, and participation requirements in the event description.",
-    tip3Title: "Regular Reminders",
-    tip3Desc: "Send reminders 2-3 days before the match and on the day of the event.",
-    tip4Title: "Backup Players",
-    tip4Desc: "Always have a list of backup players for last-minute cancellations.",
-    supportTitle: "Support and Help",
-    supportDesc: "Need help? We're here for you",
-    contactSupport: "Contact Support",
-    emailSupport: "support@surego.app",
-    faqLink: "Frequently Asked Questions",
-    communityLink: "User Community",
   }
 };
 
@@ -311,38 +227,23 @@ interface LanguageContextType {
   language: Language;
   t: (key: TranslationKeys) => string;
   changeLanguage: (lang: Language) => void;
-  isLoading: boolean;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>("bg");
-  const [isLoading, setIsLoading] = useState(false);
-
-  // Load language from localStorage on mount
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem("surego-language") as Language;
-    if (savedLanguage && (savedLanguage === "bg" || savedLanguage === "en")) {
-      setLanguage(savedLanguage);
-    }
-  }, []);
 
   const t = (key: TranslationKeys): string => {
     return translations[language]?.[key] || translations.bg[key];
   };
 
   const changeLanguage = (lang: Language) => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setLanguage(lang);
-      localStorage.setItem("surego-language", lang);
-      setIsLoading(false);
-    }, 300); // Brief loading delay for UX feedback
+    setLanguage(lang);
   };
 
   return (
-    <LanguageContext.Provider value={{ language, t, changeLanguage, isLoading }}>
+    <LanguageContext.Provider value={{ language, t, changeLanguage }}>
       {children}
     </LanguageContext.Provider>
   );
