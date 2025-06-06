@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
 // Define our translations
@@ -109,6 +110,22 @@ export const translations = {
     ctaTitle: "Готов ли си да играеш без главоболия?",
     ctaSubtitle: "Свали SureGo сега и започни да организираш футболни събития лесно и бързо.",
     downloadApp: "Свали SureGo",
+
+    // Instructions Page
+    instructionsTitle: "Инструкции",
+    instructionsSubtitle: "Как да използвате SureGo за организиране на футболни събития",
+    downloadTitle: "1. Изтеглете приложението",
+    downloadContent: "Първо, изтеглете SureGo приложението от App Store или Google Play Store. Приложението е безплатно за изтегляне и използване.",
+    registerTitle: "2. Регистрирайте се",
+    registerContent: "Създайте профил в приложението. Можете да се регистрирате с вашия Google акаунт, Apple ID или имейл адрес. Процесът отнема само няколко минути.",
+    teamTitle: "3. Създайте отбор",
+    teamContent: "След регистрацията, създайте вашия първи отбор. Дайте му име, добавете описание и настройте основните параметри като цена за участие в мач.",
+    playersTitle: "4. Добавете играчи",
+    playersContent: "Поканете играчи към вашия отбор чрез изпращане на покани по имейл, телефон или споделяне на специален код. Играчите могат да се присъединят към отбора чрез SureGo ID.",
+    eventTitle: "5. Организирайте събитие",
+    eventContent: "Създайте мач или тренировка като зададете дата, час, локация и условия за участие. Системата автоматично ще изпрати покани до всички играчи в отбора.",
+    trackTitle: "6. Следете потвърждения",
+    trackContent: "Наблюдавайте кой е потвърдил участие и кой е платил таксата. Можете да изпращате напомняния и да управлявате списъка с участници до самия ден на мача.",
   },
   en: {
     // Header
@@ -217,6 +234,22 @@ export const translations = {
     ctaTitle: "Ready to play without headaches?",
     ctaSubtitle: "Download SureGo now and start organizing football events easily and quickly.",
     downloadApp: "Download SureGo",
+
+    // Instructions Page
+    instructionsTitle: "Instructions",
+    instructionsSubtitle: "How to use SureGo for organizing football events",
+    downloadTitle: "1. Download the App",
+    downloadContent: "First, download the SureGo application from the App Store or Google Play Store. The app is free to download and use.",
+    registerTitle: "2. Register",
+    registerContent: "Create a profile in the app. You can register with your Google account, Apple ID, or email address. The process takes only a few minutes.",
+    teamTitle: "3. Create a Team",
+    teamContent: "After registration, create your first team. Give it a name, add a description and set up basic parameters like the participation fee for a match.",
+    playersTitle: "4. Add Players",
+    playersContent: "Invite players to your team by sending invitations via email, phone, or by sharing a special code. Players can join the team using a SureGo ID.",
+    eventTitle: "5. Organize an Event",
+    eventContent: "Create a match or training session by setting the date, time, location, and participation conditions. The system will automatically send invitations to all players on the team.",
+    trackTitle: "6. Track Confirmations",
+    trackContent: "Monitor who has confirmed participation and who has paid the fee. You can send reminders and manage the participant list up to the day of the match.",
   }
 };
 
