@@ -41,7 +41,7 @@ const Instructions = () => {
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">1</span>
-                      Създаване на профил в SureGo – бързо и лесно!
+                      {t('instructionTitle1')}
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
@@ -49,8 +49,8 @@ const Instructions = () => {
                       
                       {/* Column 1: Download App */}
                       <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Свалете приложението</h3>
-                        <p className="text-gray-700">Достъпно е в:</p>
+                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionDownloadApp')}</h3>
+                        <p className="text-gray-700">{t('instructionAvailableIn')}</p>
                         
                         {/* App Store and Google Play Badges */}
                         <div className="space-y-3 pt-4">
@@ -73,20 +73,20 @@ const Instructions = () => {
 
                       {/* Column 2: Choose Registration Method */}
                       <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Изберете начин за регистрация</h3>
-                        <p className="text-gray-700">Можете да се регистрирате чрез:</p>
+                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionChooseRegistration')}</h3>
+                        <p className="text-gray-700">{t('instructionCanRegisterWith')}</p>
                         <div className="space-y-2">
                           <div className="flex items-center">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">Google акаунт</span>
+                            <span className="text-sm">{t('instructionGoogleAccount')}</span>
                           </div>
                           <div className="flex items-center">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">Apple ID</span>
+                            <span className="text-sm">{t('instructionAppleId')}</span>
                           </div>
                           <div className="flex items-center">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">Имейл (изберете „Създай профил")</span>
+                            <span className="text-sm">{t('instructionEmailRegistration')}</span>
                           </div>
                         </div>
                         
@@ -102,19 +102,19 @@ const Instructions = () => {
 
                       {/* Column 3: Email Registration Process */}
                       <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Ако сте избрали имейл регистрация:</h3>
+                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionEmailRegTitle')}</h3>
                         <div className="space-y-2">
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>Въведете вашия имейл и парола</span>
+                            <span>{t('instructionEnterEmail')}</span>
                           </div>
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>Натиснете „Създай профил"</span>
+                            <span>{t('instructionPressCreateProfile')}</span>
                           </div>
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>Проверете имейла си за потвърждаващ линк</span>
+                            <span>{t('instructionCheckEmail')}</span>
                           </div>
                         </div>
                         
@@ -130,19 +130,19 @@ const Instructions = () => {
 
                       {/* Column 4: Activate Profile */}
                       <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Активирайте профила си</h3>
+                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionActivateProfile')}</h3>
                         <div className="space-y-2">
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>Отворете имейла и кликнете върху линка за потвърждение</span>
+                            <span>{t('instructionOpenEmail')}</span>
                           </div>
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>Върнете се в приложението и изберете „Вход с имейл"</span>
+                            <span>{t('instructionReturnToApp')}</span>
                           </div>
                           <div className="flex items-start">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>Въведете имейл и парола – и готово!</span>
+                            <span>{t('instructionEnterCredentials')}</span>
                           </div>
                         </div>
                         
@@ -160,7 +160,7 @@ const Instructions = () => {
                     {/* Success Message */}
                     <div className="bg-warmyellow-50 p-6 rounded-md mt-8">
                       <p className="text-lg font-medium text-warmyellow-700 text-center">
-                        Вече имате активен профил и сте готови да започнете да използвате SureGo!
+                        {t('instructionProfileReady')}
                       </p>
                     </div>
                   </div>
@@ -175,7 +175,7 @@ const Instructions = () => {
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">2</span>
-                      Създайте своя отбор
+                      {t('instructionTitle2')}
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
@@ -183,10 +183,10 @@ const Instructions = () => {
                       
                       {/* Column 1: Open Teams */}
                       <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Отворете раздела</h3>
+                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionOpenSection')}</h3>
                         <div className="flex items-start">
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
-                          <span className="text-sm">Отворете раздела „Отбори"</span>
+                          <span className="text-sm">{t('instructionOpenTeamsSection')}</span>
                         </div>
                         
                         {/* Mobile Screenshot - Below this section */}
@@ -201,10 +201,10 @@ const Instructions = () => {
 
                       {/* Column 2: Press Plus */}
                       <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Натиснете „+"</h3>
+                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionPressPlus')}</h3>
                         <div className="flex items-start">
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
-                          <span className="text-sm">Натиснете „+" (в горния десен ъгъл)</span>
+                          <span className="text-sm">{t('instructionPressPlusButton')}</span>
                         </div>
                         
                         {/* Mobile Screenshot - Below this section */}
@@ -219,10 +219,10 @@ const Instructions = () => {
 
                       {/* Column 3: Fill Information */}
                       <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Попълнете данни</h3>
+                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionFillData')}</h3>
                         <div className="flex items-start">
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
-                          <span className="text-sm">Попълнете име, държава, град и добавете снимка</span>
+                          <span className="text-sm">{t('instructionFillTeamData')}</span>
                         </div>
                         
                         {/* Mobile Screenshot - Below this section */}
@@ -237,10 +237,10 @@ const Instructions = () => {
 
                       {/* Column 4: Save */}
                       <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">Запазете</h3>
+                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionSave')}</h3>
                         <div className="flex items-start">
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">4</div>
-                          <span className="text-sm">Натиснете „Запази" – и готово!</span>
+                          <span className="text-sm">{t('instructionPressSave')}</span>
                         </div>
                         
                         {/* Mobile Screenshot - Below this section */}
@@ -257,7 +257,7 @@ const Instructions = () => {
                     {/* Success Message */}
                     <div className="bg-warmyellow-50 p-6 rounded-md mt-8">
                       <p className="text-lg font-medium text-warmyellow-700 text-center">
-                        Вече сте готови да организирате мачовете си без главоболия!
+                        {t('instructionTeamReady')}
                       </p>
                     </div>
                   </div>
@@ -272,9 +272,9 @@ const Instructions = () => {
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">3</span>
-                      Добавяне и настройка на играчи в отбора
+                      {t('instructionTitle3')}
                     </h2>
-                    <p className="text-white/90 text-lg">Вече имате създаден отбор - нека го организираме перфектно!</p>
+                    <p className="text-white/90 text-lg">{t('instructionTeamSubtitle')}</p>
                   </div>
                   <div className="p-6 md:p-8 space-y-8">
                     
@@ -282,20 +282,20 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-warmyellow-400 pl-6">
                       <div className="lg:col-span-2">
                         <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                          1. Достъп до секцията за играчи:
+                          1. {t('instructionAccessPlayers')}
                         </h3>
                         <div className="space-y-2">
                           <div className="flex items-center">
                             <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Отворете раздела „Отбори"</span>
+                            <span>{t('instructionOpenTeams')}</span>
                           </div>
                           <div className="flex items-center">
                             <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Изберете вашия отбор</span>
+                            <span>{t('instructionSelectTeam')}</span>
                           </div>
                           <div className="flex items-center">
                             <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Кликнете върху „Играчи"</span>
+                            <span>{t('instructionClickPlayers')}</span>
                           </div>
                         </div>
                       </div>
@@ -314,27 +314,27 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-warmyellow-400 pl-6">
                       <div className="lg:col-span-2">
                         <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                          2. Добавяне на нов играч:
+                          2. {t('instructionAddNewPlayer')}
                         </h3>
                         <div className="space-y-3">
                           <div className="flex items-center">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Натиснете „+" (в горния десен ъгъл)</span>
+                            <span>{t('instructionPressPlusButton')}</span>
                           </div>
                           <div className="ml-6">
-                            <p className="font-medium mb-2">Изберете удобен за вас метод:</p>
+                            <p className="font-medium mb-2">{t('instructionChooseMethod')}</p>
                             <div className="space-y-2">
                               <div className="flex items-center">
                                 <Users className="text-blue-500 mr-2 flex-shrink-0" size={16} />
-                                <span>Чрез SureGo ID (намерете го в профила на играча)</span>
+                                <span>{t('instructionViaSureGoId')}</span>
                               </div>
                               <div className="flex items-center">
                                 <Users className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                                <span>Чрез телефонен номер (ръчно въвеждане)</span>
+                                <span>{t('instructionViaPhone')}</span>
                               </div>
                               <div className="flex items-center">
                                 <Users className="text-purple-500 mr-2 flex-shrink-0" size={16} />
-                                <span>От контактите на телефона (автоматично свързване)</span>
+                                <span>{t('instructionViaContacts')}</span>
                               </div>
                             </div>
                           </div>
@@ -355,56 +355,56 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-warmyellow-400 pl-6">
                       <div className="lg:col-span-2">
                         <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                          3. Конфигуриране на играча
+                          3. {t('instructionPlayerConfig')}
                         </h3>
                         
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                           {/* Role Configuration */}
                           <div className="bg-warmyellow-50 p-4 rounded-lg">
-                            <h4 className="font-bold text-lg mb-3 text-warmyellow-600">Задаване на роля:</h4>
+                            <h4 className="font-bold text-lg mb-3 text-warmyellow-600">{t('instructionSetRole')}</h4>
                             <div className="space-y-2">
                               <div className="flex items-center">
                                 <span className="mr-2">🏆</span>
-                                <span className="font-medium">Основен</span>
-                                <span className="text-sm text-gray-600 ml-2">(приоритетни покани)</span>
+                                <span className="font-medium">{t('instructionMainPlayer')}</span>
+                                <span className="text-sm text-gray-600 ml-2">{t('instructionMainPlayerDesc')}</span>
                               </div>
                               <div className="flex items-center">
                                 <span className="mr-2">🔄</span>
-                                <span className="font-medium">Резервен</span>
-                                <span className="text-sm text-gray-600 ml-2">(поканват се втори)</span>
+                                <span className="font-medium">{t('instructionReservePlayer')}</span>
+                                <span className="text-sm text-gray-600 ml-2">{t('instructionReservePlayerDesc')}</span>
                               </div>
                               <div className="flex items-center">
                                 <span className="mr-2">👋</span>
-                                <span className="font-medium">Гост</span>
-                                <span className="text-sm text-gray-600 ml-2">(поканват се при нужда)</span>
+                                <span className="font-medium">{t('instructionGuestPlayer')}</span>
+                                <span className="text-sm text-gray-600 ml-2">{t('instructionGuestPlayerDesc')}</span>
                               </div>
                               <div className="flex items-center">
                                 <span className="mr-2">👀</span>
-                                <span className="font-medium">Наблюдател</span>
-                                <span className="text-sm text-gray-600 ml-2">(само преглед)</span>
+                                <span className="font-medium">{t('instructionObserver')}</span>
+                                <span className="text-sm text-gray-600 ml-2">{t('instructionObserverDesc')}</span>
                               </div>
                             </div>
                           </div>
 
                           {/* Position Configuration */}
                           <div className="bg-blue-50 p-4 rounded-lg">
-                            <h4 className="font-bold text-lg mb-3 text-blue-600">Специалност (позиция):</h4>
+                            <h4 className="font-bold text-lg mb-3 text-blue-600">{t('instructionSpecialty')}</h4>
                             <div className="space-y-2">
                               <div className="flex items-center">
                                 <span className="mr-2">🧤</span>
-                                <span className="font-medium">Вратар</span>
+                                <span className="font-medium">{t('instructionGoalkeeper')}</span>
                               </div>
                               <div className="flex items-center">
                                 <span className="mr-2">🛡️</span>
-                                <span className="font-medium">Защитник</span>
+                                <span className="font-medium">{t('instructionDefender')}</span>
                               </div>
                               <div className="flex items-center">
                                 <span className="mr-2">⚙️</span>
-                                <span className="font-medium">Полузащитник</span>
+                                <span className="font-medium">{t('instructionMidfielder')}</span>
                               </div>
                               <div className="flex items-center">
                                 <span className="mr-2">⚡</span>
-                                <span className="font-medium">Нападател</span>
+                                <span className="font-medium">{t('instructionAttacker')}</span>
                               </div>
                             </div>
                           </div>
@@ -412,19 +412,19 @@ const Instructions = () => {
 
                         {/* Position Usage Information */}
                         <div className="bg-gray-50 p-4 rounded-lg">
-                          <h5 className="font-medium text-gray-700 mb-2">Позициите се използват за:</h5>
+                          <h5 className="font-medium text-gray-700 mb-2">{t('instructionPositionsUsedFor')}</h5>
                           <div className="space-y-1 text-sm text-gray-600">
                             <div className="flex items-center">
                               <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
-                              <span>Автоматично балансиране на отборите при мачове</span>
+                              <span>{t('instructionAutoBalance')}</span>
                             </div>
                             <div className="flex items-center">
                               <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
-                              <span>Детайлна статистика по пост</span>
+                              <span>{t('instructionDetailedStats')}</span>
                             </div>
                             <div className="flex items-center">
                               <Check className="text-green-500 mr-2 flex-shrink-0" size={14} />
-                              <span>Анализ на използваните формации</span>
+                              <span>{t('instructionFormationAnalysis')}</span>
                             </div>
                           </div>
                         </div>
@@ -444,10 +444,10 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 gap-6 items-start border-l-4 border-blue-400 pl-6">
                       <div>
                         <h3 className="font-bold text-xl text-blue-500 mb-4">
-                          4. Ако играчът все още не е в SureGo:
+                          4. {t('instructionPlayerNotInSureGo')}
                         </h3>
                         <p className="text-gray-700">
-                          Можете да му изпратите инвайт линк по SMS, имейл или месинджър – той ще получи директна връзка за изтегляне на приложението и регистрация.
+                          {t('instructionSendInvite')}
                         </p>
                       </div>
                     </div>
@@ -456,20 +456,20 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 gap-6 items-start border-l-4 border-green-400 pl-6">
                       <div>
                         <h3 className="font-bold text-xl text-green-500 mb-4">
-                          5. Допълнителни възможности:
+                          5. {t('instructionAdditionalFeatures')}
                         </h3>
                         <div className="space-y-2">
                           <div className="flex items-center">
                             <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Редактиране на профили по-късно</span>
+                            <span>{t('instructionEditProfiles')}</span>
                           </div>
                           <div className="flex items-center">
                             <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Промяна на позиции и роли</span>
+                            <span>{t('instructionChangePositions')}</span>
                           </div>
                           <div className="flex items-center">
                             <Settings className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Индивидуална статистика за всеки играч</span>
+                            <span>{t('instructionIndividualStats')}</span>
                           </div>
                         </div>
                       </div>
@@ -479,20 +479,20 @@ const Instructions = () => {
                     <div className="bg-gradient-to-r from-warmyellow-100 to-warmyellow-50 p-6 rounded-lg">
                       <h3 className="font-bold text-xl text-warmyellow-600 mb-4 flex items-center">
                         <span className="mr-2">🌟</span>
-                        След като конфигурирате играчите, ще можете:
+                        {t('instructionAfterConfig')}
                       </h3>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="flex items-start">
                           <Users className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Да получавате автоматични предложения за оптимални състави</span>
+                          <span>{t('instructionAutoSuggestions')}</span>
                         </div>
                         <div className="flex items-start">
                           <Settings className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Да следите производителността по позиции</span>
+                          <span>{t('instructionTrackPerformance')}</span>
                         </div>
                         <div className="flex items-start">
                           <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Да анализирате силните и слабите страни на отбора</span>
+                          <span>{t('instructionAnalyzeStrengths')}</span>
                         </div>
                       </div>
                     </div>
@@ -500,7 +500,7 @@ const Instructions = () => {
                     {/* Final Message */}
                     <div className="bg-warmyellow-50 p-6 rounded-md text-center">
                       <p className="text-lg font-medium text-warmyellow-700">
-                        Приложението ще ви помогне да управлявате отбора професионално, като ви предоставя всички необходими инструменти за успех! ⚽📊
+                        {t('instructionFinalMessage1')}
                       </p>
                     </div>
                   </div>
@@ -515,25 +515,25 @@ const Instructions = () => {
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">4</span>
-                      Създаване на футболно събитие в SureGo
+                      {t('instructionTitle4')}
                     </h2>
-                    <p className="text-white/90 text-lg">Организирайте перфектни мачове с няколко лесни стъпки!</p>
+                    <p className="text-white/90 text-lg">{t('instructionEventSubtitle')}</p>
                   </div>
                   <div className="p-6 md:p-8 space-y-8">
                     
                     {/* Section 1: Start New Event */}
                     <div className="border-l-4 border-warmyellow-400 pl-6">
                       <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                        1. Стартиране на ново събитие:
+                        1. {t('instructionStartNewEvent')}
                       </h3>
                       <div className="space-y-2">
                         <div className="flex items-center">
                           <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                          <span>От екрана на отбора изберете „Събития"</span>
+                          <span>{t('instructionSelectEvents')}</span>
                         </div>
                         <div className="flex items-center">
                           <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                          <span>Натиснете „+" (горен десен ъгъл)</span>
+                          <span>{t('instructionPressPlusButton')}</span>
                         </div>
                       </div>
                     </div>
@@ -542,20 +542,20 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-warmyellow-400 pl-6">
                       <div className="lg:col-span-2">
                         <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                          2. Основна информация:
+                          2. {t('instructionBasicInfo')}
                         </h3>
                         <div className="space-y-2">
                           <div className="flex items-center">
                             <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Въведете име и описание на събитието</span>
+                            <span>{t('instructionEnterEventInfo')}</span>
                           </div>
                           <div className="flex items-center">
                             <MapPin className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Добавете място (с възможност за точна локация чрез „Карта" бутон)</span>
+                            <span>{t('instructionAddLocation')}</span>
                           </div>
                           <div className="flex items-center">
                             <ArrowRight className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Натиснете „Напред"</span>
+                            <span>{t('instructionPressNext')}</span>
                           </div>
                         </div>
                       </div>
@@ -574,38 +574,38 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-warmyellow-400 pl-6">
                       <div className="lg:col-span-2">
                         <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                          3. Настройки на мача:
+                          3. {t('instructionMatchSettings')}
                         </h3>
                         
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                           {/* DateTime and Duration */}
                           <div className="bg-warmyellow-50 p-4 rounded-lg">
-                            <h4 className="font-bold text-lg mb-3 text-warmyellow-600">Дата и време:</h4>
+                            <h4 className="font-bold text-lg mb-3 text-warmyellow-600">{t('instructionDateTime')}</h4>
                             <div className="space-y-2">
                               <div className="flex items-center">
                                 <Calendar className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                                <span>Изберете дата и начален час</span>
+                                <span>{t('instructionSelectDate')}</span>
                               </div>
                               <div className="flex items-center">
                                 <Clock className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                                <span>Задайте продължителност (в минути)</span>
+                                <span>{t('instructionSetDuration')}</span>
                               </div>
                             </div>
                           </div>
 
                           {/* Repeat Settings */}
                           <div className="bg-blue-50 p-4 rounded-lg">
-                            <h4 className="font-bold text-lg mb-3 text-blue-600">Повторяемост:</h4>
+                            <h4 className="font-bold text-lg mb-3 text-blue-600">{t('instructionRepeatability')}</h4>
                             <div className="space-y-2">
                               <div className="flex items-center">
                                 <span className="mr-2">🔹</span>
-                                <span className="font-medium">Еднократно</span>
-                                <span className="text-sm text-gray-600 ml-2">(само за този ден)</span>
+                                <span className="font-medium">{t('instructionOneTime')}</span>
+                                <span className="text-sm text-gray-600 ml-2">{t('instructionOneTimeDesc')}</span>
                               </div>
                               <div className="flex items-center">
                                 <span className="mr-2">🔹</span>
-                                <span className="font-medium">Ежеседмично</span>
-                                <span className="text-sm text-gray-600 ml-2">(автоматично повторение)</span>
+                                <span className="font-medium">{t('instructionWeekly')}</span>
+                                <span className="text-sm text-gray-600 ml-2">{t('instructionWeeklyDesc')}</span>
                               </div>
                             </div>
                           </div>
@@ -614,27 +614,27 @@ const Instructions = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                           {/* Teams Configuration */}
                           <div className="bg-green-50 p-4 rounded-lg">
-                            <h4 className="font-bold text-lg mb-3 text-green-600">Брой отбори:</h4>
+                            <h4 className="font-bold text-lg mb-3 text-green-600">{t('instructionTeamCount')}</h4>
                             <div className="space-y-2">
                               <div className="flex items-center">
                                 <span className="mr-2">1️⃣</span>
-                                <span className="font-medium">1 отбор</span>
-                                <span className="text-sm text-gray-600 ml-2">(игра срещу външен отбор)</span>
+                                <span className="font-medium">{t('instructionOneTeam')}</span>
+                                <span className="text-sm text-gray-600 ml-2">{t('instructionOneTeamDesc')}</span>
                               </div>
                               <div className="flex items-center">
                                 <span className="mr-2">2️⃣</span>
-                                <span className="font-medium">2 отбора</span>
-                                <span className="text-sm text-gray-600 ml-2">(вътрешен мач)</span>
+                                <span className="font-medium">{t('instructionTwoTeams')}</span>
+                                <span className="text-sm text-gray-600 ml-2">{t('instructionTwoTeamsDesc')}</span>
                               </div>
                             </div>
                           </div>
 
                           {/* Player Count */}
                           <div className="bg-purple-50 p-4 rounded-lg">
-                            <h4 className="font-bold text-lg mb-3 text-purple-600">Играчи:</h4>
+                            <h4 className="font-bold text-lg mb-3 text-purple-600">{t('instructionPlayers')}</h4>
                             <div className="flex items-center">
                               <Users className="text-purple-500 mr-2 flex-shrink-0" size={16} />
-                              <span>Задайте минимален брой играчи</span>
+                              <span>{t('instructionSetMinPlayers')}</span>
                             </div>
                           </div>
                         </div>
@@ -654,35 +654,35 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-blue-400 pl-6">
                       <div className="lg:col-span-2">
                         <h3 className="font-bold text-xl text-blue-500 mb-4">
-                          4. Покани за играчи:
+                          4. {t('instructionPlayerInvites')}
                         </h3>
                         
                         <div className="bg-blue-50 p-4 rounded-lg mb-4">
-                          <h4 className="font-bold text-lg mb-3 text-blue-600">Времеви интервали за покани:</h4>
+                          <h4 className="font-bold text-lg mb-3 text-blue-600">{t('instructionTimeIntervals')}</h4>
                           <div className="space-y-2">
                             <div className="flex items-center">
                               <span className="mr-2">⏰</span>
-                              <span className="font-medium">Основни играчи</span>
-                              <span className="text-sm text-gray-600 ml-2">(първи получават покана)</span>
+                              <span className="font-medium">{t('instructionMainPlayers')}</span>
+                              <span className="text-sm text-gray-600 ml-2">{t('instructionMainPlayersDesc')}</span>
                             </div>
                             <div className="flex items-center">
                               <span className="mr-2">⏰</span>
-                              <span className="font-medium">Резерви</span>
-                              <span className="text-sm text-gray-600 ml-2">(получават след основните)</span>
+                              <span className="font-medium">{t('instructionReservePlayers')}</span>
+                              <span className="text-sm text-gray-600 ml-2">{t('instructionReservePlayersDesc')}</span>
                             </div>
                             <div className="flex items-center">
                               <span className="mr-2">⏰</span>
-                              <span className="font-medium">Гости</span>
-                              <span className="text-sm text-gray-600 ml-2">(получават последни)</span>
+                              <span className="font-medium">{t('instructionGuestPlayers')}</span>
+                              <span className="text-sm text-gray-600 ml-2">{t('instructionGuestPlayersDesc')}</span>
                             </div>
                           </div>
                         </div>
 
                         <div className="bg-orange-50 p-4 rounded-lg">
-                          <h4 className="font-bold text-lg mb-2 text-orange-600">Краен срок за потвърждение:</h4>
+                          <h4 className="font-bold text-lg mb-2 text-orange-600">{t('instructionDeadline')}</h4>
                           <div className="flex items-start">
                             <span className="mr-2">📅</span>
-                            <span className="text-sm">Ако не се събере достатъчно играчи до този момент, събитието се отменя автоматично</span>
+                            <span className="text-sm">{t('instructionDeadlineDesc')}</span>
                           </div>
                         </div>
                       </div>
@@ -701,36 +701,36 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-green-400 pl-6">
                       <div className="lg:col-span-2">
                         <h3 className="font-bold text-xl text-green-500 mb-4">
-                          5. Финанси и допълнения:
+                          5. {t('instructionFinanceAndAdditional')}
                         </h3>
                         
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
                           {/* Financial Settings */}
                           <div className="bg-green-50 p-4 rounded-lg">
-                            <h4 className="font-bold text-lg mb-3 text-green-600">Цена за участие:</h4>
+                            <h4 className="font-bold text-lg mb-3 text-green-600">{t('instructionParticipationPrice')}</h4>
                             <div className="space-y-2">
                               <div className="flex items-center">
                                 <span className="mr-2">💰</span>
-                                <span className="text-sm">Възможност за закръгляване на сумата (остатъкът отива в хазната)</span>
+                                <span className="text-sm">{t('instructionRoundingOption')}</span>
                               </div>
                               <div className="flex items-center">
                                 <span className="mr-2">🎫</span>
-                                <span className="text-sm">Безплатен вариант (ако желаете)</span>
+                                <span className="text-sm">{t('instructionFreeOption')}</span>
                               </div>
                             </div>
                           </div>
 
                           {/* Final Steps */}
                           <div className="bg-gray-50 p-4 rounded-lg">
-                            <h4 className="font-bold text-lg mb-3 text-gray-600">Финализиране:</h4>
+                            <h4 className="font-bold text-lg mb-3 text-gray-600">{t('instructionFinalization')}</h4>
                             <div className="space-y-2">
                               <div className="flex items-center">
                                 <Check className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                                <span className="text-sm">Добавете бележки (по избор)</span>
+                                <span className="text-sm">{t('instructionAddNotes')}</span>
                               </div>
                               <div className="flex items-center">
                                 <Check className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                                <span className="text-sm">Завършете с „Създай събитие"</span>
+                                <span className="text-sm">{t('instructionCompleteWithCreate')}</span>
                               </div>
                             </div>
                           </div>
@@ -751,10 +751,10 @@ const Instructions = () => {
                     <div className="bg-warmyellow-50 p-6 rounded-md">
                       <h3 className="font-bold text-xl text-warmyellow-600 mb-3 flex items-center">
                         <span className="mr-2">✅</span>
-                        Готово! 
+                        {t('instructionEventReady')} 
                       </h3>
                       <p className="text-warmyellow-700 mb-4">
-                        Събитието е активно и поканите са изпратени според зададените настройки.
+                        {t('instructionEventActive')}
                       </p>
                     </div>
 
@@ -762,24 +762,24 @@ const Instructions = () => {
                     <div className="bg-gradient-to-r from-warmyellow-100 to-warmyellow-50 p-6 rounded-lg">
                       <h3 className="font-bold text-xl text-warmyellow-600 mb-4 flex items-center">
                         <span className="mr-2">🌟</span>
-                        Допълнителни възможности:
+                        {t('instructionAdditionalPossibilities')}
                       </h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="flex items-start">
                           <Users className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Автоматично балансиране на отборите (ако е вътрешен мач)</span>
+                          <span>{t('instructionAutoTeamBalance')}</span>
                         </div>
                         <div className="flex items-start">
                           <Eye className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Проследяване на потвърждения в реално време</span>
+                          <span>{t('instructionTrackConfirmations')}</span>
                         </div>
                         <div className="flex items-start">
                           <Zap className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Известия за промени по събитието</span>
+                          <span>{t('instructionEventNotifications')}</span>
                         </div>
                         <div className="flex items-start">
                           <Settings className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Опция за автоматично попълване на липсващи играчи от резервите</span>
+                          <span>{t('instructionAutoFillPlayers')}</span>
                         </div>
                       </div>
                     </div>
@@ -787,7 +787,7 @@ const Instructions = () => {
                     {/* Final Message */}
                     <div className="bg-warmyellow-50 p-6 rounded-md text-center">
                       <p className="text-lg font-medium text-warmyellow-700">
-                        Приложението ще ви уведоми за всяка промяна в статуса на събитието и ще ви помогне да организирате перфектен мач без главоболия! ⚽📅
+                        {t('instructionFinalMessage2')}
                       </p>
                     </div>
                   </div>
@@ -802,27 +802,27 @@ const Instructions = () => {
                   <div className="bg-gradient-to-r from-warmyellow-400 to-warmyellow-300 p-6 md:p-8">
                     <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white flex items-center">
                       <span className="bg-white text-warmyellow-500 w-10 h-10 flex items-center justify-center rounded-full mr-4 flex-shrink-0">5</span>
-                      Управление на плащанията за събитие
+                      {t('instructionTitle5')}
                     </h2>
-                    <p className="text-white/90 text-lg">Ефективно и прозрачно управление на финансите за всяко събитие!</p>
+                    <p className="text-white/90 text-lg">{t('instructionPaymentSubtitle')}</p>
                   </div>
                   <div className="p-6 md:p-8 space-y-8">
                     
                     {/* Section 1: Event Selection */}
                     <div className="border-l-4 border-warmyellow-400 pl-6">
                       <h3 className="font-bold text-xl text-warmyellow-500 mb-4">
-                        Процес на регистрация на плащания:
+                        {t('instructionPaymentProcess')}
                       </h3>
                       <div className="space-y-2">
                         <div className="flex items-center">
                           <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-3 flex-shrink-0 text-xs">1</div>
-                          <span>Отворете желаното събитие като го изберете от предстоящи или минали</span>
+                          <span>{t('instructionOpenEvent')}</span>
                         </div>
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start mt-4">
                           <div className="lg:col-span-2">
                             <div className="flex items-center">
                               <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-3 flex-shrink-0 text-xs">2</div>
-                              <span>Натиснете бутона "$" в горния десен ъгъл</span>
+                              <span>{t('instructionPressDollarButton')}</span>
                             </div>
                           </div>
                           
@@ -842,32 +842,32 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-blue-400 pl-6">
                       <div className="lg:col-span-2">
                         <h3 className="font-bold text-xl text-blue-500 mb-4">
-                          3. Екран за управление на плащания:
+                          3. {t('instructionPaymentScreen')}
                         </h3>
                         
                         <div className="bg-blue-50 p-6 rounded-lg mb-4">
                           <div className="space-y-3">
                             <div className="flex items-center">
                               <Users className="text-blue-500 mr-3 flex-shrink-0" size={20} />
-                              <span>Виждате списък с всички участници</span>
+                              <span>{t('instructionSeeParticipants')}</span>
                             </div>
                             <div className="flex items-center">
                               <DollarSign className="text-blue-500 mr-3 flex-shrink-0" size={20} />
-                              <span>В горната част се показва сумата за плащане (която може да се редактира)</span>
+                              <span>{t('instructionSeeAmount')}</span>
                             </div>
                           </div>
                         </div>
 
                         <div className="bg-gray-50 p-4 rounded-lg">
-                          <h4 className="font-bold text-lg mb-3 text-gray-700">За всеки играч имате възможност да:</h4>
+                          <h4 className="font-bold text-lg mb-3 text-gray-700">{t('instructionForEachPlayer')}</h4>
                           <div className="space-y-2">
                             <div className="flex items-center">
                               <span className="mr-3">💰</span>
-                              <span>Добавите допълнителна сума (остава в портфейла на играча за бъдещи събития)</span>
+                              <span>{t('instructionAddExtraAmount')}</span>
                             </div>
                             <div className="flex items-center">
                               <span className="mr-3">📉</span>
-                              <span>Намалите сумата</span>
+                              <span>{t('instructionReduceAmount')}</span>
                             </div>
                           </div>
                         </div>
@@ -887,33 +887,33 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start border-l-4 border-green-400 pl-6">
                       <div className="lg:col-span-2">
                         <h3 className="font-bold text-xl text-green-500 mb-4">
-                          4. Завършване на процеса:
+                          4. {t('instructionProcessCompletion')}
                         </h3>
                         
                         <div className="space-y-4">
                           <div className="flex items-center">
                             <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">1</div>
-                            <span>Натиснете червения бутон в горния десен ъгъл</span>
+                            <span>{t('instructionPressRedButton')}</span>
                           </div>
                           
                           <div className="ml-9">
                             <div className="flex items-center mb-2">
                               <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">2</div>
-                              <span>Ще видите обобщение с:</span>
+                              <span>{t('instructionSeeSummary')}</span>
                             </div>
                             <div className="bg-green-50 p-4 rounded-lg ml-9">
                               <div className="space-y-2">
                                 <div className="flex items-center">
                                   <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                                  <span>Цената на събитието</span>
+                                  <span>{t('instructionEventPrice')}</span>
                                 </div>
                                 <div className="flex items-center">
                                   <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                                  <span>Общо събрана сума</span>
+                                  <span>{t('instructionTotalCollected')}</span>
                                 </div>
                                 <div className="flex items-center">
                                   <ArrowRight className="text-green-500 mr-2 flex-shrink-0" size={16} />
-                                  <span>Сума за хазната на отбора</span>
+                                  <span>{t('instructionTeamTreasury')}</span>
                                 </div>
                               </div>
                             </div>
@@ -921,7 +921,7 @@ const Instructions = () => {
                           
                           <div className="flex items-center">
                             <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-green-500 font-semibold mr-3 flex-shrink-0 text-xs">3</div>
-                            <span>Потвърдете с "Да"</span>
+                            <span>{t('instructionConfirmYes')}</span>
                           </div>
                         </div>
                       </div>
@@ -939,21 +939,21 @@ const Instructions = () => {
                     {/* Additional Information */}
                     <div className="border-l-4 border-orange-400 pl-6">
                       <h3 className="font-bold text-xl text-orange-500 mb-4">
-                        Допълнителна информация:
+                        {t('instructionAdditionalInfo')}
                       </h3>
                       
                       <div className="bg-orange-50 p-4 rounded-lg">
                         <p className="text-orange-700 mb-2">
-                          Ако има играчи, които не са платили, системата проверява:
+                          {t('instructionUnpaidPlayers')}
                         </p>
                         <div className="space-y-2 ml-4">
                           <div className="flex items-center">
                             <Shield className="text-orange-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Дали хазната на отбора може да покрие липсващата сума</span>
+                            <span>{t('instructionTreasuryCheck')}</span>
                           </div>
                           <div className="flex items-center">
                             <Shield className="text-orange-500 mr-2 flex-shrink-0" size={16} />
-                            <span>Ако няма достатъчно средства, процесът не може да бъде завършен</span>
+                            <span>{t('instructionInsufficientFunds')}</span>
                           </div>
                         </div>
                       </div>
@@ -963,20 +963,20 @@ const Instructions = () => {
                     <div className="bg-gradient-to-r from-warmyellow-100 to-warmyellow-50 p-6 rounded-lg">
                       <h3 className="font-bold text-xl text-warmyellow-600 mb-4 flex items-center">
                         <span className="mr-2">🌟</span>
-                        Предимства на системата:
+                        {t('instructionSystemAdvantages')}
                       </h3>
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="flex items-start">
                           <Zap className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Удобно управление на плащанията без необходимост от връщане на ресто</span>
+                          <span>{t('instructionConvenientManagement')}</span>
                         </div>
                         <div className="flex items-start">
                           <Eye className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Пълна финансова прозрачност</span>
+                          <span>{t('instructionFullTransparency')}</span>
                         </div>
                         <div className="flex items-start">
                           <Settings className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={20} />
-                          <span>Автоматични изчисления и баланси</span>
+                          <span>{t('instructionAutoCalculations')}</span>
                         </div>
                       </div>
                     </div>
@@ -985,10 +985,10 @@ const Instructions = () => {
                     <div className="bg-blue-50 p-6 rounded-lg">
                       <h3 className="font-bold text-xl text-blue-600 mb-3 flex items-center">
                         <span className="mr-2">💡</span>
-                        Пример:
+                        {t('instructionExample')}
                       </h3>
                       <p className="text-blue-700">
-                        Ако играч плати 20 лв. вместо 15 лв., оставащите 5 лв. се запазват в неговия баланс за следващи събития.
+                        {t('instructionExampleText')}
                       </p>
                     </div>
 
@@ -996,17 +996,17 @@ const Instructions = () => {
                     <div className="bg-green-50 p-6 rounded-lg">
                       <h3 className="font-bold text-xl text-green-600 mb-3 flex items-center">
                         <Star className="mr-2" size={24} />
-                        Прозрачност:
+                        {t('instructionTransparency')}
                       </h3>
                       <p className="text-green-700">
-                        Всички играчи имат достъп до своя баланс и история на плащанията, което гарантира прозрачност.
+                        {t('instructionTransparencyText')}
                       </p>
                     </div>
 
                     {/* Final Message */}
                     <div className="bg-warmyellow-50 p-6 rounded-md text-center">
                       <p className="text-lg font-medium text-warmyellow-700">
-                        Системата за плащания в SureGo прави финансовото управление лесно, прозрачно и ефективно за всички! 💰⚡
+                        {t('instructionFinalMessage3')}
                       </p>
                     </div>
                   </div>
