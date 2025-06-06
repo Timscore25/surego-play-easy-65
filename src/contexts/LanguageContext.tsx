@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
 // Define our translations
@@ -110,23 +109,6 @@ export const translations = {
     ctaTitle: "Готов ли си да играеш без главоболия?",
     ctaSubtitle: "Свали SureGo сега и започни да организираш футболни събития лесно и бързо.",
     downloadApp: "Свали SureGo",
-
-    // Instructions Page
-    instructionsTitle: "Инструкции за използване на SureGo",
-    instructionsSubtitle: "Научете как да използвате всички функции на SureGo за перфектно организиране на футболни събития",
-    backToMain: "Обратно към началото",
-    quickStart: "Бърз старт",
-    quickStartDesc: "Започнете да използвате SureGo за минути",
-    playerManagement: "Управление на играчи",
-    playerManagementDesc: "Как да добавяте и организирате играчи",
-    eventOrganization: "Организиране на събития",
-    eventOrganizationDesc: "Създаване и управление на мачове",
-    teamBalancing: "Балансиране на отбори",
-    teamBalancingDesc: "Създаване на справедливи отбори",
-    paymentTracking: "Проследяване на плащания",
-    paymentTrackingDesc: "Управление на финанси",
-    advancedFeatures: "Разширени функции",
-    advancedFeaturesDesc: "Напреднали възможности на приложението"
   },
   en: {
     // Header
@@ -235,23 +217,6 @@ export const translations = {
     ctaTitle: "Ready to play without headaches?",
     ctaSubtitle: "Download SureGo now and start organizing football events easily and quickly.",
     downloadApp: "Download SureGo",
-
-    // Instructions Page
-    instructionsTitle: "SureGo User Instructions",
-    instructionsSubtitle: "Learn how to use all SureGo features for perfect football event organization",
-    backToMain: "Back to Home",
-    quickStart: "Quick Start",
-    quickStartDesc: "Start using SureGo in minutes",
-    playerManagement: "Player Management",
-    playerManagementDesc: "How to add and organize players",
-    eventOrganization: "Event Organization",
-    eventOrganizationDesc: "Creating and managing matches",
-    teamBalancing: "Team Balancing",
-    teamBalancingDesc: "Creating fair teams",
-    paymentTracking: "Payment Tracking",
-    paymentTrackingDesc: "Managing finances",
-    advancedFeatures: "Advanced Features",
-    advancedFeaturesDesc: "Advanced app capabilities"
   }
 };
 
