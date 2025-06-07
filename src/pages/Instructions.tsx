@@ -15,7 +15,7 @@ const Instructions = () => {
       <Header />
       <main>
         {/* Wave SVG - positioned at the bottom of the header */}
-        <div className="relative w-full h-16 md:h-24 overflow-hidden mt-[4.5rem] border-0 outline-0">
+        <div className="relative w-full h-16 md:h-24 overflow-hidden mt-16 md:mt-[4.5rem] border-0 outline-0">
           <svg 
             className="absolute top-0 left-0 w-full h-full border-0 outline-0"
             viewBox="0 0 1200 120" 
