@@ -186,9 +186,31 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       
-                      {/* Column 1: Fill Information */}
+                      {/* Column 1: Open Teams */}
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionOpenSection')}</h3>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
+                            <span className="text-sm">{t('instructionOpenTeamsSection')}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Column 2: Press Plus */}
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionPressPlus')}</h3>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
+                            <span className="text-sm">{t('instructionPressPlusButton')}</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Column 3: Fill Information */}
                       <div className="flex flex-col h-full">
                         <div className="flex-grow space-y-4">
                           <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionFillData')}</h3>
@@ -208,7 +230,7 @@ const Instructions = () => {
                         </div>
                       </div>
 
-                      {/* Column 2: Save */}
+                      {/* Column 4: Save */}
                       <div className="flex flex-col h-full">
                         <div className="flex-grow space-y-4">
                           <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionSave')}</h3>
