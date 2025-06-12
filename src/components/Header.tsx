@@ -85,7 +85,7 @@ const Header = () => {
             {t('faq')}
           </button>
           <Link to="/instructions" className="text-gray-600 hover:text-primary transition-colors font-medium">
-            Инструкции
+            {t('instructions')}
           </Link>
           <div className="flex items-center space-x-2 border-l pl-4 border-gray-200">
             <button 
@@ -140,7 +140,7 @@ const Header = () => {
               {t('faq')}
             </button>
             <Link to="/instructions" className="text-gray-600 hover:text-primary transition-colors py-2 px-4 rounded-md hover:bg-gray-50 font-medium" onClick={toggleMenu}>
-              Инструкции
+              {t('instructions')}
             </Link>
             <div className="flex items-center space-x-2 border-t pt-3 mt-1">
               <button 

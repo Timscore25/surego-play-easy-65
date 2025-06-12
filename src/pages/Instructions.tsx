@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -187,49 +186,9 @@ const Instructions = () => {
                     </h2>
                   </div>
                   <div className="p-6 md:p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                       
-                      {/* Column 1: Open Teams */}
-                      <div className="flex flex-col h-full">
-                        <div className="flex-grow space-y-4">
-                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionOpenSection')}</h3>
-                          <div className="flex items-start">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
-                            <span className="text-sm">{t('instructionOpenTeamsSection')}</span>
-                          </div>
-                        </div>
-                        
-                        {/* Mobile Screenshot - At the bottom */}
-                        <div className="mt-4 flex justify-center">
-                          <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                            alt="SureGo Teams Open Screenshot" 
-                            className="max-w-full h-auto rounded-lg max-h-48"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Column 2: Press Plus */}
-                      <div className="flex flex-col h-full">
-                        <div className="flex-grow space-y-4">
-                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionPressPlus')}</h3>
-                          <div className="flex items-start">
-                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
-                            <span className="text-sm">{t('instructionPressPlusButton')}</span>
-                          </div>
-                        </div>
-                        
-                        {/* Mobile Screenshot - At the bottom */}
-                        <div className="mt-4 flex justify-center">
-                          <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
-                            alt="SureGo Teams Plus Button Screenshot" 
-                            className="max-w-full h-auto rounded-lg max-h-48"
-                          />
-                        </div>
-                      </div>
-
-                      {/* Column 3: Fill Information */}
+                      {/* Column 1: Fill Information */}
                       <div className="flex flex-col h-full">
                         <div className="flex-grow space-y-4">
                           <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionFillData')}</h3>
@@ -249,7 +208,7 @@ const Instructions = () => {
                         </div>
                       </div>
 
-                      {/* Column 4: Save */}
+                      {/* Column 2: Save */}
                       <div className="flex flex-col h-full">
                         <div className="flex-grow space-y-4">
                           <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionSave')}</h3>
