@@ -48,49 +48,53 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       
                       {/* Column 1: Download App */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionDownloadApp')}</h3>
-                        <p className="text-gray-700">{t('instructionAvailableIn')}</p>
-                        
-                        {/* App Store and Google Play Badges */}
-                        <div className="space-y-3 pt-4">
-                          <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="block">
-                            <img 
-                              src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
-                              alt="Download on the App Store" 
-                              className="h-12 w-auto"
-                            />
-                          </a>
-                          <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="block">
-                            <img 
-                              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-                              alt="Get it on Google Play" 
-                              className="h-12 w-auto"
-                            />
-                          </a>
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionDownloadApp')}</h3>
+                          <p className="text-gray-700">{t('instructionAvailableIn')}</p>
+                          
+                          {/* App Store and Google Play Badges */}
+                          <div className="space-y-3 pt-4">
+                            <a href="https://apps.apple.com/bg/app/surego/id1671429121" target="_blank" rel="noopener noreferrer" className="block">
+                              <img 
+                                src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
+                                alt="Download on the App Store" 
+                                className="h-12 w-auto"
+                              />
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2" target="_blank" rel="noopener noreferrer" className="block">
+                              <img 
+                                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
+                                alt="Get it on Google Play" 
+                                className="h-12 w-auto"
+                              />
+                            </a>
+                          </div>
                         </div>
                       </div>
 
                       {/* Column 2: Choose Registration Method */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionChooseRegistration')}</h3>
-                        <p className="text-gray-700">{t('instructionCanRegisterWith')}</p>
-                        <div className="space-y-2">
-                          <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">{t('instructionGoogleAccount')}</span>
-                          </div>
-                          <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">{t('instructionAppleId')}</span>
-                          </div>
-                          <div className="flex items-center">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
-                            <span className="text-sm">{t('instructionEmailRegistration')}</span>
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionChooseRegistration')}</h3>
+                          <p className="text-gray-700">{t('instructionCanRegisterWith')}</p>
+                          <div className="space-y-2">
+                            <div className="flex items-center">
+                              <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                              <span className="text-sm">{t('instructionGoogleAccount')}</span>
+                            </div>
+                            <div className="flex items-center">
+                              <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                              <span className="text-sm">{t('instructionAppleId')}</span>
+                            </div>
+                            <div className="flex items-center">
+                              <Check className="text-warmyellow-500 mr-2 flex-shrink-0" size={16} />
+                              <span className="text-sm">{t('instructionEmailRegistration')}</span>
+                            </div>
                           </div>
                         </div>
                         
-                        {/* Mobile Screenshot - Below this section */}
+                        {/* Mobile Screenshot - At the bottom */}
                         <div className="mt-4 flex justify-center">
                           <img 
                             src="/lovable-uploads/501f51f3-0232-4e24-a34b-1c67dca7c87f.png" 
@@ -101,24 +105,26 @@ const Instructions = () => {
                       </div>
 
                       {/* Column 3: Email Registration Process */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionEmailRegTitle')}</h3>
-                        <div className="space-y-2">
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>{t('instructionEnterEmail')}</span>
-                          </div>
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>{t('instructionPressCreateProfile')}</span>
-                          </div>
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>{t('instructionCheckEmail')}</span>
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionEmailRegTitle')}</h3>
+                          <div className="space-y-2">
+                            <div className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                              <span>{t('instructionEnterEmail')}</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                              <span>{t('instructionPressCreateProfile')}</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                              <span>{t('instructionCheckEmail')}</span>
+                            </div>
                           </div>
                         </div>
                         
-                        {/* Mobile Screenshot - Below this section */}
+                        {/* Mobile Screenshot - At the bottom */}
                         <div className="mt-4 flex justify-center">
                           <img 
                             src="/lovable-uploads/ca7b67e1-1774-474a-bab0-619adb140776.png" 
@@ -129,24 +135,26 @@ const Instructions = () => {
                       </div>
 
                       {/* Column 4: Activate Profile */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionActivateProfile')}</h3>
-                        <div className="space-y-2">
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>{t('instructionOpenEmail')}</span>
-                          </div>
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>{t('instructionReturnToApp')}</span>
-                          </div>
-                          <div className="flex items-start">
-                            <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
-                            <span>{t('instructionEnterCredentials')}</span>
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionActivateProfile')}</h3>
+                          <div className="space-y-2">
+                            <div className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                              <span>{t('instructionOpenEmail')}</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                              <span>{t('instructionReturnToApp')}</span>
+                            </div>
+                            <div className="flex items-start">
+                              <Check className="text-warmyellow-500 mr-2 flex-shrink-0 mt-1" size={16} />
+                              <span>{t('instructionEnterCredentials')}</span>
+                            </div>
                           </div>
                         </div>
                         
-                        {/* Mobile Screenshot - Below this section */}
+                        {/* Mobile Screenshot - At the bottom */}
                         <div className="mt-4 flex justify-center">
                           <img 
                             src="/lovable-uploads/243ab4bd-b874-4b78-a5c6-34df233a34a5.png" 
