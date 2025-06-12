@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -197,6 +198,15 @@ const Instructions = () => {
                             <span className="text-sm">{t('instructionOpenTeamsSection')}</span>
                           </div>
                         </div>
+                        
+                        {/* Mobile Screenshot - At the bottom */}
+                        <div className="mt-4 flex justify-center">
+                          <img 
+                            src="/lovable-uploads/4f6a85b5-6b5f-48a5-8e9f-32b85f72760a.png" 
+                            alt="SureGo Teams Open Section Screenshot" 
+                            className="max-w-full h-auto rounded-lg max-h-48"
+                          />
+                        </div>
                       </div>
 
                       {/* Column 2: Press Plus */}
@@ -207,6 +217,15 @@ const Instructions = () => {
                             <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
                             <span className="text-sm">{t('instructionPressPlusButton')}</span>
                           </div>
+                        </div>
+                        
+                        {/* Mobile Screenshot - At the bottom */}
+                        <div className="mt-4 flex justify-center">
+                          <img 
+                            src="/lovable-uploads/75e94b9e-02cc-4bb4-b7bf-40c1db665d4e.png" 
+                            alt="SureGo Teams Press Plus Screenshot" 
+                            className="max-w-full h-auto rounded-lg max-h-48"
+                          />
                         </div>
                       </div>
 
@@ -223,7 +242,7 @@ const Instructions = () => {
                         {/* Mobile Screenshot - At the bottom */}
                         <div className="mt-4 flex justify-center">
                           <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            src="/lovable-uploads/ba189c6d-5144-4f4a-a67f-7b72637c9991.png" 
                             alt="SureGo Teams Fill Data Screenshot" 
                             className="max-w-full h-auto rounded-lg max-h-48"
                           />
@@ -243,7 +262,7 @@ const Instructions = () => {
                         {/* Mobile Screenshot - At the bottom */}
                         <div className="mt-4 flex justify-center">
                           <img 
-                            src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
+                            src="/lovable-uploads/ba189c6d-5144-4f4a-a67f-7b72637c9991.png" 
                             alt="SureGo Teams Save Screenshot" 
                             className="max-w-full h-auto rounded-lg max-h-48"
                           />
