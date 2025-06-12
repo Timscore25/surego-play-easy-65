@@ -168,7 +168,7 @@ const Instructions = () => {
               </Card>
             </div>
 
-            {/* Instruction 2 - Team Creation - Horizontal Layout */}
+            {/* Instruction 2 - Team Creation - Horizontal Layout with Bottom-Aligned Images */}
             <div className="w-full">
               <Card className="overflow-hidden border-0 shadow-md">
                 <CardContent className="p-0">
@@ -182,14 +182,16 @@ const Instructions = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
                       
                       {/* Column 1: Open Teams */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionOpenSection')}</h3>
-                        <div className="flex items-start">
-                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
-                          <span className="text-sm">{t('instructionOpenTeamsSection')}</span>
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionOpenSection')}</h3>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">1</div>
+                            <span className="text-sm">{t('instructionOpenTeamsSection')}</span>
+                          </div>
                         </div>
                         
-                        {/* Mobile Screenshot - Below this section */}
+                        {/* Mobile Screenshot - At the bottom */}
                         <div className="mt-4 flex justify-center">
                           <img 
                             src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
@@ -200,14 +202,16 @@ const Instructions = () => {
                       </div>
 
                       {/* Column 2: Press Plus */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionPressPlus')}</h3>
-                        <div className="flex items-start">
-                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
-                          <span className="text-sm">{t('instructionPressPlusButton')}</span>
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionPressPlus')}</h3>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">2</div>
+                            <span className="text-sm">{t('instructionPressPlusButton')}</span>
+                          </div>
                         </div>
                         
-                        {/* Mobile Screenshot - Below this section */}
+                        {/* Mobile Screenshot - At the bottom */}
                         <div className="mt-4 flex justify-center">
                           <img 
                             src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
@@ -218,14 +222,16 @@ const Instructions = () => {
                       </div>
 
                       {/* Column 3: Fill Information */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionFillData')}</h3>
-                        <div className="flex items-start">
-                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
-                          <span className="text-sm">{t('instructionFillTeamData')}</span>
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionFillData')}</h3>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">3</div>
+                            <span className="text-sm">{t('instructionFillTeamData')}</span>
+                          </div>
                         </div>
                         
-                        {/* Mobile Screenshot - Below this section */}
+                        {/* Mobile Screenshot - At the bottom */}
                         <div className="mt-4 flex justify-center">
                           <img 
                             src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
@@ -236,14 +242,16 @@ const Instructions = () => {
                       </div>
 
                       {/* Column 4: Save */}
-                      <div className="space-y-4">
-                        <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionSave')}</h3>
-                        <div className="flex items-start">
-                          <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">4</div>
-                          <span className="text-sm">{t('instructionPressSave')}</span>
+                      <div className="flex flex-col h-full">
+                        <div className="flex-grow space-y-4">
+                          <h3 className="font-bold text-xl text-warmyellow-500">{t('instructionSave')}</h3>
+                          <div className="flex items-start">
+                            <div className="flex items-center justify-center rounded-full bg-gray-100 w-6 h-6 text-warmyellow-500 font-semibold mr-2 flex-shrink-0 text-xs">4</div>
+                            <span className="text-sm">{t('instructionPressSave')}</span>
+                          </div>
                         </div>
                         
-                        {/* Mobile Screenshot - Below this section */}
+                        {/* Mobile Screenshot - At the bottom */}
                         <div className="mt-4 flex justify-center">
                           <img 
                             src="/lovable-uploads/db795962-c771-4b56-abf6-d694b954f10b.png" 
