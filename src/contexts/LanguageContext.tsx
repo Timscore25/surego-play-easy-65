@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
 // Define our translations
@@ -54,6 +53,14 @@ export const translations = {
     // How It Works
     howItWorksTitle: "Как работи SureGo?",
     howItWorksSubtitle: "Само шест лесни стъпки ви делят от перфектно организираните футболни събития",
+    howItWorksStep1Title: "Създай Отбор",
+    howItWorksStep1Description: "Създайте своя отбор и настройте основните му параметри.",
+    howItWorksStep2Title: "Покани Играчи",
+    howItWorksStep2Description: "Поканете играчи с телефон или SureGo ID към вашия отбор.",
+    howItWorksStep3Title: "Разпредели Играчите",
+    howItWorksStep3Description: "Организирайте играчите по позиции и роли за оптимални състави.",
+    howItWorksStep4Title: "Организирай и Играй!",
+    howItWorksStep4Description: "Задайте дата, час, локация и условия за участие.",
     step1Title: "Свали приложението",
     step1Desc: "Изтеглете SureGo от App Store или Google Play безплатно.",
     step2Title: "Създай профил",
@@ -233,7 +240,7 @@ export const translations = {
     instructionAutoTeamBalance: "Автоматично балансиране на отборите (ако е вътрешен мач)",
     instructionTrackConfirmations: "Проследяване на потвърждения в реално време",
     instructionEventNotifications: "Известия за промени по събитието",
-    instructionAutoFillPlayers: "Опция за автоматично попълване на липсващи играчи от резервете",
+    instructionAutoFillPlayers: "Опция за автоматично попълване на липсващи играчи от резервите",
     instructionFinalMessage2: "Приложението ще ви уведоми за всяка промяна в статуса на събитието и ще ви помогне да организирате перфектен мач без главоболия! ⚽📅",
 
     instructionTitle5: "Управление на плащанията за събитие",
@@ -319,6 +326,14 @@ export const translations = {
     // How It Works
     howItWorksTitle: "How Does SureGo Work?",
     howItWorksSubtitle: "Only six easy steps separate you from perfectly organized football events",
+    howItWorksStep1Title: "Create Team",
+    howItWorksStep1Description: "Create your team and set up its basic parameters.",
+    howItWorksStep2Title: "Invite Players",
+    howItWorksStep2Description: "Invite players by phone or SureGo ID to your team.",
+    howItWorksStep3Title: "Assign Players",
+    howItWorksStep3Description: "Organize players by positions and roles for optimal lineups.",
+    howItWorksStep4Title: "Organize and Play!",
+    howItWorksStep4Description: "Set date, time, location and participation conditions.",
     step1Title: "Download the App",
     step1Desc: "Download SureGo from the App Store or Google Play for free.",
     step2Title: "Create an Account",
