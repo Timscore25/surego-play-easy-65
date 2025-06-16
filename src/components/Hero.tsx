@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const Hero = () => {
   const { t } = useLanguage();
   
-  return <section id="hero" className="pt-20 md:pt-24 lg:pt-28 pb-10 md:pb-12 lg:pb-16 bg-gradient-to-b from-purple-100 to-white overflow-hidden">
+  return <section id="hero" className="pt-20 md:pt-24 lg:pt-28 pb-10 md:pb-12 lg:pb-16 bg-gradient-to-b from-dbeafe to-white overflow-hidden bg-[#11e7ef]">
       <div className="app-container">
         <div className="flex flex-col-reverse lg:flex-row items-center lg:space-x-8 px-4 md:px-0">
           {/* Hero Content */}
@@ -31,7 +31,7 @@ const Hero = () => {
           {/* Hero Image */}
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 translate-y-1 scale-100 bg-gradient-to-b from-green-500 to-green-400 rounded-[3rem] transform rotate-6"></div>
+              <div className="absolute inset-0 translate-y-1 scale-100 bg-gradient-to-b from-[#ffc100] to-[#ffc100] rounded-[3rem] transform rotate-6"></div>
               <img 
                 alt="SureGo App Screenshot" 
                 className="relative z-10 w-72 sm:w-80 md:w-96 lg:w-[28rem] h-auto rounded-[2.5rem]" 

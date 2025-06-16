@@ -8,32 +8,32 @@ const Features = () => {
   
   const features = [{
     id: 1,
-    icon: <Calendar className="h-8 w-8 sm:h-10 sm:w-10 text-purple-600" />,
+    icon: <Calendar className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
     title: t('feature1Title'),
     description: t('feature1Desc')
   }, {
     id: 2,
-    icon: <Users className="h-8 w-8 sm:h-10 sm:w-10 text-green-600" />,
+    icon: <Users className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
     title: t('feature2Title'),
     description: t('feature2Desc')
   }, {
     id: 3,
-    icon: <Bell className="h-8 w-8 sm:h-10 sm:w-10 text-purple-600" />,
+    icon: <Bell className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
     title: t('feature3Title'),
     description: t('feature3Desc')
   }, {
     id: 4,
-    icon: <Scale className="h-8 w-8 sm:h-10 sm:w-10 text-green-600" />,
+    icon: <Scale className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
     title: t('feature4Title'),
     description: t('feature4Desc')
   }, {
     id: 5,
-    icon: <Wallet className="h-8 w-8 sm:h-10 sm:w-10 text-purple-600" />,
+    icon: <Wallet className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
     title: t('feature5Title'),
     description: t('feature5Desc')
   }, {
     id: 6,
-    icon: <BarChart className="h-8 w-8 sm:h-10 sm:w-10 text-green-600" />,
+    icon: <BarChart className="h-8 w-8 sm:h-10 sm:w-10 text-[#ffc100]" />,
     title: t('feature6Title'),
     description: t('feature6Desc')
   }];
@@ -53,10 +53,10 @@ const Features = () => {
             <Card 
               key={feature.id} 
               style={{ animationDelay: `${0.1 * feature.id}s` }} 
-              className="border border-gray-100 hover:bg-purple-50 hover:shadow-lg transition-all duration-300 animate-fade-in overflow-hidden group"
+              className="border border-gray-100 hover:bg-[#ffc100]/5 hover:shadow-lg transition-all duration-300 animate-fade-in overflow-hidden group"
             >
               <CardContent className="p-5 sm:p-6">
-                <div className="rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center mb-4 transition-colors bg-gradient-to-br from-purple-100 to-green-100">
+                <div className="rounded-full w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center mb-4 transition-colors bg-[#f4f4f4]">
                   {feature.icon}
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold mb-2">{feature.title}</h3>

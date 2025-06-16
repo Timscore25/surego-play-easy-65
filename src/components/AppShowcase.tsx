@@ -35,7 +35,7 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
     : appScreenshots;
   
   return (
-    <section id="app-showcase" className="relative section-padding bg-gradient-to-b from-green-50 to-white pt-16 md:pt-24 px-4 sm:px-6">
+    <section id="app-showcase" className="relative section-padding bg-gradient-to-b from-dbeafe to-white pt-16 md:pt-24 px-4 sm:px-6">
       <div className="app-container text-center">
         <h2 className="section-title mb-6 sm:mb-8 text-2xl sm:text-3xl md:text-4xl font-bold">{t('appShowcaseTitle')}</h2>
         
@@ -54,7 +54,7 @@ const AppShowcase = ({ screenshots }: AppShowcaseProps) => {
                 >
                   {/* Colored background card with tilt effect */}
                   <div 
-                    className={`absolute inset-0 ${index % 2 === 0 ? 'bg-purple-400' : 'bg-green-400'} rounded-[2rem]`}
+                    className="absolute inset-0 bg-[#ffc100] rounded-[2rem]" 
                     style={{ 
                       transform: `rotate(${index % 2 === 0 ? '-3deg' : '3deg'})`,
                       zIndex: 5

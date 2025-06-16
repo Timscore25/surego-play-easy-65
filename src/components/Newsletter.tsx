@@ -26,11 +26,11 @@ const Newsletter = () => {
   };
 
   return (
-    <section className="section-padding bg-gradient-to-b from-purple-50 to-white px-4 md:px-6">
+    <section className="section-padding bg-gradient-to-b from-[#11e7ef]/10 to-white px-4 md:px-6">
       <div className="app-container">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="inline-flex items-center justify-center p-3 mb-6 rounded-full bg-green-100">
-            <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-green-600" />
+          <div className="inline-flex items-center justify-center p-3 mb-6 rounded-full bg-[#11e7ef]/20">
+            <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-[#11e7ef]" />
           </div>
           
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-gray-800">
@@ -55,7 +55,7 @@ const Newsletter = () => {
               </div>
               <Button 
                 type="submit" 
-                className="bg-gradient-to-r from-purple-500 to-green-500 hover:from-purple-600 hover:to-green-600 shadow-md transition-all hover:shadow-lg text-white whitespace-nowrap"
+                className="bg-[#ffc100] hover:bg-[#ffc100]/90 shadow-md transition-all hover:shadow-lg text-gray-900 whitespace-nowrap"
               >
                 {t('newsletterButton')}
               </Button>

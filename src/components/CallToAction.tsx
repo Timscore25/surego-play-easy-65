@@ -6,16 +6,16 @@ const CallToAction = () => {
   const { t } = useLanguage();
   
   return (
-    <section className="section-padding relative bg-gradient-to-br from-purple-600 via-purple-500 to-green-500 text-white overflow-hidden px-4 sm:px-6">
+    <section className="section-padding relative bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-white overflow-hidden px-4 sm:px-6">
       {/* Abstract sporty shape in background */}
-      <div className="absolute inset-0 overflow-hidden opacity-100">
+      <div className="absolute inset-0 overflow-hidden opacity-100 bg-[#ffc100]">
         <div className="absolute bottom-0 left-1/4 w-72 h-72 rounded-full bg-white/20"></div>
       </div>
       
       <div className="app-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-white">{t('ctaTitle')}</h2>
-          <p className="text-lg sm:text-xl mb-6 sm:mb-10 text-white/90">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-gray-950">{t('ctaTitle')}</h2>
+          <p className="text-lg sm:text-xl mb-6 sm:mb-10 text-gray-950">
             {t('ctaSubtitle')}
           </p>
           
@@ -59,7 +59,7 @@ const CallToAction = () => {
               window.open('https://play.google.com/store/apps/details?id=com.intellicsengineering.surego2', '_blank');
             }
           }}
-          className="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-full shadow-lg flex items-center justify-center gap-2 font-medium"
+          className="w-full bg-[#ffc100] hover:bg-warmyellow-500 text-black py-3 rounded-full shadow-lg flex items-center justify-center gap-2 font-medium"
         >
           <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M12 15V3m0 12l-4-4m4 4l4-4" />
