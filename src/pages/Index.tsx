@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from "@/components/Header";
@@ -15,12 +14,12 @@ import Footer from "@/components/Footer";
 const Index = () => {
   const location = useLocation();
   
-  // Define the app showcase screenshots in the order specified by the user
+  // Define the app showcase screenshots with the new uploaded images
   const appScreenshots = [
-    "/lovable-uploads/78087210-3661-4383-a7df-163b48ab4965.png", // Invite Players  
-    "/lovable-uploads/19450552-6c39-4408-8801-04f3ac0823d7.png", // Create Team
-    "/lovable-uploads/d405336c-4d6f-40e8-b3f3-631cf1b3ab98.png", // Assign Players
-    "/lovable-uploads/8c82ea02-2341-4e73-bd3e-36f5db5a2f5d.png", // Organize and Play!
+    "/lovable-uploads/fa3132b2-5680-47ac-9f2b-be94598d7e07.png", // Създай Отбор (Create Team) - Main screen
+    "/lovable-uploads/09b7e742-50d5-424c-b530-a1c695583c60.png", // Покани Играчи (Invite Players) - Main screen duplicate
+    "/lovable-uploads/3c86f45e-cfce-40bf-a734-6e6ecb6a15cd.png", // Разпредели Играчите (Assign Players) - Payments screen
+    "/lovable-uploads/a759d7c0-6184-4c2c-9afb-e281b42b5fb0.png", // Организирай и Играй! (Organize and Play) - Team formation screen
   ];
 
   useEffect(() => {
