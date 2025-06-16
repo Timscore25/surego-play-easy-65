@@ -8,26 +8,18 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: Users,
-      titleKey: 'howItWorksStep1Title',
-      descriptionKey: 'howItWorksStep1Description',
       image: "/lovable-uploads/37954cb1-92f0-48e6-8137-51b25ec50dc8.png"
     },
     {
       icon: UserPlus,
-      titleKey: 'howItWorksStep2Title',
-      descriptionKey: 'howItWorksStep2Description',
       image: "/lovable-uploads/d0206bce-a75e-4838-a98a-061bd514bf0c.png"
     },
     {
       icon: Calendar,
-      titleKey: 'howItWorksStep3Title',
-      descriptionKey: 'howItWorksStep3Description',
       image: "/lovable-uploads/134974be-f26c-4be3-879c-9deee3182d28.png"
     },
     {
       icon: Trophy,
-      titleKey: 'howItWorksStep4Title',
-      descriptionKey: 'howItWorksStep4Description',
       image: "/lovable-uploads/b60de349-68b2-4a71-905f-a09cdfe6c743.png"
     }
   ];
@@ -55,13 +47,32 @@ const HowItWorks = () => {
               <div className="mb-6">
                 <img 
                   src={step.image}
-                  alt={t(step.titleKey)}
+                  alt={
+                    index === 0 ? t('howItWorksStep1Title') :
+                    index === 1 ? t('howItWorksStep2Title') :
+                    index === 2 ? t('howItWorksStep3Title') :
+                    t('howItWorksStep4Title')
+                  }
                   className="w-48 h-auto mx-auto rounded-lg shadow-md"
                 />
               </div>
               
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{t(step.titleKey)}</h3>
-              <p className="text-gray-600">{t(step.descriptionKey)}</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                {
+                  index === 0 ? t('howItWorksStep1Title') :
+                  index === 1 ? t('howItWorksStep2Title') :
+                  index === 2 ? t('howItWorksStep3Title') :
+                  t('howItWorksStep4Title')
+                }
+              </h3>
+              <p className="text-gray-600">
+                {
+                  index === 0 ? t('howItWorksStep1Description') :
+                  index === 1 ? t('howItWorksStep2Description') :
+                  index === 2 ? t('howItWorksStep3Description') :
+                  t('howItWorksStep4Description')
+                }
+              </p>
             </div>
           ))}
         </div>
