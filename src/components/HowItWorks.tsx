@@ -1,5 +1,4 @@
 
-import { Users, Calendar, UserPlus, Trophy } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const HowItWorks = () => {
@@ -7,72 +6,74 @@ const HowItWorks = () => {
   
   const steps = [
     {
-      icon: Users,
-      image: "/lovable-uploads/37954cb1-92f0-48e6-8137-51b25ec50dc8.png"
+      number: "01",
+      title: t('step1Title'),
+      description: t('step1Desc')
     },
     {
-      icon: UserPlus,
-      image: "/lovable-uploads/d0206bce-a75e-4838-a98a-061bd514bf0c.png"
+      number: "02",
+      title: t('step2Title'),
+      description: t('step2Desc')
     },
     {
-      icon: Calendar,
-      image: "/lovable-uploads/134974be-f26c-4be3-879c-9deee3182d28.png"
+      number: "03",
+      title: t('step3Title'),
+      description: t('step3Desc')
     },
     {
-      icon: Trophy,
-      image: "/lovable-uploads/b60de349-68b2-4a71-905f-a09cdfe6c743.png"
+      number: "04",
+      title: t('step4Title'),
+      description: t('step4Desc')
+    },
+    {
+      number: "05",
+      title: t('step5Title'),
+      description: t('step5Desc')
+    },
+    {
+      number: "06",
+      title: t('step6Title'),
+      description: t('step6Desc')
     }
   ];
 
   return (
-    <section id="how-it-works" className="section-padding bg-gray-50">
+    <section id="how-it-works" className="section-padding bg-gradient-to-b from-dbeafe/50 to-white px-4 sm:px-6">
       <div className="app-container">
-        <div className="text-center mb-12">
-          <h2 className="section-title text-gray-900">{t('howItWorksTitle')}</h2>
-          <p className="section-subtitle">{t('howItWorksSubtitle')}</p>
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+          <h2 className="section-title mb-3 md:mb-4 text-2xl sm:text-3xl md:text-4xl">{t('howItWorksTitle')}</h2>
+          <p className="section-subtitle text-base sm:text-lg">
+            {t('howItWorksSubtitle')}
+          </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="max-w-4xl mx-auto">
           {steps.map((step, index) => (
-            <div key={index} className="text-center group">
-              <div className="relative mb-6">
-                <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <step.icon size={32} />
-                </div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-accent text-accent-foreground rounded-full flex items-center justify-center text-sm font-bold">
-                  {index + 1}
+            <div 
+              key={index}
+              className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 mb-8 sm:mb-12 animate-fade-in relative"
+              style={{ animationDelay: `${0.2 * index}s` }}
+            >
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-[#ffc100] text-white flex items-center justify-center text-lg sm:text-xl font-bold relative">
+                  {step.number}
+                  <div className="absolute inset-0 rounded-full bg-[#ffc100] opacity-20 animate-ping"></div>
                 </div>
               </div>
-              
-              <div className="mb-6">
-                <img 
-                  src={step.image}
-                  alt={
-                    index === 0 ? t('howItWorksStep1Title') :
-                    index === 1 ? t('howItWorksStep2Title') :
-                    index === 2 ? t('howItWorksStep3Title') :
-                    t('howItWorksStep4Title')
-                  }
-                  className="w-48 h-auto mx-auto rounded-lg shadow-md"
-                />
+              <div className="flex-1 pt-1">
+                <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">{step.title}</h3>
+                <p className="text-gray-600 text-sm sm:text-base">{step.description}</p>
               </div>
               
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                {
-                  index === 0 ? t('howItWorksStep1Title') :
-                  index === 1 ? t('howItWorksStep2Title') :
-                  index === 2 ? t('howItWorksStep3Title') :
-                  t('howItWorksStep4Title')
-                }
-              </h3>
-              <p className="text-gray-600">
-                {
-                  index === 0 ? t('howItWorksStep1Description') :
-                  index === 1 ? t('howItWorksStep2Description') :
-                  index === 2 ? t('howItWorksStep3Description') :
-                  t('howItWorksStep4Description')
-                }
-              </p>
+              {/* Connecting line (only for desktop) */}
+              {index < steps.length - 1 && (
+                <div className="hidden md:block h-14 border-l-2 border-dashed border-[#ffc100]/30 absolute ml-6 sm:ml-8 mt-16"></div>
+              )}
+              
+              {/* Connecting line (only for mobile) */}
+              {index < steps.length - 1 && (
+                <div className="md:hidden w-0.5 bg-dashed border-l-2 border-dashed border-[#ffc100]/30 absolute left-6 top-12 h-10"></div>
+              )}
             </div>
           ))}
         </div>
